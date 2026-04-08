@@ -4,7 +4,10 @@ const COIN_MAP = {
     "Bitcoin": { apiId: "bitcoin", jsonKey: "cleaned_coin_Bitcoin.csv" },
     "Ethereum": { apiId: "ethereum", jsonKey: "cleaned_coin_Ethereum.csv" },
     "BinanceCoin": { apiId: "binancecoin", jsonKey: "cleaned_coin_BinanceCoin.csv" },
-    "Solana": { apiId: "solana", jsonKey: "cleaned_coin_Solana.csv" }
+    "Solana": { apiId: "solana", jsonKey: "cleaned_coin_Solana.csv" },
+    "Cardano": { apiId: "cardano", jsonKey: "cleaned_coin_Cardano.csv" },
+    "Dogecoin": { apiId: "dogecoin", jsonKey: "cleaned_coin_Dogecoin.csv" },
+    "XRP": { apiId: "ripple", jsonKey: "cleaned_coin_XRP.csv" }
 };
 
 // --- SCALING ENGINE (Replicating Python StandardScaler) ---
@@ -23,12 +26,11 @@ async function updateDashboard() {
     const threshold = 0.0233; // From your main.ipynb
 
     try {
-        // Fetching 30 days of data via backend proxy (avoids CORS & API errors)
-        const mUrl = `/api/market/${config.apiId}?days=30`;
-        const oUrl = `/api/ohlc/${config.apiId}?days=30`;
-        const wUrl = `/api/weights`;
+        // Fetching 30 days of data directly from CoinGecko (public API, CORS enabled)
+        const mUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/market_chart?vs_currency=usd&days=30&interval=daily&x_cg_demo_api_key=${API_KEY}`;
+        const oUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/ohlc?vs_currency=usd&days=30&x_cg_demo_api_key=${API_KEY}`;
         
-        const [mRes, oRes, wRes] = await Promise.all([fetch(mUrl), fetch(oUrl), fetch(wUrl)]);
+        const [mRes, oRes, wRes] = await Promise.all([fetch(mUrl), fetch(oUrl), fetch('data.json')]);
 
         if (!mRes.ok || !oRes.ok) throw new Error(`API Error: ${mRes.status}`);
 
@@ -98,7 +100,7 @@ async function updateDashboard() {
 
     } catch (err) {
         console.error("Dashboard Error:", err);
-        document.getElementById('accuracy-display').innerText = "Server Error: Run 'npm install && node server.js'";
+        document.getElementById('accuracy-display').innerText = "Loading... Check browser console for errors";
     }
 }
 
