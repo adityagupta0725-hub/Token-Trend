@@ -23,7 +23,7 @@ function getStats(array) {
 async function updateDashboard() {
     const selectedName = document.getElementById('coinSelect').value;
     const config = COIN_MAP[selectedName];
-    const threshold = 0.0233; // From your main.ipynb
+    const threshold = 0.0233;
 
     try {
         // Fetching 30 days of data directly from CoinGecko (public API, CORS enabled)
@@ -39,31 +39,44 @@ async function updateDashboard() {
         const allWeights = await wRes.json();
         const weights = allWeights[config.jsonKey];
 
-        // --- DEFENSIVE GUARD: Fixes the "reading '1'" error ---
+        // Debug: Log the API response structure
+        console.log('histData keys:', Object.keys(histData));
+        console.log('ohlcData sample:', ohlcData ? ohlcData.slice(0, 2) : 'undefined');
+
+        // Defensive guards
         if (!ohlcData || ohlcData.length < 15) {
             document.getElementById('accuracy-display').innerText = "Insufficient API Data. Try BTC/ETH.";
             return;
         }
 
+        // Fix: Use histData.prices if total_volumes is missing
+        const volumeData = histData.total_volumes || histData.prices || [];
+        if (!volumeData || volumeData.length === 0) {
+            document.getElementById('accuracy-display').innerText = "No volume data available.";
+            return;
+        }
+
         // 1. Calculate Scaling Stats (StandardScaler Replication)
         const priceStats = getStats(ohlcData.map(d => d[4])); 
-        const volStats = getStats(histData.total_volumes.map(v => v[1]));
+        const volStats = getStats(volumeData.map(v => (Array.isArray(v) ? v[1] : v)));
 
-        // 2. 14-Day Backtesting Loop
+        // 2. 5-Day Backtesting Loop (reduced from 14d to minimize API calls)
         let correct = 0;
-        const testWindow = 14;
+        const testWindow = Math.min(5, ohlcData.length - 1);
         
-        for (let i = ohlcData.length - testWindow - 1; i < ohlcData.length - 1; i++) {
+        for (let i = Math.max(0, ohlcData.length - testWindow - 1); i < ohlcData.length - 1; i++) {
             const day = ohlcData[i];
-            const nextDay = ohlcData[i+1];
+            const nextDay = ohlcData[i + 1];
             
-            // Scaled Inputs: (Value - Mean) / StdDev
+            // Safe volume access
+            const volValue = volumeData[i] ? (Array.isArray(volumeData[i]) ? volumeData[i][1] : volumeData[i]) : 0;
+            
             const z = {
                 o: (day[1] - priceStats.mean) / priceStats.std,
                 h: (day[2] - priceStats.mean) / priceStats.std,
                 l: (day[3] - priceStats.mean) / priceStats.std,
                 c: (day[4] - priceStats.mean) / priceStats.std,
-                v: (histData.total_volumes[i][1] - volStats.mean) / volStats.std
+                v: (volValue - volStats.mean) / volStats.std
             };
 
             const logit = weights.intercept + (z.o * weights.w_open) + (z.h * weights.w_high) + 
@@ -79,20 +92,21 @@ async function updateDashboard() {
 
         // 3. Final Prediction for Today
         const current = ohlcData[ohlcData.length - 1];
-        const currentVol = histData.total_volumes[histData.total_volumes.length - 1][1];
+        const currentVol = volumeData[volumeData.length - 1];
+        const currentVolValue = Array.isArray(currentVol) ? currentVol[1] : currentVol;
         
         const finalZ = weights.intercept + 
             ((current[1] - priceStats.mean) / priceStats.std * weights.w_open) + 
             ((current[2] - priceStats.mean) / priceStats.std * weights.w_high) + 
             ((current[3] - priceStats.mean) / priceStats.std * weights.w_low) + 
             ((current[4] - priceStats.mean) / priceStats.std * weights.w_close) + 
-            ((currentVol - volStats.mean) / volStats.std * weights.w_volume);
+            ((currentVolValue - volStats.mean) / volStats.std * weights.w_volume);
 
         const result = (1 / (1 + Math.exp(-finalZ))) > 0.5 ? "UP" : "DOWN";
 
         // 4. Update UI
         document.getElementById('price').innerText = `$${current[4].toLocaleString()}`;
-        document.getElementById('accuracy-display').innerText = `14d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
+        document.getElementById('accuracy-display').innerText = `5d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
         
         const predEl = document.getElementById('prediction');
         predEl.innerText = result;
@@ -100,7 +114,7 @@ async function updateDashboard() {
 
     } catch (err) {
         console.error("Dashboard Error:", err);
-        document.getElementById('accuracy-display').innerText = "Loading... Check browser console for errors";
+        document.getElementById('accuracy-display').innerText = "Error loading data. Check console.";
     }
 }
 
