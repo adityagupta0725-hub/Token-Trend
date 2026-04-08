@@ -23,11 +23,12 @@ async function updateDashboard() {
     const threshold = 0.0233; // From your main.ipynb
 
     try {
-        // Fetching 30 days of data to provide context for scaling and 14-day backtesting
-        const mUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/market_chart?vs_currency=usd&days=30&interval=daily&x_cg_demo_api_key=${API_KEY}`;
-        const oUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/ohlc?vs_currency=usd&days=30&x_cg_demo_api_key=${API_KEY}`;
+        // Fetching 30 days of data via backend proxy (avoids CORS & API errors)
+        const mUrl = `/api/market/${config.apiId}?days=30`;
+        const oUrl = `/api/ohlc/${config.apiId}?days=30`;
+        const wUrl = `/api/weights`;
         
-        const [mRes, oRes, wRes] = await Promise.all([fetch(mUrl), fetch(oUrl), fetch('data.json')]);
+        const [mRes, oRes, wRes] = await Promise.all([fetch(mUrl), fetch(oUrl), fetch(wUrl)]);
 
         if (!mRes.ok || !oRes.ok) throw new Error(`API Error: ${mRes.status}`);
 
@@ -97,7 +98,7 @@ async function updateDashboard() {
 
     } catch (err) {
         console.error("Dashboard Error:", err);
-        document.getElementById('accuracy-display').innerText = "Check API Key / Local Server";
+        document.getElementById('accuracy-display').innerText = "Server Error: Run 'npm install && node server.js'";
     }
 }
 
