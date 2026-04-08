@@ -1,15 +1,21 @@
-const API_KEY = '2fb950a190d94873b34091e1074d316b'; // Replace with your CoinMarketCap free plan API key
+const API_KEY = 'CG-LCdqS2Gs8t9UEUHbKgoafQgd'; // Replace with your CoinGecko Demo Key
 
 const COIN_MAP = {
-    "Bitcoin": { cmcId: "1", jsonKey: "cleaned_coin_Bitcoin.csv" },
-    "Ethereum": { cmcId: "1027", jsonKey: "cleaned_coin_Ethereum.csv" },
-    "BinanceCoin": { cmcId: "1839", jsonKey: "cleaned_coin_BinanceCoin.csv" },
-    "Solana": { cmcId: "5426", jsonKey: "cleaned_coin_Solana.csv" }
+    "Bitcoin": { apiId: "bitcoin", jsonKey: "cleaned_coin_Bitcoin.csv" },
+    "Ethereum": { apiId: "ethereum", jsonKey: "cleaned_coin_Ethereum.csv" },
+    "BinanceCoin": { apiId: "binancecoin", jsonKey: "cleaned_coin_BinanceCoin.csv" },
+    "Solana": { apiId: "solana", jsonKey: "cleaned_coin_Solana.csv" }
 };
 
-// --- NOTE: Historical data functions removed ---
-// CoinMarketCap Free Plan does not provide historical OHLC or time-series data
-// These were previously used for scaling and backtesting
+// --- SCALING ENGINE (Replicating Python StandardScaler) ---
+function getStats(array) {
+    const validData = array.map(Number).filter(x => !isNaN(x));
+    const n = validData.length;
+    if (n === 0) return { mean: 0, std: 1 };
+    const mean = validData.reduce((a, b) => a + b) / n;
+    const std = Math.sqrt(validData.map(x => Math.pow(x - mean, 2)).reduce((a, b) => a + b) / n);
+    return { mean, std: std || 1 };
+}
 
 async function updateDashboard() {
     const selectedName = document.getElementById('coinSelect').value;
@@ -17,55 +23,81 @@ async function updateDashboard() {
     const threshold = 0.0233; // From your main.ipynb
 
     try {
-        // CoinMarketCap Free Plan - Only latest quotes available
-        const quoteUrl = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?id=${config.cmcId}&convert=USD`;
+        // Fetching 30 days of data to provide context for scaling and 14-day backtesting
+        const mUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/market_chart?vs_currency=usd&days=30&interval=daily&x_cg_demo_api_key=${API_KEY}`;
+        const oUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/ohlc?vs_currency=usd&days=30&x_cg_demo_api_key=${API_KEY}`;
         
-        const quoteRes = await fetch(quoteUrl, {
-            headers: {
-                'X-CMC_PRO_API_KEY': API_KEY
-            }
-        });
+        const [mRes, oRes, wRes] = await Promise.all([fetch(mUrl), fetch(oUrl), fetch('data.json')]);
 
-        if (!quoteRes.ok) {
-            throw new Error(`API Error: ${quoteRes.status} - Check your CoinMarketCap API key`);
-        }
+        if (!mRes.ok || !oRes.ok) throw new Error(`API Error: ${mRes.status}`);
 
-        const quoteData = await quoteRes.json();
-        const wRes = await fetch('data.json');
+        const histData = await mRes.json();
+        const ohlcData = await oRes.json();
         const allWeights = await wRes.json();
         const weights = allWeights[config.jsonKey];
 
-        // Extract current price
-        const coinData = quoteData.data[config.cmcId];
-        const currentPrice = coinData.quote.USD.price;
-        const priceChange24h = coinData.quote.USD.percent_change_24h;
-        const volume24h = coinData.quote.USD.volume_24h;
+        // --- DEFENSIVE GUARD: Fixes the "reading '1'" error ---
+        if (!ohlcData || ohlcData.length < 15) {
+            document.getElementById('accuracy-display').innerText = "Insufficient API Data. Try BTC/ETH.";
+            return;
+        }
 
-        // --- LIMITATION NOTICE ---
-        // CoinMarketCap Free Plan does NOT provide historical OHLC data
-        // Therefore, 14-day backtest cannot be performed
-        // Using only current price change as indicator
+        // 1. Calculate Scaling Stats (StandardScaler Replication)
+        const priceStats = getStats(ohlcData.map(d => d[4])); 
+        const volStats = getStats(histData.total_volumes.map(v => v[1]));
+
+        // 2. 14-Day Backtesting Loop
+        let correct = 0;
+        const testWindow = 14;
         
-        // Simplified prediction: Use price change as signal
-        // Based on 24h price change, make prediction
-        const pred = priceChange24h > 0 ? 1 : 0;
+        for (let i = ohlcData.length - testWindow - 1; i < ohlcData.length - 1; i++) {
+            const day = ohlcData[i];
+            const nextDay = ohlcData[i+1];
+            
+            // Scaled Inputs: (Value - Mean) / StdDev
+            const z = {
+                o: (day[1] - priceStats.mean) / priceStats.std,
+                h: (day[2] - priceStats.mean) / priceStats.std,
+                l: (day[3] - priceStats.mean) / priceStats.std,
+                c: (day[4] - priceStats.mean) / priceStats.std,
+                v: (histData.total_volumes[i][1] - volStats.mean) / volStats.std
+            };
+
+            const logit = weights.intercept + (z.o * weights.w_open) + (z.h * weights.w_high) + 
+                          (z.l * weights.w_low) + (z.c * weights.w_close) + (z.v * weights.w_volume);
+            
+            const pred = (1 / (1 + Math.exp(-logit))) > 0.5 ? 1 : 0;
+            const actual = ((nextDay[4] - day[4]) / day[4]) > threshold ? 1 : 0;
+
+            if (pred === actual) correct++;
+        }
+
+        const accuracy = (correct / testWindow) * 100;
+
+        // 3. Final Prediction for Today
+        const current = ohlcData[ohlcData.length - 1];
+        const currentVol = histData.total_volumes[histData.total_volumes.length - 1][1];
         
-        // For demonstration, predict UP/DOWN based on current volatility
-        const result = Math.abs(priceChange24h) > threshold * 100 ? 
-            (priceChange24h > 0 ? "UP" : "DOWN") : 
-            "NEUTRAL";
+        const finalZ = weights.intercept + 
+            ((current[1] - priceStats.mean) / priceStats.std * weights.w_open) + 
+            ((current[2] - priceStats.mean) / priceStats.std * weights.w_high) + 
+            ((current[3] - priceStats.mean) / priceStats.std * weights.w_low) + 
+            ((current[4] - priceStats.mean) / priceStats.std * weights.w_close) + 
+            ((currentVol - volStats.mean) / volStats.std * weights.w_volume);
+
+        const result = (1 / (1 + Math.exp(-finalZ))) > 0.5 ? "UP" : "DOWN";
 
         // 4. Update UI
-        document.getElementById('price').innerText = `$${currentPrice.toLocaleString(undefined, {maximumFractionDigits: 2})}`;
-        document.getElementById('accuracy-display').innerText = `24h Change: ${priceChange24h.toFixed(2)}% | Vol: $${(volume24h/1e9).toFixed(2)}B\n⚠️ Note: CoinMarketCap Free Plan does not provide historical data for backtesting`;
+        document.getElementById('price').innerText = `$${current[4].toLocaleString()}`;
+        document.getElementById('accuracy-display').innerText = `14d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
         
         const predEl = document.getElementById('prediction');
         predEl.innerText = result;
-        predEl.style.color = result === "UP" ? "#22c55e" : (result === "DOWN" ? "#ef4444" : "#eab308");
+        predEl.style.color = result === "UP" ? "#22c55e" : "#ef4444";
 
     } catch (err) {
         console.error("Dashboard Error:", err);
-        document.getElementById('accuracy-display').innerText = `API Error: ${err.message}\n• Verify CoinMarketCap API key\n• Check API call limits`;
+        document.getElementById('accuracy-display').innerText = "Check API Key / Local Server";
     }
 }
 
