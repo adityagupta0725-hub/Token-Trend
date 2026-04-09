@@ -1,4 +1,4 @@
-const API_KEY = ''; // CoinGecko public API (no key required)
+const API_KEY = 'CG-LCdqS2Gs8t9UEUHbKgoafQgd'; // CoinGecko public API (no key required)
 
 const COIN_MAP = {
     "Bitcoin": { apiId: "bitcoin", jsonKey: "cleaned_coin_Bitcoin.csv" },
@@ -80,9 +80,9 @@ async function updateDashboard() {
         const priceStats = getStats(ohlcData.map(d => d[4])); 
         const volStats = getStats(volumeData.map(v => (Array.isArray(v) ? v[1] : v)));
 
-        // 2. 3-Day Backtesting Loop
+        // 2. 5-Day Backtesting Loop
         let correct = 0;
-        const testWindow = Math.min(14, Math.max(1, ohlcData.length - 1));
+        const testWindow = Math.min(5, Math.max(1, ohlcData.length - 1));
         
         for (let i = Math.max(0, ohlcData.length - testWindow - 1); i < ohlcData.length - 1; i++) {
             const day = ohlcData[i];
