@@ -46,23 +46,36 @@ async function updateDashboard() {
         const mUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/market_chart?vs_currency=usd&days=30&interval=daily&x_cg_demo_api_key=${API_KEY}`;
         const oUrl = `https://api.coingecko.com/api/v3/coins/${config.apiId}/ohlc?vs_currency=usd&days=30&x_cg_demo_api_key=${API_KEY}`;
         
+        console.log('Fetching from:', oUrl);
         const [mRes, oRes, wRes] = await Promise.all([fetch(mUrl), fetch(oUrl), fetch('data.json')]);
 
-        if (!mRes.ok || !oRes.ok) throw new Error(`API Error: ${mRes.status}`);
+        if (!mRes.ok) throw new Error(`Market Chart API Error: ${mRes.status}`);
+        if (!oRes.ok) throw new Error(`OHLC API Error: ${oRes.status}`);
+        if (!wRes.ok) throw new Error(`data.json fetch error: ${wRes.status}`);
 
         const histData = await mRes.json();
-        const ohlcData = await oRes.json();
+        const ohlcRaw = await oRes.json();
         const allWeights = await wRes.json();
-        const weights = allWeights[config.jsonKey];
+        
+        console.log('ohlcRaw:', ohlcRaw);
+        console.log('allWeights keys:', Object.keys(allWeights));
+        
+        // Handle both direct array and wrapped object
+        const ohlcData = Array.isArray(ohlcRaw) ? ohlcRaw : ohlcRaw.ohlc || ohlcRaw.ohlcv || [];
+        
+        const weights = allWeights.weights.find(w => w.file === config.jsonKey);
+
+        if (!weights) throw new Error(`No weights found for ${config.jsonKey}. Available: ${allWeights.weights.map(w => w.file).join(', ')}`);
 
         // Debug: Log the API response structure
         console.log('histData keys:', Object.keys(histData));
+        console.log('ohlcData length:', ohlcData.length);
         console.log('ohlcData sample:', ohlcData ? ohlcData.slice(0, 2) : 'undefined');
+        console.log('weights:', weights);
 
         // Defensive guards
-        if (!ohlcData || ohlcData.length < 15) {
-            document.getElementById('accuracy-display').innerText = "Insufficient API Data. Try BTC/ETH.";
-            return;
+        if (!ohlcData || !Array.isArray(ohlcData) || ohlcData.length < 15) {
+            throw new Error(`Insufficient OHLC data: got ${!ohlcData ? 'null' : !Array.isArray(ohlcData) ? 'not an array' : ohlcData.length + ' rows'}`);
         }
 
         // Fix: Use histData.prices if total_volumes is missing
@@ -78,7 +91,7 @@ async function updateDashboard() {
 
         // 2. 5-Day Backtesting Loop (reduced from 14d to minimize API calls)
         let correct = 0;
-        const testWindow = Math.min(5, ohlcData.length - 1);
+        const testWindow = Math.min(3, ohlcData.length - 1);
         
         for (let i = Math.max(0, ohlcData.length - testWindow - 1); i < ohlcData.length - 1; i++) {
             const day = ohlcData[i];
@@ -95,8 +108,8 @@ async function updateDashboard() {
                 v: (volValue - volStats.mean) / volStats.std
             };
 
-            const logit = weights.intercept + (z.o * weights.w_open) + (z.h * weights.w_high) + 
-                          (z.l * weights.w_low) + (z.c * weights.w_close) + (z.v * weights.w_volume);
+            const logit = (weights.intercept || 0) + (z.o * (weights.w_open || 0)) + (z.h * (weights.w_high || 0)) + 
+                          (z.l * (weights.w_low || 0)) + (z.c * (weights.w_close || 0)) + (z.v * (weights.w_volume || 0));
             
             const pred = (1 / (1 + Math.exp(-logit))) > 0.5 ? 1 : 0;
             const actual = ((nextDay[4] - day[4]) / day[4]) > threshold ? 1 : 0;
@@ -111,18 +124,18 @@ async function updateDashboard() {
         const currentVol = volumeData[volumeData.length - 1];
         const currentVolValue = Array.isArray(currentVol) ? currentVol[1] : currentVol;
         
-        const finalZ = weights.intercept + 
-            ((current[1] - priceStats.mean) / priceStats.std * weights.w_open) + 
-            ((current[2] - priceStats.mean) / priceStats.std * weights.w_high) + 
-            ((current[3] - priceStats.mean) / priceStats.std * weights.w_low) + 
-            ((current[4] - priceStats.mean) / priceStats.std * weights.w_close) + 
-            ((currentVolValue - volStats.mean) / volStats.std * weights.w_volume);
+        const finalZ = (weights.intercept || 0) + 
+            ((current[1] - priceStats.mean) / priceStats.std * (weights.w_open || 0)) + 
+            ((current[2] - priceStats.mean) / priceStats.std * (weights.w_high || 0)) + 
+            ((current[3] - priceStats.mean) / priceStats.std * (weights.w_low || 0)) + 
+            ((current[4] - priceStats.mean) / priceStats.std * (weights.w_close || 0)) + 
+            ((currentVolValue - volStats.mean) / volStats.std * (weights.w_volume || 0));
 
         const result = (1 / (1 + Math.exp(-finalZ))) > 0.5 ? "UP" : "DOWN";
 
         // 4. Update UI
         document.getElementById('price').innerText = `$${current[4].toLocaleString()}`;
-        document.getElementById('accuracy-display').innerText = `5d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
+        document.getElementById('accuracy-display').innerText = `3d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
         
         const predEl = document.getElementById('prediction');
         predEl.innerText = result;
@@ -130,7 +143,8 @@ async function updateDashboard() {
 
     } catch (err) {
         console.error("Dashboard Error:", err);
-        document.getElementById('accuracy-display').innerText = "Error loading data. Check console.";
+        console.error("Stack:", err.stack);
+        document.getElementById('accuracy-display').innerText = `Error: ${err.message}`;
     }
 }
 
