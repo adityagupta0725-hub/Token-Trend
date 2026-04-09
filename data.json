@@ -1,374 +1,616 @@
 {
+  "advanced_features": [
+    "volatility_5d",
+    "returns_1d",
+    "ema_12",
+    "ema_26",
+    "sma_5",
+    "sma_7",
+    "volume_sma_5",
+    "rsi_momentum",
+    "price_to_sma5",
+    "volume_ratio_5"
+  ],
   "metrics": [
     {
       "file": "cleaned_coin_Tether.csv",
-      "rows_used": 2317,
-      "train_rows": 1390,
-      "test_rows": 927,
-      "accuracy": 0.9978425026968716
-    },
-    {
-      "file": "cleaned_coin_Dogecoin.csv",
-      "rows_used": 2759,
-      "train_rows": 1655,
-      "test_rows": 1104,
-      "accuracy": 0.7789855072463768
-    },
-    {
-      "file": "cleaned_coin_XRP.csv",
-      "rows_used": 2892,
-      "train_rows": 1735,
-      "test_rows": 1157,
-      "accuracy": 0.7761452031114953
-    },
-    {
-      "file": "cleaned_coin_WrappedBitcoin.csv",
-      "rows_used": 887,
-      "train_rows": 532,
-      "test_rows": 355,
-      "accuracy": 0.7492957746478873
-    },
-    {
-      "file": "cleaned_coin_EOS.csv",
-      "rows_used": 1465,
-      "train_rows": 879,
-      "test_rows": 586,
-      "accuracy": 0.7474402730375427
-    },
-    {
-      "file": "cleaned_coin_CryptocomCoin.csv",
-      "rows_used": 934,
-      "train_rows": 560,
-      "test_rows": 374,
-      "accuracy": 0.7433155080213903
+      "rows_used": 2304,
+      "train_rows": 1382,
+      "test_rows": 922,
+      "accuracy": 0.9978308026030369
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
-      "rows_used": 2990,
-      "train_rows": 1794,
-      "test_rows": 1196,
-      "accuracy": 0.7366220735785953
+      "rows_used": 2977,
+      "train_rows": 1786,
+      "test_rows": 1191,
+      "accuracy": 0.7774979009235936
     },
     {
-      "file": "cleaned_coin_NEM.csv",
-      "rows_used": 2287,
-      "train_rows": 1372,
-      "test_rows": 915,
-      "accuracy": 0.7180327868852459
+      "file": "cleaned_coin_XRP.csv",
+      "rows_used": 2879,
+      "train_rows": 1727,
+      "test_rows": 1152,
+      "accuracy": 0.7751736111111112
     },
     {
-      "file": "cleaned_coin_Litecoin.csv",
-      "rows_used": 2990,
-      "train_rows": 1794,
-      "test_rows": 1196,
-      "accuracy": 0.7090301003344481
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rows_used": 2746,
+      "train_rows": 1647,
+      "test_rows": 1099,
+      "accuracy": 0.7725204731574158
     },
     {
-      "file": "cleaned_coin_Ethereum.csv",
-      "rows_used": 2159,
-      "train_rows": 1295,
-      "test_rows": 864,
-      "accuracy": 0.7083333333333334
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rows_used": 874,
+      "train_rows": 524,
+      "test_rows": 350,
+      "accuracy": 0.7485714285714286
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rows_used": 1452,
+      "train_rows": 871,
+      "test_rows": 581,
+      "accuracy": 0.7418244406196214
     },
     {
       "file": "cleaned_coin_Monero.csv",
-      "rows_used": 2601,
-      "train_rows": 1560,
-      "test_rows": 1041,
-      "accuracy": 0.7079731027857828
+      "rows_used": 2588,
+      "train_rows": 1552,
+      "test_rows": 1036,
+      "accuracy": 0.7084942084942085
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rows_used": 2274,
+      "train_rows": 1364,
+      "test_rows": 910,
+      "accuracy": 0.7032967032967034
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rows_used": 2146,
+      "train_rows": 1287,
+      "test_rows": 859,
+      "accuracy": 0.7031431897555297
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rows_used": 921,
+      "train_rows": 552,
+      "test_rows": 369,
+      "accuracy": 0.6910569105691057
     },
     {
       "file": "cleaned_coin_Tron.csv",
-      "rows_used": 1391,
-      "train_rows": 834,
-      "test_rows": 557,
-      "accuracy": 0.6876122082585279
+      "rows_used": 1378,
+      "train_rows": 826,
+      "test_rows": 552,
+      "accuracy": 0.6811594202898551
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
-      "rows_used": 291,
-      "train_rows": 174,
-      "test_rows": 117,
-      "accuracy": 0.6666666666666666
-    },
-    {
-      "file": "cleaned_coin_Polkadot.csv",
-      "rows_used": 319,
-      "train_rows": 191,
-      "test_rows": 128,
-      "accuracy": 0.6640625
-    },
-    {
-      "file": "cleaned_coin_Iota.csv",
-      "rows_used": 1483,
-      "train_rows": 889,
-      "test_rows": 594,
-      "accuracy": 0.6599326599326599
-    },
-    {
-      "file": "cleaned_coin_Cardano.csv",
-      "rows_used": 1373,
-      "train_rows": 823,
-      "test_rows": 550,
-      "accuracy": 0.6545454545454545
-    },
-    {
-      "file": "cleaned_coin_ChainLink.csv",
-      "rows_used": 1384,
-      "train_rows": 830,
-      "test_rows": 554,
-      "accuracy": 0.6534296028880866
-    },
-    {
-      "file": "cleaned_coin_USDCoin.csv",
-      "rows_used": 1001,
-      "train_rows": 600,
-      "test_rows": 401,
-      "accuracy": 0.6458852867830424
-    },
-    {
-      "file": "cleaned_coin_Aave.csv",
-      "rows_used": 274,
-      "train_rows": 164,
-      "test_rows": 110,
-      "accuracy": 0.6454545454545455
+      "rows_used": 278,
+      "train_rows": 166,
+      "test_rows": 112,
+      "accuracy": 0.6696428571428571
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
-      "rows_used": 1441,
-      "train_rows": 864,
-      "test_rows": 577,
-      "accuracy": 0.6429809358752167
+      "rows_used": 1428,
+      "train_rows": 856,
+      "test_rows": 572,
+      "accuracy": 0.6573426573426573
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rows_used": 1470,
+      "train_rows": 882,
+      "test_rows": 588,
+      "accuracy": 0.6547619047619048
     },
     {
       "file": "cleaned_coin_Stellar.csv",
-      "rows_used": 2526,
-      "train_rows": 1515,
-      "test_rows": 1011,
-      "accuracy": 0.6132542037586548
+      "rows_used": 2513,
+      "train_rows": 1507,
+      "test_rows": 1006,
+      "accuracy": 0.6391650099403579
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rows_used": 1371,
+      "train_rows": 822,
+      "test_rows": 549,
+      "accuracy": 0.6375227686703097
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
-      "rows_used": 844,
-      "train_rows": 506,
-      "test_rows": 338,
-      "accuracy": 0.6094674556213018
+      "rows_used": 831,
+      "train_rows": 498,
+      "test_rows": 333,
+      "accuracy": 0.6186186186186187
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rows_used": 306,
+      "train_rows": 183,
+      "test_rows": 123,
+      "accuracy": 0.6016260162601627
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rows_used": 988,
+      "train_rows": 592,
+      "test_rows": 396,
+      "accuracy": 0.601010101010101
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rows_used": 1360,
+      "train_rows": 816,
+      "test_rows": 544,
+      "accuracy": 0.5698529411764706
     },
     {
       "file": "cleaned_coin_Solana.csv",
-      "rows_used": 451,
-      "train_rows": 270,
-      "test_rows": 181,
-      "accuracy": 0.56353591160221
+      "rows_used": 438,
+      "train_rows": 262,
+      "test_rows": 176,
+      "accuracy": 0.5568181818181818
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rows_used": 261,
+      "train_rows": 156,
+      "test_rows": 105,
+      "accuracy": 0.5523809523809524
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rows_used": 2977,
+      "train_rows": 1786,
+      "test_rows": 1191,
+      "accuracy": 0.5130142737195634
     }
   ],
   "weights": [
     {
       "file": "cleaned_coin_Aave.csv",
-      "intercept": -0.26521014369471657,
-      "w_open": 1.014827902281806,
-      "w_high": -1.451320613367415,
-      "w_low": -0.9492758853396107,
-      "w_close": 0.6996807539706597,
-      "w_volume": 0.46329227879113805
+      "intercept": -0.3260051921519825,
+      "w_open": -0.14429347719119612,
+      "w_high": -0.4475814280037047,
+      "w_low": -0.2941587694339774,
+      "w_close": -0.13402939219221763,
+      "w_volume": 0.2997912933423412,
+      "w_volatility_5d": 0.35879795079679505,
+      "w_returns_1d": 0.17197720004725414,
+      "w_ema_12": -0.0016927265888618177,
+      "w_ema_26": 0.12685021655610246,
+      "w_sma_5": 0.02189348267388846,
+      "w_sma_7": 0.07002581405964861,
+      "w_volume_sma_5": 0.2902322556351537,
+      "w_rsi_momentum": -0.1436411473730056,
+      "w_price_to_sma5": -0.35766105358335637,
+      "w_volume_ratio_5": 0.04258238597545196
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
-      "intercept": -0.8888058830435502,
-      "w_open": -0.45725832985852166,
-      "w_high": 0.011478663277686532,
-      "w_low": 0.5592435343270478,
-      "w_close": -0.9639238503245999,
-      "w_volume": 0.5317821396105517
+      "intercept": -0.9079036225980538,
+      "w_open": -0.47959516011647,
+      "w_high": -0.44660143721189677,
+      "w_low": -0.28537508130534056,
+      "w_close": -0.6333073435500731,
+      "w_volume": 0.333048743336718,
+      "w_volatility_5d": 0.1534834260701799,
+      "w_returns_1d": 0.01932662377148882,
+      "w_ema_12": 0.43927840894172304,
+      "w_ema_26": 0.572532155509737,
+      "w_sma_5": -0.3029510606717907,
+      "w_sma_7": 0.4854065974966066,
+      "w_volume_sma_5": 0.07605782360522675,
+      "w_rsi_momentum": 0.24317734832761662,
+      "w_price_to_sma5": 0.004701496191027776,
+      "w_volume_ratio_5": -0.050943301039598377
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
-      "intercept": -1.269472514387433,
-      "w_open": -0.07059661794891235,
-      "w_high": 0.6843266845702198,
-      "w_low": -0.4560754594512485,
-      "w_close": 0.19330073382908008,
-      "w_volume": -0.12801528757163505
+      "intercept": -1.3151407459628819,
+      "w_open": -0.6665396904422233,
+      "w_high": -0.38409267347751286,
+      "w_low": 0.3172874455859495,
+      "w_close": 0.17173434437828178,
+      "w_volume": 0.13407839907463293,
+      "w_volatility_5d": 0.411180420303647,
+      "w_returns_1d": -0.025729088992126333,
+      "w_ema_12": 0.10457430513679489,
+      "w_ema_26": 0.18967335545464653,
+      "w_sma_5": 0.2484330266561147,
+      "w_sma_7": 0.5083566255400733,
+      "w_volume_sma_5": -0.49766107728563963,
+      "w_rsi_momentum": 0.17447088410668432,
+      "w_price_to_sma5": -0.13639870623591066,
+      "w_volume_ratio_5": -0.07862032249914391
     },
     {
       "file": "cleaned_coin_Cardano.csv",
-      "intercept": -0.917022904054985,
-      "w_open": 0.35122262230999124,
-      "w_high": 0.14417035097767886,
-      "w_low": -1.8828586145312876,
-      "w_close": 1.4171612626643435,
-      "w_volume": -0.005472934211809214
+      "intercept": -0.946361721087891,
+      "w_open": -0.07988544441528575,
+      "w_high": 0.44524839092439084,
+      "w_low": -1.3994340458370191,
+      "w_close": 1.167594415028991,
+      "w_volume": -0.4229121202398515,
+      "w_volatility_5d": 0.18454144775081055,
+      "w_returns_1d": -0.21810648493910278,
+      "w_ema_12": 0.14194941941248207,
+      "w_ema_26": 0.15837034977646405,
+      "w_sma_5": -0.15105102541286022,
+      "w_sma_7": -0.36621007498003133,
+      "w_volume_sma_5": 0.47378404784205647,
+      "w_rsi_momentum": 0.06981032829391956,
+      "w_price_to_sma5": -0.0033683965146296614,
+      "w_volume_ratio_5": 0.2501320409385249
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
-      "intercept": -0.6630537192839032,
-      "w_open": 0.5838753822959571,
-      "w_high": 1.5493668664386653,
-      "w_low": -1.671621574388624,
-      "w_close": -0.7334386283371024,
-      "w_volume": 0.03774777200546325
+      "intercept": -0.6820625178364874,
+      "w_open": 0.09480625227016402,
+      "w_high": 0.42560492265541294,
+      "w_low": -0.2877482486352444,
+      "w_close": 0.03932664645466451,
+      "w_volume": 0.021863053699323,
+      "w_volatility_5d": 0.08923370963388752,
+      "w_returns_1d": -0.04678058664747748,
+      "w_ema_12": -0.2691968247686924,
+      "w_ema_26": -0.20853794109456175,
+      "w_sma_5": -0.03637507733247285,
+      "w_sma_7": -0.0016890950149036628,
+      "w_volume_sma_5": 0.010606864135052348,
+      "w_rsi_momentum": -0.017965244367262215,
+      "w_price_to_sma5": -0.1187718772355066,
+      "w_volume_ratio_5": 0.14874978360347027
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
-      "intercept": -0.7543018715253279,
-      "w_open": 0.9764891286765333,
-      "w_high": -0.07241693441607173,
-      "w_low": -0.7290018145543202,
-      "w_close": -0.314733541354282,
-      "w_volume": 0.08956094196839001
+      "intercept": -0.7390723201401835,
+      "w_open": -0.4184403712372596,
+      "w_high": 0.1550114385502404,
+      "w_low": -0.5069133610315745,
+      "w_close": 0.11281584589919957,
+      "w_volume": 0.6131988112508432,
+      "w_volatility_5d": 0.1333762873532128,
+      "w_returns_1d": -0.3266656925315752,
+      "w_ema_12": 0.7800439209979151,
+      "w_ema_26": -0.07410151983324852,
+      "w_sma_5": -0.12999393648270963,
+      "w_sma_7": -0.08015357910320979,
+      "w_volume_sma_5": -0.5543952891967143,
+      "w_rsi_momentum": 0.0933382531046406,
+      "w_price_to_sma5": 0.1419262259340759,
+      "w_volume_ratio_5": -0.33383461428149286
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
-      "intercept": -1.0975330124693863,
-      "w_open": -0.23831888063051018,
-      "w_high": 0.1064383979901539,
-      "w_low": 0.016116270615118066,
-      "w_close": 0.31339581056760457,
-      "w_volume": -0.034598608823996416
+      "intercept": -1.119220294654274,
+      "w_open": 0.05550052661611281,
+      "w_high": -0.5061357191757896,
+      "w_low": -0.04262104116300547,
+      "w_close": -0.6564891647762505,
+      "w_volume": 0.07504923295354485,
+      "w_volatility_5d": 0.21535272555247853,
+      "w_returns_1d": -0.029401172186155067,
+      "w_ema_12": 0.4656136417235955,
+      "w_ema_26": 0.30558958350195387,
+      "w_sma_5": 0.19639113867742006,
+      "w_sma_7": 0.28004423362857367,
+      "w_volume_sma_5": -0.08898884082396553,
+      "w_rsi_momentum": 0.28599559835777316,
+      "w_price_to_sma5": 0.21366515635780164,
+      "w_volume_ratio_5": -0.04185875750277266
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
-      "intercept": -1.1594199270778172,
-      "w_open": 0.08658861063210525,
-      "w_high": 1.6817190575963,
-      "w_low": -2.2269263466399223,
-      "w_close": 0.7346968294700572,
-      "w_volume": -0.08046110106831939
+      "intercept": -1.2056018846015155,
+      "w_open": -0.019451895421634134,
+      "w_high": 0.035815878069334894,
+      "w_low": -0.5300248237588697,
+      "w_close": 0.4191393995538421,
+      "w_volume": 0.13152061153362182,
+      "w_volatility_5d": 0.3589962975022524,
+      "w_returns_1d": -0.020692662867380526,
+      "w_ema_12": -0.16969780737979112,
+      "w_ema_26": 0.16951256426387892,
+      "w_sma_5": 0.3823524363495737,
+      "w_sma_7": -0.09077689269497301,
+      "w_volume_sma_5": -0.20517621968328434,
+      "w_rsi_momentum": 0.20732669674274806,
+      "w_price_to_sma5": -0.2095796512244912,
+      "w_volume_ratio_5": 0.20422343991081837
     },
     {
       "file": "cleaned_coin_EOS.csv",
-      "intercept": -0.9186963690268798,
-      "w_open": 1.0514064663902256,
-      "w_high": 1.0462893007411935,
-      "w_low": -2.057377476846108,
-      "w_close": -0.0617755696182698,
-      "w_volume": -0.11536192023229971
+      "intercept": -0.9347641318377765,
+      "w_open": 0.006318425383777042,
+      "w_high": -0.05622633453072655,
+      "w_low": -0.031098581361117688,
+      "w_close": 0.044117050534181156,
+      "w_volume": -0.29235404184765285,
+      "w_volatility_5d": 0.3232496579656313,
+      "w_returns_1d": -0.12437340988411882,
+      "w_ema_12": 0.17658412691009812,
+      "w_ema_26": -0.36866270052767725,
+      "w_sma_5": -0.14928484047293308,
+      "w_sma_7": 0.28440929584382707,
+      "w_volume_sma_5": 0.16433088110740943,
+      "w_rsi_momentum": 0.04626510641553603,
+      "w_price_to_sma5": -0.17680174768591897,
+      "w_volume_ratio_5": 0.24206702071325298
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
-      "intercept": -0.9025290935414063,
-      "w_open": -0.10789914557639188,
-      "w_high": 2.947985321694875,
-      "w_low": -1.4343706199824136,
-      "w_close": -1.3905718858508547,
-      "w_volume": -0.08370383495725309
+      "intercept": -0.9316902710909665,
+      "w_open": 0.25789554330166214,
+      "w_high": 0.3365353312522988,
+      "w_low": -0.33213310662145173,
+      "w_close": -0.2723899765266264,
+      "w_volume": -0.2655097071069477,
+      "w_volatility_5d": 0.28209338531552103,
+      "w_returns_1d": -0.1396394106008639,
+      "w_ema_12": -0.1811381572070542,
+      "w_ema_26": 0.006582753505837957,
+      "w_sma_5": 0.29586997042955715,
+      "w_sma_7": -0.09017828495451505,
+      "w_volume_sma_5": 0.1898750846655461,
+      "w_rsi_momentum": 0.07573478055230926,
+      "w_price_to_sma5": 0.002236086698473995,
+      "w_volume_ratio_5": 0.2651906970452355
     },
     {
       "file": "cleaned_coin_Iota.csv",
-      "intercept": -0.8498654487005575,
-      "w_open": 1.6798997858712466,
-      "w_high": 1.1025138545349282,
-      "w_low": -1.8181249484524429,
-      "w_close": -0.7672686774312105,
-      "w_volume": -0.031650746890993
+      "intercept": -0.8776483668898029,
+      "w_open": 0.01758323193123566,
+      "w_high": -0.3273660540430412,
+      "w_low": -0.2888331736421549,
+      "w_close": -0.041770342703288825,
+      "w_volume": 0.1120382021394404,
+      "w_volatility_5d": 0.4331579828685771,
+      "w_returns_1d": -0.3472930895530724,
+      "w_ema_12": -0.15519156972148887,
+      "w_ema_26": 0.24929632140601155,
+      "w_sma_5": 0.10460429665289894,
+      "w_sma_7": 0.46423102180128756,
+      "w_volume_sma_5": -0.08211937515742528,
+      "w_rsi_momentum": 0.12234432746363147,
+      "w_price_to_sma5": 0.05771206766347662,
+      "w_volume_ratio_5": 0.12166927745504046
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
-      "intercept": -1.310832646296724,
-      "w_open": 1.3536151490354467,
-      "w_high": -0.3362335751380512,
-      "w_low": -1.2783763987344299,
-      "w_close": 0.40893108086855817,
-      "w_volume": 0.044962444675324266
+      "intercept": -1.3457755359655157,
+      "w_open": -0.0966605114617614,
+      "w_high": -0.5831520450769752,
+      "w_low": -0.16549433804691982,
+      "w_close": -0.1867998042431547,
+      "w_volume": 0.065359283718671,
+      "w_volatility_5d": 0.41991436625278733,
+      "w_returns_1d": -0.047383335773636216,
+      "w_ema_12": -0.11492093890433876,
+      "w_ema_26": 0.48337910544360996,
+      "w_sma_5": 0.34401919327012703,
+      "w_sma_7": 0.25802622919151896,
+      "w_volume_sma_5": 0.13930437190194442,
+      "w_rsi_momentum": 0.17254648532684905,
+      "w_price_to_sma5": -0.11644632866183295,
+      "w_volume_ratio_5": -0.016567174935511936
     },
     {
       "file": "cleaned_coin_Monero.csv",
-      "intercept": -0.7475658740753018,
-      "w_open": -0.11705082618523889,
-      "w_high": 1.805488969760671,
-      "w_low": -0.6658113041333306,
-      "w_close": -0.8782965624178971,
-      "w_volume": -0.06351566700736283
+      "intercept": -0.7607788081554576,
+      "w_open": 0.16642559074045393,
+      "w_high": 0.44274611835899497,
+      "w_low": -0.12731322781115323,
+      "w_close": -0.06621346928729803,
+      "w_volume": -0.3378647354252975,
+      "w_volatility_5d": 0.18603702570101718,
+      "w_returns_1d": 0.07870296783527553,
+      "w_ema_12": -0.26085250846305497,
+      "w_ema_26": -0.2999694682585326,
+      "w_sma_5": 0.04860987539232873,
+      "w_sma_7": 0.2911900515289621,
+      "w_volume_sma_5": 0.17856307955838094,
+      "w_rsi_momentum": 0.12822990315718713,
+      "w_price_to_sma5": -0.2710104639731409,
+      "w_volume_ratio_5": 0.2404058340856186
     },
     {
       "file": "cleaned_coin_NEM.csv",
-      "intercept": -0.7380549771881791,
-      "w_open": 0.29766967533987226,
-      "w_high": 0.35923406170836925,
-      "w_low": -0.6568301068299469,
-      "w_close": 0.01859633273125653,
-      "w_volume": -0.048245969444679904
+      "intercept": -0.7458869654040307,
+      "w_open": -0.4629942368711715,
+      "w_high": 0.040572661048529045,
+      "w_low": -0.209996377951092,
+      "w_close": 0.3068841538374728,
+      "w_volume": -0.14727869111332784,
+      "w_volatility_5d": 0.13265971362366924,
+      "w_returns_1d": -0.1289040736039229,
+      "w_ema_12": 0.07816814059017003,
+      "w_ema_26": -0.38694247599860243,
+      "w_sma_5": 0.31008527143240394,
+      "w_sma_7": 0.21508323045936162,
+      "w_volume_sma_5": 0.17887189291895003,
+      "w_rsi_momentum": 0.13590093640703763,
+      "w_price_to_sma5": -0.19685603825987452,
+      "w_volume_ratio_5": 0.21040169630828165
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
-      "intercept": -0.595366988446184,
-      "w_open": 0.883343019842381,
-      "w_high": 0.26408939012875904,
-      "w_low": 0.19495275471618498,
-      "w_close": -1.4617928171904282,
-      "w_volume": 0.17562720707838334
+      "intercept": -0.6376061093559369,
+      "w_open": -0.17741949760433626,
+      "w_high": -0.15097357172921205,
+      "w_low": -0.0168054784103895,
+      "w_close": -0.014507677764771907,
+      "w_volume": -0.20648539132606292,
+      "w_volatility_5d": 0.11924163968260322,
+      "w_returns_1d": -0.0922864065272982,
+      "w_ema_12": 0.08899544873501095,
+      "w_ema_26": 0.3958100067616996,
+      "w_sma_5": -0.27043189268506507,
+      "w_sma_7": -0.02771581794939645,
+      "w_volume_sma_5": 0.5053517351727285,
+      "w_rsi_momentum": 0.028121802725343814,
+      "w_price_to_sma5": -0.2683305249044107,
+      "w_volume_ratio_5": 0.270883792565584
     },
     {
       "file": "cleaned_coin_Solana.csv",
-      "intercept": -0.5617458105927544,
-      "w_open": 0.7230640412242224,
-      "w_high": 3.0437703149207374,
-      "w_low": -2.462660170647403,
-      "w_close": -1.3817753208565138,
-      "w_volume": -0.22192522416635435
+      "intercept": -0.5325802423625843,
+      "w_open": 0.12088395976724507,
+      "w_high": 0.3837530453624724,
+      "w_low": -0.50118460146372,
+      "w_close": -0.20355732846681926,
+      "w_volume": 0.4655345293063574,
+      "w_volatility_5d": 0.16140963266007186,
+      "w_returns_1d": -0.17852251446725925,
+      "w_ema_12": 0.12363923653142933,
+      "w_ema_26": -0.6093029985155746,
+      "w_sma_5": -0.15062367912057364,
+      "w_sma_7": 0.5353575494689862,
+      "w_volume_sma_5": -0.27967011370473577,
+      "w_rsi_momentum": 0.04452963881244272,
+      "w_price_to_sma5": -0.11712987196708867,
+      "w_volume_ratio_5": 0.12849198886582017
     },
     {
       "file": "cleaned_coin_Stellar.csv",
-      "intercept": -0.9266070989165719,
-      "w_open": 1.1613512165279263,
-      "w_high": 0.41017200182775176,
-      "w_low": -0.8196023851725902,
-      "w_close": -0.8318969387957104,
-      "w_volume": 0.21325746406012575
+      "intercept": -0.9622274784688858,
+      "w_open": 0.5032382455961102,
+      "w_high": 0.2794864061094898,
+      "w_low": -0.49657217613626914,
+      "w_close": -0.14371408968263694,
+      "w_volume": 0.10851815042281707,
+      "w_volatility_5d": 0.3291702304659733,
+      "w_returns_1d": 0.012756290256784377,
+      "w_ema_12": 0.2734649580831794,
+      "w_ema_26": 0.6672856351262729,
+      "w_sma_5": -0.5336550101129421,
+      "w_sma_7": -0.6425052493753897,
+      "w_volume_sma_5": 0.07268184811881238,
+      "w_rsi_momentum": 0.1759840077468672,
+      "w_price_to_sma5": -0.295189508276864,
+      "w_volume_ratio_5": 0.17985592283275809
     },
     {
       "file": "cleaned_coin_Tether.csv",
-      "intercept": -5.205489104199453,
-      "w_open": 1.2781090331735718,
-      "w_high": 0.3820516886034776,
-      "w_low": -0.5854404818451393,
-      "w_close": -1.3088221225011325,
-      "w_volume": -0.07530456281552285
+      "intercept": -5.831976627647122,
+      "w_open": -1.0380113191715117,
+      "w_high": 0.3146481357263225,
+      "w_low": -0.40894934012521844,
+      "w_close": 0.11467657785448922,
+      "w_volume": 0.0364986165111747,
+      "w_volatility_5d": 0.4074572956960751,
+      "w_returns_1d": -0.6806909238113942,
+      "w_ema_12": 0.7151144124695702,
+      "w_ema_26": -0.3634033262963222,
+      "w_sma_5": 0.06618139327003615,
+      "w_sma_7": 0.38767939015159236,
+      "w_volume_sma_5": -0.21966231519980486,
+      "w_rsi_momentum": 0.480041060812483,
+      "w_price_to_sma5": 0.1894608374230392,
+      "w_volume_ratio_5": -0.696361439437415
     },
     {
       "file": "cleaned_coin_Tron.csv",
-      "intercept": -0.8992365241947939,
-      "w_open": 0.3653344724265864,
-      "w_high": 0.5568824767109946,
-      "w_low": -1.6889642785244927,
-      "w_close": 0.785870969126717,
-      "w_volume": -0.06779751066657383
+      "intercept": -0.9259678400024017,
+      "w_open": 0.14702667450568868,
+      "w_high": -0.12154970679023967,
+      "w_low": -0.9788118879901585,
+      "w_close": 0.4258051484717472,
+      "w_volume": 0.14382058689057897,
+      "w_volatility_5d": 0.3198440869582057,
+      "w_returns_1d": -0.18980514849121896,
+      "w_ema_12": 0.18735519349109164,
+      "w_ema_26": 0.30178311435880323,
+      "w_sma_5": 0.19875178822531558,
+      "w_sma_7": -0.22035999197229622,
+      "w_volume_sma_5": -0.14983234727068284,
+      "w_rsi_momentum": 0.05679649346283266,
+      "w_price_to_sma5": 0.13042424161785005,
+      "w_volume_ratio_5": 0.08145332912279436
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
-      "intercept": -10.951442621606335,
-      "w_open": -0.6325985013477644,
-      "w_high": -0.11571507048455487,
-      "w_low": 1.8629875086816934,
-      "w_close": -3.505399793564319,
-      "w_volume": 1.619518128378789
+      "intercept": -9.867220050003782,
+      "w_open": -0.48628092014389096,
+      "w_high": -0.1419411964468979,
+      "w_low": 0.5113089924164039,
+      "w_close": -0.5699941408297138,
+      "w_volume": 0.6587045760225575,
+      "w_volatility_5d": -0.07642135682888447,
+      "w_returns_1d": 0.06048801551496338,
+      "w_ema_12": -0.4697596941507703,
+      "w_ema_26": -0.4288647017013812,
+      "w_sma_5": -0.14128354099724497,
+      "w_sma_7": -0.3116025317933392,
+      "w_volume_sma_5": 1.0340916493649988,
+      "w_rsi_momentum": -0.0338080093798542,
+      "w_price_to_sma5": -0.8648638106415764,
+      "w_volume_ratio_5": -0.26814837647314194
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
-      "intercept": -0.40405246234497966,
-      "w_open": 2.9309783394704683,
-      "w_high": -2.2203189314378253,
-      "w_low": 0.9228052197364746,
-      "w_close": -1.9583282350874598,
-      "w_volume": 0.38930137492671835
+      "intercept": -0.4065405941658357,
+      "w_open": 0.074101175169844,
+      "w_high": -0.2123960096550305,
+      "w_low": 0.022509984079604313,
+      "w_close": -0.13767828178172903,
+      "w_volume": -0.08664600776381741,
+      "w_volatility_5d": -0.09619700432581216,
+      "w_returns_1d": -0.3625266983527959,
+      "w_ema_12": 0.13082266492979677,
+      "w_ema_26": -0.313413624067422,
+      "w_sma_5": -0.05931803684855547,
+      "w_sma_7": 0.13102207142365957,
+      "w_volume_sma_5": 0.7559573535485087,
+      "w_rsi_momentum": -0.073694108697386,
+      "w_price_to_sma5": -0.22394546838993074,
+      "w_volume_ratio_5": 0.11973996937209547
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
-      "intercept": -1.4774066441305393,
-      "w_open": 2.3808888158083232,
-      "w_high": -0.16578159305284068,
-      "w_low": -2.347789107295142,
-      "w_close": 0.04270525976454763,
-      "w_volume": -0.016108119707413146
+      "intercept": -1.4864348894286838,
+      "w_open": -0.24811755016344988,
+      "w_high": -0.12561745229662563,
+      "w_low": -0.37804669865507007,
+      "w_close": -0.14747976406151458,
+      "w_volume": 0.046282462991706894,
+      "w_volatility_5d": 0.3833746588678608,
+      "w_returns_1d": -0.41589959271488897,
+      "w_ema_12": 0.6219175194279944,
+      "w_ema_26": 0.22556286186172966,
+      "w_sma_5": -0.19583985491247732,
+      "w_sma_7": 0.13006839964613884,
+      "w_volume_sma_5": -0.14432265781780695,
+      "w_rsi_momentum": 0.10721751485769183,
+      "w_price_to_sma5": 0.19932732803616635,
+      "w_volume_ratio_5": 0.0344435028720037
     },
     {
       "file": "cleaned_coin_XRP.csv",
-      "intercept": -1.1529371559636885,
-      "w_open": 0.6496821360959841,
-      "w_high": -0.6875494009153328,
-      "w_low": -1.2140702022220207,
-      "w_close": 1.4073945146532654,
-      "w_volume": -0.032063392977485616
+      "intercept": -1.191516421627771,
+      "w_open": 0.39562093261532383,
+      "w_high": -0.14122395312642852,
+      "w_low": -0.37588895389901406,
+      "w_close": 0.3414405043096366,
+      "w_volume": -0.012775728461640018,
+      "w_volatility_5d": 0.3591646947480534,
+      "w_returns_1d": 0.10623509972263258,
+      "w_ema_12": -0.2631032936009955,
+      "w_ema_26": 0.30144409795950466,
+      "w_sma_5": 0.2982777793421665,
+      "w_sma_7": -0.4399662198803561,
+      "w_volume_sma_5": -0.08281692064025648,
+      "w_rsi_momentum": 0.32039655020395597,
+      "w_price_to_sma5": -0.24021482393081148,
+      "w_volume_ratio_5": 0.07324032273895086
     }
   ],
   "powers_by_model": [
@@ -376,829 +618,2209 @@
       "file": "cleaned_coin_Aave.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.26521014369471657
+      "weight": -0.3260051921519825
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 1.014827902281806
+      "weight": -0.14429347719119612
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -1.451320613367415
+      "weight": -0.4475814280037047
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.9492758853396107
+      "weight": -0.2941587694339774
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.6996807539706597
+      "weight": -0.13402939219221763
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.46329227879113805
+      "weight": 0.2997912933423412
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.35879795079679505
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": 0.17197720004725414
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.0016927265888618177
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.12685021655610246
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.02189348267388846
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.07002581405964861
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.2902322556351537
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": -0.1436411473730056
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.35766105358335637
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.04258238597545196
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.8888058830435502
+      "weight": -0.9079036225980538
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": -0.45725832985852166
+      "weight": -0.47959516011647
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.011478663277686532
+      "weight": -0.44660143721189677
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": 0.5592435343270478
+      "weight": -0.28537508130534056
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.9639238503245999
+      "weight": -0.6333073435500731
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.5317821396105517
+      "weight": 0.333048743336718
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.1534834260701799
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": 0.01932662377148882
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.43927840894172304
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.572532155509737
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.3029510606717907
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.4854065974966066
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.07605782360522675
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.24317734832761662
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.004701496191027776
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.050943301039598377
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -1.269472514387433
+      "weight": -1.3151407459628819
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": -0.07059661794891235
+      "weight": -0.6665396904422233
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.6843266845702198
+      "weight": -0.38409267347751286
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.4560754594512485
+      "weight": 0.3172874455859495
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.19330073382908008
+      "weight": 0.17173434437828178
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.12801528757163505
+      "weight": 0.13407839907463293
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.411180420303647
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.025729088992126333
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.10457430513679489
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.18967335545464653
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.2484330266561147
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.5083566255400733
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.49766107728563963
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.17447088410668432
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.13639870623591066
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.07862032249914391
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.917022904054985
+      "weight": -0.946361721087891
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.35122262230999124
+      "weight": -0.07988544441528575
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.14417035097767886
+      "weight": 0.44524839092439084
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.8828586145312876
+      "weight": -1.3994340458370191
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 1.4171612626643435
+      "weight": 1.167594415028991
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.005472934211809214
+      "weight": -0.4229121202398515
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.18454144775081055
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.21810648493910278
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.14194941941248207
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.15837034977646405
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.15105102541286022
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.36621007498003133
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.47378404784205647
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.06981032829391956
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.0033683965146296614
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.2501320409385249
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.6630537192839032
+      "weight": -0.6820625178364874
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.5838753822959571
+      "weight": 0.09480625227016402
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 1.5493668664386653
+      "weight": 0.42560492265541294
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.671621574388624
+      "weight": -0.2877482486352444
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.7334386283371024
+      "weight": 0.03932664645466451
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.03774777200546325
+      "weight": 0.021863053699323
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.08923370963388752
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.04678058664747748
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.2691968247686924
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.20853794109456175
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.03637507733247285
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.0016890950149036628
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.010606864135052348
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": -0.017965244367262215
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.1187718772355066
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.14874978360347027
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.7543018715253279
+      "weight": -0.7390723201401835
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.9764891286765333
+      "weight": -0.4184403712372596
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -0.07241693441607173
+      "weight": 0.1550114385502404
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.7290018145543202
+      "weight": -0.5069133610315745
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.314733541354282
+      "weight": 0.11281584589919957
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.08956094196839001
+      "weight": 0.6131988112508432
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.1333762873532128
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.3266656925315752
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.7800439209979151
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.07410151983324852
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.12999393648270963
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.08015357910320979
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.5543952891967143
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.0933382531046406
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.1419262259340759
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.33383461428149286
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -1.0975330124693863
+      "weight": -1.119220294654274
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": -0.23831888063051018
+      "weight": 0.05550052661611281
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.1064383979901539
+      "weight": -0.5061357191757896
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": 0.016116270615118066
+      "weight": -0.04262104116300547
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.31339581056760457
+      "weight": -0.6564891647762505
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.034598608823996416
+      "weight": 0.07504923295354485
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.21535272555247853
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.029401172186155067
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.4656136417235955
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.30558958350195387
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.19639113867742006
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.28004423362857367
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.08898884082396553
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.28599559835777316
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.21366515635780164
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.04185875750277266
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -1.1594199270778172
+      "weight": -1.2056018846015155
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.08658861063210525
+      "weight": -0.019451895421634134
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 1.6817190575963
+      "weight": 0.035815878069334894
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -2.2269263466399223
+      "weight": -0.5300248237588697
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.7346968294700572
+      "weight": 0.4191393995538421
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.08046110106831939
+      "weight": 0.13152061153362182
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.3589962975022524
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.020692662867380526
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.16969780737979112
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.16951256426387892
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.3823524363495737
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.09077689269497301
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.20517621968328434
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.20732669674274806
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.2095796512244912
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.20422343991081837
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.9186963690268798
+      "weight": -0.9347641318377765
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 1.0514064663902256
+      "weight": 0.006318425383777042
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 1.0462893007411935
+      "weight": -0.05622633453072655
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -2.057377476846108
+      "weight": -0.031098581361117688
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.0617755696182698
+      "weight": 0.044117050534181156
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.11536192023229971
+      "weight": -0.29235404184765285
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.3232496579656313
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.12437340988411882
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.17658412691009812
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.36866270052767725
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.14928484047293308
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.28440929584382707
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.16433088110740943
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.04626510641553603
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.17680174768591897
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.24206702071325298
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.9025290935414063
+      "weight": -0.9316902710909665
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": -0.10789914557639188
+      "weight": 0.25789554330166214
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 2.947985321694875
+      "weight": 0.3365353312522988
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.4343706199824136
+      "weight": -0.33213310662145173
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -1.3905718858508547
+      "weight": -0.2723899765266264
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.08370383495725309
+      "weight": -0.2655097071069477
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.28209338531552103
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.1396394106008639
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.1811381572070542
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.006582753505837957
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.29586997042955715
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.09017828495451505
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.1898750846655461
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.07573478055230926
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.002236086698473995
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.2651906970452355
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.8498654487005575
+      "weight": -0.8776483668898029
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 1.6798997858712466
+      "weight": 0.01758323193123566
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 1.1025138545349282
+      "weight": -0.3273660540430412
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.8181249484524429
+      "weight": -0.2888331736421549
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.7672686774312105
+      "weight": -0.041770342703288825
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.031650746890993
+      "weight": 0.1120382021394404
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.4331579828685771
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.3472930895530724
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.15519156972148887
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.24929632140601155
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.10460429665289894
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.46423102180128756
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.08211937515742528
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.12234432746363147
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.05771206766347662
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.12166927745504046
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -1.310832646296724
+      "weight": -1.3457755359655157
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 1.3536151490354467
+      "weight": -0.0966605114617614
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -0.3362335751380512
+      "weight": -0.5831520450769752
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.2783763987344299
+      "weight": -0.16549433804691982
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.40893108086855817
+      "weight": -0.1867998042431547
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.044962444675324266
+      "weight": 0.065359283718671
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.41991436625278733
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.047383335773636216
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.11492093890433876
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.48337910544360996
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.34401919327012703
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.25802622919151896
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.13930437190194442
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.17254648532684905
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.11644632866183295
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.016567174935511936
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.7475658740753018
+      "weight": -0.7607788081554576
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": -0.11705082618523889
+      "weight": 0.16642559074045393
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 1.805488969760671
+      "weight": 0.44274611835899497
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.6658113041333306
+      "weight": -0.12731322781115323
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.8782965624178971
+      "weight": -0.06621346928729803
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.06351566700736283
+      "weight": -0.3378647354252975
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.18603702570101718
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": 0.07870296783527553
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.26085250846305497
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.2999694682585326
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.04860987539232873
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.2911900515289621
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.17856307955838094
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.12822990315718713
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.2710104639731409
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.2404058340856186
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.7380549771881791
+      "weight": -0.7458869654040307
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.29766967533987226
+      "weight": -0.4629942368711715
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.35923406170836925
+      "weight": 0.040572661048529045
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.6568301068299469
+      "weight": -0.209996377951092
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.01859633273125653
+      "weight": 0.3068841538374728
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.048245969444679904
+      "weight": -0.14727869111332784
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.13265971362366924
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.1289040736039229
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.07816814059017003
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.38694247599860243
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.31008527143240394
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.21508323045936162
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.17887189291895003
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.13590093640703763
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.19685603825987452
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.21040169630828165
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.595366988446184
+      "weight": -0.6376061093559369
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.883343019842381
+      "weight": -0.17741949760433626
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.26408939012875904
+      "weight": -0.15097357172921205
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": 0.19495275471618498
+      "weight": -0.0168054784103895
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -1.4617928171904282
+      "weight": -0.014507677764771907
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.17562720707838334
+      "weight": -0.20648539132606292
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.11924163968260322
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.0922864065272982
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.08899544873501095
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.3958100067616996
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.27043189268506507
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.02771581794939645
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.5053517351727285
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.028121802725343814
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.2683305249044107
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.270883792565584
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.5617458105927544
+      "weight": -0.5325802423625843
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.7230640412242224
+      "weight": 0.12088395976724507
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 3.0437703149207374
+      "weight": 0.3837530453624724
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -2.462660170647403
+      "weight": -0.50118460146372
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -1.3817753208565138
+      "weight": -0.20355732846681926
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.22192522416635435
+      "weight": 0.4655345293063574
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.16140963266007186
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.17852251446725925
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.12363923653142933
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.6093029985155746
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.15062367912057364
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.5353575494689862
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.27967011370473577
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.04452963881244272
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.11712987196708867
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.12849198886582017
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.9266070989165719
+      "weight": -0.9622274784688858
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 1.1613512165279263
+      "weight": 0.5032382455961102
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.41017200182775176
+      "weight": 0.2794864061094898
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.8196023851725902
+      "weight": -0.49657217613626914
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -0.8318969387957104
+      "weight": -0.14371408968263694
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.21325746406012575
+      "weight": 0.10851815042281707
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.3291702304659733
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": 0.012756290256784377
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.2734649580831794
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.6672856351262729
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.5336550101129421
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.6425052493753897
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.07268184811881238
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.1759840077468672
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.295189508276864
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.17985592283275809
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -5.205489104199453
+      "weight": -5.831976627647122
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 1.2781090331735718
+      "weight": -1.0380113191715117
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.3820516886034776
+      "weight": 0.3146481357263225
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -0.5854404818451393
+      "weight": -0.40894934012521844
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -1.3088221225011325
+      "weight": 0.11467657785448922
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.07530456281552285
+      "weight": 0.0364986165111747
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.4074572956960751
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.6806909238113942
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.7151144124695702
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.3634033262963222
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.06618139327003615
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.38767939015159236
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.21966231519980486
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.480041060812483
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.1894608374230392
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.696361439437415
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.8992365241947939
+      "weight": -0.9259678400024017
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.3653344724265864
+      "weight": 0.14702667450568868
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": 0.5568824767109946
+      "weight": -0.12154970679023967
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.6889642785244927
+      "weight": -0.9788118879901585
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.785870969126717
+      "weight": 0.4258051484717472
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.06779751066657383
+      "weight": 0.14382058689057897
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.3198440869582057
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.18980514849121896
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.18735519349109164
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.30178311435880323
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.19875178822531558
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.22035999197229622
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.14983234727068284
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.05679649346283266
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.13042424161785005
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.08145332912279436
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -10.951442621606335
+      "weight": -9.867220050003782
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": -0.6325985013477644
+      "weight": -0.48628092014389096
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -0.11571507048455487
+      "weight": -0.1419411964468979
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": 1.8629875086816934
+      "weight": 0.5113089924164039
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -3.505399793564319
+      "weight": -0.5699941408297138
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 1.619518128378789
+      "weight": 0.6587045760225575
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": -0.07642135682888447
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": 0.06048801551496338
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.4697596941507703
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.4288647017013812
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.14128354099724497
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.3116025317933392
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 1.0340916493649988
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": -0.0338080093798542
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.8648638106415764
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": -0.26814837647314194
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -0.40405246234497966
+      "weight": -0.4065405941658357
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 2.9309783394704683
+      "weight": 0.074101175169844
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -2.2203189314378253
+      "weight": -0.2123960096550305
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": 0.9228052197364746
+      "weight": 0.022509984079604313
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": -1.9583282350874598
+      "weight": -0.13767828178172903
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": 0.38930137492671835
+      "weight": -0.08664600776381741
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": -0.09619700432581216
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.3625266983527959
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.13082266492979677
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": -0.313413624067422
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.05931803684855547
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.13102207142365957
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": 0.7559573535485087
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": -0.073694108697386
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.22394546838993074
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.11973996937209547
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -1.4774066441305393
+      "weight": -1.4864348894286838
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 2.3808888158083232
+      "weight": -0.24811755016344988
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -0.16578159305284068
+      "weight": -0.12561745229662563
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -2.347789107295142
+      "weight": -0.37804669865507007
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 0.04270525976454763
+      "weight": -0.14747976406151458
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.016108119707413146
+      "weight": 0.046282462991706894
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.3833746588678608
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": -0.41589959271488897
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": 0.6219175194279944
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.22556286186172966
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": -0.19583985491247732
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": 0.13006839964613884
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.14432265781780695
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.10721751485769183
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": 0.19932732803616635
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.0344435028720037
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "feature": "intercept",
       "power_used": 0,
-      "weight": -1.1529371559636885
+      "weight": -1.191516421627771
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "feature": "open",
       "power_used": 1,
-      "weight": 0.6496821360959841
+      "weight": 0.39562093261532383
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "feature": "high",
       "power_used": 1,
-      "weight": -0.6875494009153328
+      "weight": -0.14122395312642852
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "feature": "low",
       "power_used": 1,
-      "weight": -1.2140702022220207
+      "weight": -0.37588895389901406
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "feature": "close",
       "power_used": 1,
-      "weight": 1.4073945146532654
+      "weight": 0.3414405043096366
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "feature": "volume",
       "power_used": 1,
-      "weight": -0.032063392977485616
+      "weight": -0.012775728461640018
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "volatility_5d",
+      "power_used": 1,
+      "weight": 0.3591646947480534
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "returns_1d",
+      "power_used": 1,
+      "weight": 0.10623509972263258
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "ema_12",
+      "power_used": 1,
+      "weight": -0.2631032936009955
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "ema_26",
+      "power_used": 1,
+      "weight": 0.30144409795950466
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "sma_5",
+      "power_used": 1,
+      "weight": 0.2982777793421665
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "sma_7",
+      "power_used": 1,
+      "weight": -0.4399662198803561
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "volume_sma_5",
+      "power_used": 1,
+      "weight": -0.08281692064025648
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "rsi_momentum",
+      "power_used": 1,
+      "weight": 0.32039655020395597
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "price_to_sma5",
+      "power_used": 1,
+      "weight": -0.24021482393081148
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "volume_ratio_5",
+      "power_used": 1,
+      "weight": 0.07324032273895086
     }
   ],
   "feature_importance": [
@@ -1206,921 +2828,2761 @@
       "file": "cleaned_coin_Aave.csv",
       "rank": 1,
       "feature": "high",
-      "weight": -1.451320613367415,
-      "abs_weight": 1.451320613367415,
-      "importance_score_percent": 31.699314757358042
+      "weight": -0.4475814280037047,
+      "abs_weight": 0.4475814280037047,
+      "importance_score_percent": 15.406171832630323
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "rank": 2,
-      "feature": "open",
-      "weight": 1.014827902281806,
-      "abs_weight": 1.014827902281806,
-      "importance_score_percent": 22.165570310711487
+      "feature": "volatility_5d",
+      "weight": 0.35879795079679505,
+      "abs_weight": 0.35879795079679505,
+      "importance_score_percent": 12.350161417165214
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "rank": 3,
-      "feature": "low",
-      "weight": -0.9492758853396107,
-      "abs_weight": 0.9492758853396107,
-      "importance_score_percent": 20.73380258213981
+      "feature": "price_to_sma5",
+      "weight": -0.35766105358335637,
+      "abs_weight": 0.35766105358335637,
+      "importance_score_percent": 12.311028350575755
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "rank": 4,
-      "feature": "close",
-      "weight": 0.6996807539706597,
-      "abs_weight": 0.6996807539706597,
-      "importance_score_percent": 15.282219687020056
+      "feature": "volume",
+      "weight": 0.2997912933423412,
+      "abs_weight": 0.2997912933423412,
+      "importance_score_percent": 10.319097018298004
     },
     {
       "file": "cleaned_coin_Aave.csv",
       "rank": 5,
-      "feature": "volume",
-      "weight": 0.46329227879113805,
-      "abs_weight": 0.46329227879113805,
-      "importance_score_percent": 10.119092662770615
+      "feature": "low",
+      "weight": -0.2941587694339774,
+      "abs_weight": 0.2941587694339774,
+      "importance_score_percent": 10.125220271510974
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 6,
+      "feature": "volume_sma_5",
+      "weight": 0.2902322556351537,
+      "abs_weight": 0.2902322556351537,
+      "importance_score_percent": 9.990065990070656
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 7,
+      "feature": "returns_1d",
+      "weight": 0.17197720004725414,
+      "abs_weight": 0.17197720004725414,
+      "importance_score_percent": 5.919616251817997
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 8,
+      "feature": "open",
+      "weight": -0.14429347719119612,
+      "abs_weight": 0.14429347719119612,
+      "importance_score_percent": 4.966716590208678
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 9,
+      "feature": "rsi_momentum",
+      "weight": -0.1436411473730056,
+      "abs_weight": 0.1436411473730056,
+      "importance_score_percent": 4.944262787075211
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 10,
+      "feature": "close",
+      "weight": -0.13402939219221763,
+      "abs_weight": 0.13402939219221763,
+      "importance_score_percent": 4.613417174045957
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 11,
+      "feature": "ema_26",
+      "weight": 0.12685021655610246,
+      "abs_weight": 0.12685021655610246,
+      "importance_score_percent": 4.366303226624288
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 12,
+      "feature": "sma_7",
+      "weight": 0.07002581405964861,
+      "abs_weight": 0.07002581405964861,
+      "importance_score_percent": 2.4103540867067372
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 13,
+      "feature": "volume_ratio_5",
+      "weight": 0.04258238597545196,
+      "abs_weight": 0.04258238597545196,
+      "importance_score_percent": 1.4657255961383868
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 14,
+      "feature": "sma_5",
+      "weight": 0.02189348267388846,
+      "abs_weight": 0.02189348267388846,
+      "importance_score_percent": 0.7535941730045345
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 15,
+      "feature": "ema_12",
+      "weight": -0.0016927265888618177,
+      "abs_weight": 0.0016927265888618177,
+      "importance_score_percent": 0.0582652341273005
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "rank": 1,
       "feature": "close",
-      "weight": -0.9639238503245999,
-      "abs_weight": 0.9639238503245999,
-      "importance_score_percent": 38.19507073003187
+      "weight": -0.6333073435500731,
+      "abs_weight": 0.6333073435500731,
+      "importance_score_percent": 13.993311715361306
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": 0.5592435343270478,
-      "abs_weight": 0.5592435343270478,
-      "importance_score_percent": 22.15978610939187
+      "feature": "ema_26",
+      "weight": 0.572532155509737,
+      "abs_weight": 0.572532155509737,
+      "importance_score_percent": 12.65044689708705
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "rank": 3,
-      "feature": "volume",
-      "weight": 0.5317821396105517,
-      "abs_weight": 0.5317821396105517,
-      "importance_score_percent": 21.07164007670611
+      "feature": "sma_7",
+      "weight": 0.4854065974966066,
+      "abs_weight": 0.4854065974966066,
+      "importance_score_percent": 10.725354595427778
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "rank": 4,
       "feature": "open",
-      "weight": -0.45725832985852166,
-      "abs_weight": 0.45725832985852166,
-      "importance_score_percent": 18.11866595578184
+      "weight": -0.47959516011647,
+      "abs_weight": 0.47959516011647,
+      "importance_score_percent": 10.596947344820675
     },
     {
       "file": "cleaned_coin_BinanceCoin.csv",
       "rank": 5,
       "feature": "high",
-      "weight": 0.011478663277686532,
-      "abs_weight": 0.011478663277686532,
-      "importance_score_percent": 0.4548371280882991
+      "weight": -0.44660143721189677,
+      "abs_weight": 0.44660143721189677,
+      "importance_score_percent": 9.867930929716612
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 6,
+      "feature": "ema_12",
+      "weight": 0.43927840894172304,
+      "abs_weight": 0.43927840894172304,
+      "importance_score_percent": 9.706124157177836
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 7,
+      "feature": "volume",
+      "weight": 0.333048743336718,
+      "abs_weight": 0.333048743336718,
+      "importance_score_percent": 7.358914955565446
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 8,
+      "feature": "sma_5",
+      "weight": -0.3029510606717907,
+      "abs_weight": 0.3029510606717907,
+      "importance_score_percent": 6.69388831450447
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 9,
+      "feature": "low",
+      "weight": -0.28537508130534056,
+      "abs_weight": 0.28537508130534056,
+      "importance_score_percent": 6.305536338986838
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 10,
+      "feature": "rsi_momentum",
+      "weight": 0.24317734832761662,
+      "abs_weight": 0.24317734832761662,
+      "importance_score_percent": 5.373151712071193
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 11,
+      "feature": "volatility_5d",
+      "weight": 0.1534834260701799,
+      "abs_weight": 0.1534834260701799,
+      "importance_score_percent": 3.3913098371830674
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 12,
+      "feature": "volume_sma_5",
+      "weight": 0.07605782360522675,
+      "abs_weight": 0.07605782360522675,
+      "importance_score_percent": 1.6805439648525933
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 13,
+      "feature": "volume_ratio_5",
+      "weight": -0.050943301039598377,
+      "abs_weight": 0.050943301039598377,
+      "importance_score_percent": 1.1256232830975001
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 14,
+      "feature": "returns_1d",
+      "weight": 0.01932662377148882,
+      "abs_weight": 0.01932662377148882,
+      "importance_score_percent": 0.4270335305508295
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 15,
+      "feature": "price_to_sma5",
+      "weight": 0.004701496191027776,
+      "abs_weight": 0.004701496191027776,
+      "importance_score_percent": 0.10388242359680427
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "rank": 1,
-      "feature": "high",
-      "weight": 0.6843266845702198,
-      "abs_weight": 0.6843266845702198,
-      "importance_score_percent": 44.65966732140375
+      "feature": "open",
+      "weight": -0.6665396904422233,
+      "abs_weight": 0.6665396904422233,
+      "importance_score_percent": 16.462524490436113
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": -0.4560754594512485,
-      "abs_weight": 0.4560754594512485,
-      "importance_score_percent": 29.763822969056108
+      "feature": "sma_7",
+      "weight": 0.5083566255400733,
+      "abs_weight": 0.5083566255400733,
+      "importance_score_percent": 12.555641498672824
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": 0.19330073382908008,
-      "abs_weight": 0.19330073382908008,
-      "importance_score_percent": 12.614949351582844
+      "feature": "volume_sma_5",
+      "weight": -0.49766107728563963,
+      "abs_weight": 0.49766107728563963,
+      "importance_score_percent": 12.291477597254687
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "rank": 4,
-      "feature": "volume",
-      "weight": -0.12801528757163505,
-      "abs_weight": 0.12801528757163505,
-      "importance_score_percent": 8.354372675958993
+      "feature": "volatility_5d",
+      "weight": 0.411180420303647,
+      "abs_weight": 0.411180420303647,
+      "importance_score_percent": 10.155535876259053
     },
     {
       "file": "cleaned_coin_Bitcoin.csv",
       "rank": 5,
-      "feature": "open",
-      "weight": -0.07059661794891235,
-      "abs_weight": 0.07059661794891235,
-      "importance_score_percent": 4.60718768199832
+      "feature": "high",
+      "weight": -0.38409267347751286,
+      "abs_weight": 0.38409267347751286,
+      "importance_score_percent": 9.486509407302483
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 6,
+      "feature": "low",
+      "weight": 0.3172874455859495,
+      "abs_weight": 0.3172874455859495,
+      "importance_score_percent": 7.836521092991652
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 7,
+      "feature": "sma_5",
+      "weight": 0.2484330266561147,
+      "abs_weight": 0.2484330266561147,
+      "importance_score_percent": 6.135920852434172
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 8,
+      "feature": "ema_26",
+      "weight": 0.18967335545464653,
+      "abs_weight": 0.18967335545464653,
+      "importance_score_percent": 4.684645646958628
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 9,
+      "feature": "rsi_momentum",
+      "weight": 0.17447088410668432,
+      "abs_weight": 0.17447088410668432,
+      "importance_score_percent": 4.30916754644981
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 10,
+      "feature": "close",
+      "weight": 0.17173434437828178,
+      "abs_weight": 0.17173434437828178,
+      "importance_score_percent": 4.241579144822911
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 11,
+      "feature": "price_to_sma5",
+      "weight": -0.13639870623591066,
+      "abs_weight": 0.13639870623591066,
+      "importance_score_percent": 3.368842207105026
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 12,
+      "feature": "volume",
+      "weight": 0.13407839907463293,
+      "abs_weight": 0.13407839907463293,
+      "importance_score_percent": 3.311534121756761
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 13,
+      "feature": "ema_12",
+      "weight": 0.10457430513679489,
+      "abs_weight": 0.10457430513679489,
+      "importance_score_percent": 2.5828275256086224
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 14,
+      "feature": "volume_ratio_5",
+      "weight": -0.07862032249914391,
+      "abs_weight": 0.07862032249914391,
+      "importance_score_percent": 1.9418033211637122
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 15,
+      "feature": "returns_1d",
+      "weight": -0.025729088992126333,
+      "abs_weight": 0.025729088992126333,
+      "importance_score_percent": 0.6354696707835515
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "rank": 1,
       "feature": "low",
-      "weight": -1.8828586145312876,
-      "abs_weight": 1.8828586145312876,
-      "importance_score_percent": 49.53736368803625
+      "weight": -1.3994340458370191,
+      "abs_weight": 1.3994340458370191,
+      "importance_score_percent": 25.29525239624894
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "rank": 2,
       "feature": "close",
-      "weight": 1.4171612626643435,
-      "abs_weight": 1.4171612626643435,
-      "importance_score_percent": 37.2850262528481
+      "weight": 1.167594415028991,
+      "abs_weight": 1.167594415028991,
+      "importance_score_percent": 21.104671215101064
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "rank": 3,
-      "feature": "open",
-      "weight": 0.35122262230999124,
-      "abs_weight": 0.35122262230999124,
-      "importance_score_percent": 9.24054660427437
+      "feature": "volume_sma_5",
+      "weight": 0.47378404784205647,
+      "abs_weight": 0.47378404784205647,
+      "importance_score_percent": 8.563809853799311
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "rank": 4,
       "feature": "high",
-      "weight": 0.14417035097767886,
-      "abs_weight": 0.14417035097767886,
-      "importance_score_percent": 3.793072434804655
+      "weight": 0.44524839092439084,
+      "abs_weight": 0.44524839092439084,
+      "importance_score_percent": 8.048018026258491
     },
     {
       "file": "cleaned_coin_Cardano.csv",
       "rank": 5,
       "feature": "volume",
-      "weight": -0.005472934211809214,
-      "abs_weight": 0.005472934211809214,
-      "importance_score_percent": 0.14399102003661568
+      "weight": -0.4229121202398515,
+      "abs_weight": 0.4229121202398515,
+      "importance_score_percent": 7.644282240183324
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 6,
+      "feature": "sma_7",
+      "weight": -0.36621007498003133,
+      "abs_weight": 0.36621007498003133,
+      "importance_score_percent": 6.619373241794042
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 7,
+      "feature": "volume_ratio_5",
+      "weight": 0.2501320409385249,
+      "abs_weight": 0.2501320409385249,
+      "importance_score_percent": 4.521222794850979
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 8,
+      "feature": "returns_1d",
+      "weight": -0.21810648493910278,
+      "abs_weight": 0.21810648493910278,
+      "importance_score_percent": 3.9423498393548444
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 9,
+      "feature": "volatility_5d",
+      "weight": 0.18454144775081055,
+      "abs_weight": 0.18454144775081055,
+      "importance_score_percent": 3.3356502311146325
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 10,
+      "feature": "ema_26",
+      "weight": 0.15837034977646405,
+      "abs_weight": 0.15837034977646405,
+      "importance_score_percent": 2.862598620917383
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 11,
+      "feature": "sma_5",
+      "weight": -0.15105102541286022,
+      "abs_weight": 0.15105102541286022,
+      "importance_score_percent": 2.7302993119945134
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 12,
+      "feature": "ema_12",
+      "weight": 0.14194941941248207,
+      "abs_weight": 0.14194941941248207,
+      "importance_score_percent": 2.5657846486020865
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 13,
+      "feature": "open",
+      "weight": -0.07988544441528575,
+      "abs_weight": 0.07988544441528575,
+      "importance_score_percent": 1.4439569233593632
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 14,
+      "feature": "rsi_momentum",
+      "weight": 0.06981032829391956,
+      "abs_weight": 0.06981032829391956,
+      "importance_score_percent": 1.2618457292165597
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 15,
+      "feature": "price_to_sma5",
+      "weight": -0.0033683965146296614,
+      "abs_weight": 0.0033683965146296614,
+      "importance_score_percent": 0.06088492720444046
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "rank": 1,
-      "feature": "low",
-      "weight": -1.671621574388624,
-      "abs_weight": 1.671621574388624,
-      "importance_score_percent": 36.529790818654305
+      "feature": "high",
+      "weight": 0.42560492265541294,
+      "abs_weight": 0.42560492265541294,
+      "importance_score_percent": 23.420194666211064
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "rank": 2,
-      "feature": "high",
-      "weight": 1.5493668664386653,
-      "abs_weight": 1.5493668664386653,
-      "importance_score_percent": 33.85817005446249
+      "feature": "low",
+      "weight": -0.2877482486352444,
+      "abs_weight": 0.2877482486352444,
+      "importance_score_percent": 15.83421534659972
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": -0.7334386283371024,
-      "abs_weight": 0.7334386283371024,
-      "importance_score_percent": 16.027766141552753
+      "feature": "ema_12",
+      "weight": -0.2691968247686924,
+      "abs_weight": 0.2691968247686924,
+      "importance_score_percent": 14.81336728972277
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": 0.5838753822959571,
-      "abs_weight": 0.5838753822959571,
-      "importance_score_percent": 12.759374433913912
+      "feature": "ema_26",
+      "weight": -0.20853794109456175,
+      "abs_weight": 0.20853794109456175,
+      "importance_score_percent": 11.475429243753782
     },
     {
       "file": "cleaned_coin_ChainLink.csv",
       "rank": 5,
+      "feature": "volume_ratio_5",
+      "weight": 0.14874978360347027,
+      "abs_weight": 0.14874978360347027,
+      "importance_score_percent": 8.185405532469908
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 6,
+      "feature": "price_to_sma5",
+      "weight": -0.1187718772355066,
+      "abs_weight": 0.1187718772355066,
+      "importance_score_percent": 6.53578080904631
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 7,
+      "feature": "open",
+      "weight": 0.09480625227016402,
+      "abs_weight": 0.09480625227016402,
+      "importance_score_percent": 5.217000005281581
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 8,
+      "feature": "volatility_5d",
+      "weight": 0.08923370963388752,
+      "abs_weight": 0.08923370963388752,
+      "importance_score_percent": 4.9103540376713255
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 9,
+      "feature": "returns_1d",
+      "weight": -0.04678058664747748,
+      "abs_weight": 0.04678058664747748,
+      "importance_score_percent": 2.574242889503718
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 10,
+      "feature": "close",
+      "weight": 0.03932664645466451,
+      "abs_weight": 0.03932664645466451,
+      "importance_score_percent": 2.1640673462868087
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 11,
+      "feature": "sma_5",
+      "weight": -0.03637507733247285,
+      "abs_weight": 0.03637507733247285,
+      "importance_score_percent": 2.001648352208411
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 12,
       "feature": "volume",
-      "weight": 0.03774777200546325,
-      "abs_weight": 0.03774777200546325,
-      "importance_score_percent": 0.8248985514165493
+      "weight": 0.021863053699323,
+      "abs_weight": 0.021863053699323,
+      "importance_score_percent": 1.203080477644138
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 13,
+      "feature": "rsi_momentum",
+      "weight": -0.017965244367262215,
+      "abs_weight": 0.017965244367262215,
+      "importance_score_percent": 0.9885917617733685
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 14,
+      "feature": "volume_sma_5",
+      "weight": 0.010606864135052348,
+      "abs_weight": 0.010606864135052348,
+      "importance_score_percent": 0.5836746936362509
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 15,
+      "feature": "sma_7",
+      "weight": -0.0016890950149036628,
+      "abs_weight": 0.0016890950149036628,
+      "importance_score_percent": 0.09294754819083469
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "rank": 1,
-      "feature": "open",
-      "weight": 0.9764891286765333,
-      "abs_weight": 0.9764891286765333,
-      "importance_score_percent": 44.7478724311644
+      "feature": "ema_12",
+      "weight": 0.7800439209979151,
+      "abs_weight": 0.7800439209979151,
+      "importance_score_percent": 17.51251221690909
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": -0.7290018145543202,
-      "abs_weight": 0.7290018145543202,
-      "importance_score_percent": 33.40670084466455
+      "feature": "volume",
+      "weight": 0.6131988112508432,
+      "abs_weight": 0.6131988112508432,
+      "importance_score_percent": 13.766726955177727
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": -0.314733541354282,
-      "abs_weight": 0.314733541354282,
-      "importance_score_percent": 14.422747724204616
+      "feature": "volume_sma_5",
+      "weight": -0.5543952891967143,
+      "abs_weight": 0.5543952891967143,
+      "importance_score_percent": 12.446548218251236
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "rank": 4,
-      "feature": "volume",
-      "weight": 0.08956094196839001,
-      "abs_weight": 0.08956094196839001,
-      "importance_score_percent": 4.104153838812467
+      "feature": "low",
+      "weight": -0.5069133610315745,
+      "abs_weight": 0.5069133610315745,
+      "importance_score_percent": 11.380546901286118
     },
     {
       "file": "cleaned_coin_Cosmos.csv",
       "rank": 5,
+      "feature": "open",
+      "weight": -0.4184403712372596,
+      "abs_weight": 0.4184403712372596,
+      "importance_score_percent": 9.394268599601162
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 6,
+      "feature": "volume_ratio_5",
+      "weight": -0.33383461428149286,
+      "abs_weight": 0.33383461428149286,
+      "importance_score_percent": 7.494812283842417
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 7,
+      "feature": "returns_1d",
+      "weight": -0.3266656925315752,
+      "abs_weight": 0.3266656925315752,
+      "importance_score_percent": 7.333865154651425
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 8,
       "feature": "high",
-      "weight": -0.07241693441607173,
-      "abs_weight": 0.07241693441607173,
-      "importance_score_percent": 3.318525161153955
+      "weight": 0.1550114385502404,
+      "abs_weight": 0.1550114385502404,
+      "importance_score_percent": 3.48011136077938
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 9,
+      "feature": "price_to_sma5",
+      "weight": 0.1419262259340759,
+      "abs_weight": 0.1419262259340759,
+      "importance_score_percent": 3.186339510717047
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 10,
+      "feature": "volatility_5d",
+      "weight": 0.1333762873532128,
+      "abs_weight": 0.1333762873532128,
+      "importance_score_percent": 2.9943876220853975
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 11,
+      "feature": "sma_5",
+      "weight": -0.12999393648270963,
+      "abs_weight": 0.12999393648270963,
+      "importance_score_percent": 2.918451563426313
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 12,
+      "feature": "close",
+      "weight": 0.11281584589919957,
+      "abs_weight": 0.11281584589919957,
+      "importance_score_percent": 2.5327918420839106
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 13,
+      "feature": "rsi_momentum",
+      "weight": 0.0933382531046406,
+      "abs_weight": 0.0933382531046406,
+      "importance_score_percent": 2.0955067449392253
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 14,
+      "feature": "sma_7",
+      "weight": -0.08015357910320979,
+      "abs_weight": 0.08015357910320979,
+      "importance_score_percent": 1.799501919684472
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 15,
+      "feature": "ema_26",
+      "weight": -0.07410151983324852,
+      "abs_weight": 0.07410151983324852,
+      "importance_score_percent": 1.663629106565096
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "rank": 1,
       "feature": "close",
-      "weight": 0.31339581056760457,
-      "abs_weight": 0.31339581056760457,
-      "importance_score_percent": 44.21074508056115
+      "weight": -0.6564891647762505,
+      "abs_weight": 0.6564891647762505,
+      "importance_score_percent": 18.980825825946592
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "rank": 2,
-      "feature": "open",
-      "weight": -0.23831888063051018,
-      "abs_weight": 0.23831888063051018,
-      "importance_score_percent": 33.61964303338168
+      "feature": "high",
+      "weight": -0.5061357191757896,
+      "abs_weight": 0.5061357191757896,
+      "importance_score_percent": 14.63371285532209
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": 0.1064383979901539,
-      "abs_weight": 0.1064383979901539,
-      "importance_score_percent": 15.01526415366968
+      "feature": "ema_12",
+      "weight": 0.4656136417235955,
+      "abs_weight": 0.4656136417235955,
+      "importance_score_percent": 13.46211317707339
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "rank": 4,
-      "feature": "volume",
-      "weight": -0.034598608823996416,
-      "abs_weight": 0.034598608823996416,
-      "importance_score_percent": 4.880825535253265
+      "feature": "ema_26",
+      "weight": 0.30558958350195387,
+      "abs_weight": 0.30558958350195387,
+      "importance_score_percent": 8.83539739860149
     },
     {
       "file": "cleaned_coin_CryptocomCoin.csv",
       "rank": 5,
+      "feature": "rsi_momentum",
+      "weight": 0.28599559835777316,
+      "abs_weight": 0.28599559835777316,
+      "importance_score_percent": 8.268883830346885
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 6,
+      "feature": "sma_7",
+      "weight": 0.28004423362857367,
+      "abs_weight": 0.28004423362857367,
+      "importance_score_percent": 8.096814246547861
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 7,
+      "feature": "volatility_5d",
+      "weight": 0.21535272555247853,
+      "abs_weight": 0.21535272555247853,
+      "importance_score_percent": 6.2264128551879905
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 8,
+      "feature": "price_to_sma5",
+      "weight": 0.21366515635780164,
+      "abs_weight": 0.21366515635780164,
+      "importance_score_percent": 6.177620797874582
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 9,
+      "feature": "sma_5",
+      "weight": 0.19639113867742006,
+      "abs_weight": 0.19639113867742006,
+      "importance_score_percent": 5.678183581698449
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 10,
+      "feature": "volume_sma_5",
+      "weight": -0.08898884082396553,
+      "abs_weight": 0.08898884082396553,
+      "importance_score_percent": 2.5729010907716363
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 11,
+      "feature": "volume",
+      "weight": 0.07504923295354485,
+      "abs_weight": 0.07504923295354485,
+      "importance_score_percent": 2.169870419030653
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 12,
+      "feature": "open",
+      "weight": 0.05550052661611281,
+      "abs_weight": 0.05550052661611281,
+      "importance_score_percent": 1.6046659799903833
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 13,
       "feature": "low",
-      "weight": 0.016116270615118066,
-      "abs_weight": 0.016116270615118066,
-      "importance_score_percent": 2.27352219713423
+      "weight": -0.04262104116300547,
+      "abs_weight": 0.04262104116300547,
+      "importance_score_percent": 1.2322862314281005
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 14,
+      "feature": "volume_ratio_5",
+      "weight": -0.04185875750277266,
+      "abs_weight": 0.04185875750277266,
+      "importance_score_percent": 1.210246608900933
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 15,
+      "feature": "returns_1d",
+      "weight": -0.029401172186155067,
+      "abs_weight": 0.029401172186155067,
+      "importance_score_percent": 0.8500651012789774
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "rank": 1,
       "feature": "low",
-      "weight": -2.2269263466399223,
-      "abs_weight": 2.2269263466399223,
-      "importance_score_percent": 46.29407274736409
+      "weight": -0.5300248237588697,
+      "abs_weight": 0.5300248237588697,
+      "importance_score_percent": 16.803314892430457
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "rank": 2,
-      "feature": "high",
-      "weight": 1.6817190575963,
-      "abs_weight": 1.6817190575963,
-      "importance_score_percent": 34.96012542599823
+      "feature": "close",
+      "weight": 0.4191393995538421,
+      "abs_weight": 0.4191393995538421,
+      "importance_score_percent": 13.28792727966937
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": 0.7346968294700572,
-      "abs_weight": 0.7346968294700572,
-      "importance_score_percent": 15.273117820920948
+      "feature": "sma_5",
+      "weight": 0.3823524363495737,
+      "abs_weight": 0.3823524363495737,
+      "importance_score_percent": 12.121674494990755
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": 0.08658861063210525,
-      "abs_weight": 0.08658861063210525,
-      "importance_score_percent": 1.8000323386285826
+      "feature": "volatility_5d",
+      "weight": 0.3589962975022524,
+      "abs_weight": 0.3589962975022524,
+      "importance_score_percent": 11.381217561408688
     },
     {
       "file": "cleaned_coin_Dogecoin.csv",
       "rank": 5,
+      "feature": "price_to_sma5",
+      "weight": -0.2095796512244912,
+      "abs_weight": 0.2095796512244912,
+      "importance_score_percent": 6.644279129411136
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 6,
+      "feature": "rsi_momentum",
+      "weight": 0.20732669674274806,
+      "abs_weight": 0.20732669674274806,
+      "importance_score_percent": 6.572853977421906
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 7,
+      "feature": "volume_sma_5",
+      "weight": -0.20517621968328434,
+      "abs_weight": 0.20517621968328434,
+      "importance_score_percent": 6.50467765514543
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 8,
+      "feature": "volume_ratio_5",
+      "weight": 0.20422343991081837,
+      "abs_weight": 0.20422343991081837,
+      "importance_score_percent": 6.474471789642106
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 9,
+      "feature": "ema_12",
+      "weight": -0.16969780737979112,
+      "abs_weight": 0.16969780737979112,
+      "importance_score_percent": 5.3799097063704675
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 10,
+      "feature": "ema_26",
+      "weight": 0.16951256426387892,
+      "abs_weight": 0.16951256426387892,
+      "importance_score_percent": 5.374036965568909
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 11,
       "feature": "volume",
-      "weight": -0.08046110106831939,
-      "abs_weight": 0.08046110106831939,
-      "importance_score_percent": 1.672651667088151
+      "weight": 0.13152061153362182,
+      "abs_weight": 0.13152061153362182,
+      "importance_score_percent": 4.1695825391187356
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 12,
+      "feature": "sma_7",
+      "weight": -0.09077689269497301,
+      "abs_weight": 0.09077689269497301,
+      "importance_score_percent": 2.8778891941181
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 13,
+      "feature": "high",
+      "weight": 0.035815878069334894,
+      "abs_weight": 0.035815878069334894,
+      "importance_score_percent": 1.1354665864135522
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 14,
+      "feature": "returns_1d",
+      "weight": -0.020692662867380526,
+      "abs_weight": 0.020692662867380526,
+      "importance_score_percent": 0.6560170666302292
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 15,
+      "feature": "open",
+      "weight": -0.019451895421634134,
+      "abs_weight": 0.019451895421634134,
+      "importance_score_percent": 0.6166811616601663
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "rank": 1,
-      "feature": "low",
-      "weight": -2.057377476846108,
-      "abs_weight": 2.057377476846108,
-      "importance_score_percent": 47.49024466379399
+      "feature": "ema_26",
+      "weight": -0.36866270052767725,
+      "abs_weight": 0.36866270052767725,
+      "importance_score_percent": 14.828699223213956
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "rank": 2,
-      "feature": "open",
-      "weight": 1.0514064663902256,
-      "abs_weight": 1.0514064663902256,
-      "importance_score_percent": 24.26951344218579
+      "feature": "volatility_5d",
+      "weight": 0.3232496579656313,
+      "abs_weight": 0.3232496579656313,
+      "importance_score_percent": 13.002052947364206
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": 1.0462893007411935,
-      "abs_weight": 1.0462893007411935,
-      "importance_score_percent": 24.15139440404495
+      "feature": "volume",
+      "weight": -0.29235404184765285,
+      "abs_weight": 0.29235404184765285,
+      "importance_score_percent": 11.759340304957929
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "rank": 4,
-      "feature": "volume",
-      "weight": -0.11536192023229971,
-      "abs_weight": 0.11536192023229971,
-      "importance_score_percent": 2.6628880107676984
+      "feature": "sma_7",
+      "weight": 0.28440929584382707,
+      "abs_weight": 0.28440929584382707,
+      "importance_score_percent": 11.439779229951052
     },
     {
       "file": "cleaned_coin_EOS.csv",
       "rank": 5,
+      "feature": "volume_ratio_5",
+      "weight": 0.24206702071325298,
+      "abs_weight": 0.24206702071325298,
+      "importance_score_percent": 9.736648261075837
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 6,
+      "feature": "price_to_sma5",
+      "weight": -0.17680174768591897,
+      "abs_weight": 0.17680174768591897,
+      "importance_score_percent": 7.111486827445485
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 7,
+      "feature": "ema_12",
+      "weight": 0.17658412691009812,
+      "abs_weight": 0.17658412691009812,
+      "importance_score_percent": 7.102733479128037
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 8,
+      "feature": "volume_sma_5",
+      "weight": 0.16433088110740943,
+      "abs_weight": 0.16433088110740943,
+      "importance_score_percent": 6.609871857227835
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 9,
+      "feature": "sma_5",
+      "weight": -0.14928484047293308,
+      "abs_weight": 0.14928484047293308,
+      "importance_score_percent": 6.00467580471274
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 10,
+      "feature": "returns_1d",
+      "weight": -0.12437340988411882,
+      "abs_weight": 0.12437340988411882,
+      "importance_score_percent": 5.002664722786741
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 11,
+      "feature": "high",
+      "weight": -0.05622633453072655,
+      "abs_weight": 0.05622633453072655,
+      "importance_score_percent": 2.2615887150681746
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 12,
+      "feature": "rsi_momentum",
+      "weight": 0.04626510641553603,
+      "abs_weight": 0.04626510641553603,
+      "importance_score_percent": 1.860918792663336
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 13,
       "feature": "close",
-      "weight": -0.0617755696182698,
-      "abs_weight": 0.0617755696182698,
-      "importance_score_percent": 1.4259594792075752
+      "weight": 0.044117050534181156,
+      "abs_weight": 0.044117050534181156,
+      "importance_score_percent": 1.7745176608599957
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 14,
+      "feature": "low",
+      "weight": -0.031098581361117688,
+      "abs_weight": 0.031098581361117688,
+      "importance_score_percent": 1.2508765020507981
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 15,
+      "feature": "open",
+      "weight": 0.006318425383777042,
+      "abs_weight": 0.006318425383777042,
+      "importance_score_percent": 0.2541456714938698
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "rank": 1,
       "feature": "high",
-      "weight": 2.947985321694875,
-      "abs_weight": 2.947985321694875,
-      "importance_score_percent": 49.4252677462964
+      "weight": 0.3365353312522988,
+      "abs_weight": 0.3365353312522988,
+      "importance_score_percent": 11.24407201341524
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "rank": 2,
       "feature": "low",
-      "weight": -1.4343706199824136,
-      "abs_weight": 1.4343706199824136,
-      "importance_score_percent": 24.04833952812663
+      "weight": -0.33213310662145173,
+      "abs_weight": 0.33213310662145173,
+      "importance_score_percent": 11.096988108185196
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": -1.3905718858508547,
-      "abs_weight": 1.3905718858508547,
-      "importance_score_percent": 23.31401967060557
+      "feature": "sma_5",
+      "weight": 0.29586997042955715,
+      "abs_weight": 0.29586997042955715,
+      "importance_score_percent": 9.88539076042184
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": -0.10789914557639188,
-      "abs_weight": 0.10789914557639188,
-      "importance_score_percent": 1.8090131319391138
+      "feature": "volatility_5d",
+      "weight": 0.28209338531552103,
+      "abs_weight": 0.28209338531552103,
+      "importance_score_percent": 9.425097588395172
     },
     {
       "file": "cleaned_coin_Ethereum.csv",
       "rank": 5,
+      "feature": "close",
+      "weight": -0.2723899765266264,
+      "abs_weight": 0.2723899765266264,
+      "importance_score_percent": 9.100894400599291
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 6,
       "feature": "volume",
-      "weight": -0.08370383495725309,
-      "abs_weight": 0.08370383495725309,
-      "importance_score_percent": 1.403359923032289
+      "weight": -0.2655097071069477,
+      "abs_weight": 0.2655097071069477,
+      "importance_score_percent": 8.871015877774692
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 7,
+      "feature": "volume_ratio_5",
+      "weight": 0.2651906970452355,
+      "abs_weight": 0.2651906970452355,
+      "importance_score_percent": 8.860357347231856
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 8,
+      "feature": "open",
+      "weight": 0.25789554330166214,
+      "abs_weight": 0.25789554330166214,
+      "importance_score_percent": 8.616617013233524
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 9,
+      "feature": "volume_sma_5",
+      "weight": 0.1898750846655461,
+      "abs_weight": 0.1898750846655461,
+      "importance_score_percent": 6.34396726664084
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 10,
+      "feature": "ema_12",
+      "weight": -0.1811381572070542,
+      "abs_weight": 0.1811381572070542,
+      "importance_score_percent": 6.0520554452171975
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 11,
+      "feature": "returns_1d",
+      "weight": -0.1396394106008639,
+      "abs_weight": 0.1396394106008639,
+      "importance_score_percent": 4.665529716788831
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 12,
+      "feature": "sma_7",
+      "weight": -0.09017828495451505,
+      "abs_weight": 0.09017828495451505,
+      "importance_score_percent": 3.012970811420327
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 13,
+      "feature": "rsi_momentum",
+      "weight": 0.07573478055230926,
+      "abs_weight": 0.07573478055230926,
+      "importance_score_percent": 2.530395020580914
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 14,
+      "feature": "ema_26",
+      "weight": 0.006582753505837957,
+      "abs_weight": 0.006582753505837957,
+      "importance_score_percent": 0.21993813900839285
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 15,
+      "feature": "price_to_sma5",
+      "weight": 0.002236086698473995,
+      "abs_weight": 0.002236086698473995,
+      "importance_score_percent": 0.07471049108669119
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "rank": 1,
-      "feature": "low",
-      "weight": -1.8181249484524429,
-      "abs_weight": 1.8181249484524429,
-      "importance_score_percent": 33.672360151966174
+      "feature": "sma_7",
+      "weight": 0.46423102180128756,
+      "abs_weight": 0.46423102180128756,
+      "importance_score_percent": 15.870004846264118
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "rank": 2,
-      "feature": "open",
-      "weight": 1.6798997858712466,
-      "abs_weight": 1.6798997858712466,
-      "importance_score_percent": 31.112377978870843
+      "feature": "volatility_5d",
+      "weight": 0.4331579828685771,
+      "abs_weight": 0.4331579828685771,
+      "importance_score_percent": 14.807755114359406
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": 1.1025138545349282,
-      "abs_weight": 1.1025138545349282,
-      "importance_score_percent": 20.418972642134456
+      "feature": "returns_1d",
+      "weight": -0.3472930895530724,
+      "abs_weight": 0.3472930895530724,
+      "importance_score_percent": 11.872414283939204
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "rank": 4,
-      "feature": "close",
-      "weight": -0.7672686774312105,
-      "abs_weight": 0.7672686774312105,
-      "importance_score_percent": 14.210105450550817
+      "feature": "high",
+      "weight": -0.3273660540430412,
+      "abs_weight": 0.3273660540430412,
+      "importance_score_percent": 11.191197098390498
     },
     {
       "file": "cleaned_coin_Iota.csv",
       "rank": 5,
+      "feature": "low",
+      "weight": -0.2888331736421549,
+      "abs_weight": 0.2888331736421549,
+      "importance_score_percent": 9.873928389526963
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 6,
+      "feature": "ema_26",
+      "weight": 0.24929632140601155,
+      "abs_weight": 0.24929632140601155,
+      "importance_score_percent": 8.52233832525461
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 7,
+      "feature": "ema_12",
+      "weight": -0.15519156972148887,
+      "abs_weight": 0.15519156972148887,
+      "importance_score_percent": 5.305313190882784
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 8,
+      "feature": "rsi_momentum",
+      "weight": 0.12234432746363147,
+      "abs_weight": 0.12234432746363147,
+      "importance_score_percent": 4.182411296485595
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 9,
+      "feature": "volume_ratio_5",
+      "weight": 0.12166927745504046,
+      "abs_weight": 0.12166927745504046,
+      "importance_score_percent": 4.159334323158303
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 10,
       "feature": "volume",
-      "weight": -0.031650746890993,
-      "abs_weight": 0.031650746890993,
-      "importance_score_percent": 0.5861837764777348
+      "weight": 0.1120382021394404,
+      "abs_weight": 0.1120382021394404,
+      "importance_score_percent": 3.8300904666399584
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 11,
+      "feature": "sma_5",
+      "weight": 0.10460429665289894,
+      "abs_weight": 0.10460429665289894,
+      "importance_score_percent": 3.5759581261506974
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 12,
+      "feature": "volume_sma_5",
+      "weight": -0.08211937515742528,
+      "abs_weight": 0.08211937515742528,
+      "importance_score_percent": 2.8072981350185717
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 13,
+      "feature": "price_to_sma5",
+      "weight": 0.05771206766347662,
+      "abs_weight": 0.05771206766347662,
+      "importance_score_percent": 1.9729202713629521
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 14,
+      "feature": "close",
+      "weight": -0.041770342703288825,
+      "abs_weight": 0.041770342703288825,
+      "importance_score_percent": 1.4279432222326944
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 15,
+      "feature": "open",
+      "weight": 0.01758323193123566,
+      "abs_weight": 0.01758323193123566,
+      "importance_score_percent": 0.6010929103336411
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "rank": 1,
-      "feature": "open",
-      "weight": 1.3536151490354467,
-      "abs_weight": 1.3536151490354467,
-      "importance_score_percent": 39.55488655099178
+      "feature": "high",
+      "weight": -0.5831520450769752,
+      "abs_weight": 0.5831520450769752,
+      "importance_score_percent": 18.1668802829327
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": -1.2783763987344299,
-      "abs_weight": 1.2783763987344299,
-      "importance_score_percent": 37.35628509878745
+      "feature": "ema_26",
+      "weight": 0.48337910544360996,
+      "abs_weight": 0.48337910544360996,
+      "importance_score_percent": 15.058663369183625
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": 0.40893108086855817,
-      "abs_weight": 0.40893108086855817,
-      "importance_score_percent": 11.949646487375926
+      "feature": "volatility_5d",
+      "weight": 0.41991436625278733,
+      "abs_weight": 0.41991436625278733,
+      "importance_score_percent": 13.081552375917651
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "rank": 4,
-      "feature": "high",
-      "weight": -0.3362335751380512,
-      "abs_weight": 0.3362335751380512,
-      "importance_score_percent": 9.825304429177685
+      "feature": "sma_5",
+      "weight": 0.34401919327012703,
+      "abs_weight": 0.34401919327012703,
+      "importance_score_percent": 10.717197259154817
     },
     {
       "file": "cleaned_coin_Litecoin.csv",
       "rank": 5,
+      "feature": "sma_7",
+      "weight": 0.25802622919151896,
+      "abs_weight": 0.25802622919151896,
+      "importance_score_percent": 8.038266615287498
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 6,
+      "feature": "close",
+      "weight": -0.1867998042431547,
+      "abs_weight": 0.1867998042431547,
+      "importance_score_percent": 5.819356562682909
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 7,
+      "feature": "rsi_momentum",
+      "weight": 0.17254648532684905,
+      "abs_weight": 0.17254648532684905,
+      "importance_score_percent": 5.375324272008519
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 8,
+      "feature": "low",
+      "weight": -0.16549433804691982,
+      "abs_weight": 0.16549433804691982,
+      "importance_score_percent": 5.15562939748369
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 9,
+      "feature": "volume_sma_5",
+      "weight": 0.13930437190194442,
+      "abs_weight": 0.13930437190194442,
+      "importance_score_percent": 4.339735869223791
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 10,
+      "feature": "price_to_sma5",
+      "weight": -0.11644632866183295,
+      "abs_weight": 0.11644632866183295,
+      "importance_score_percent": 3.6276414188126798
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 11,
+      "feature": "ema_12",
+      "weight": -0.11492093890433876,
+      "abs_weight": 0.11492093890433876,
+      "importance_score_percent": 3.5801210965516974
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 12,
+      "feature": "open",
+      "weight": -0.0966605114617614,
+      "abs_weight": 0.0966605114617614,
+      "importance_score_percent": 3.011255734481856
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 13,
       "feature": "volume",
-      "weight": 0.044962444675324266,
-      "abs_weight": 0.044962444675324266,
-      "importance_score_percent": 1.3138774336671695
+      "weight": 0.065359283718671,
+      "abs_weight": 0.065359283718671,
+      "importance_score_percent": 2.036131559032082
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 14,
+      "feature": "returns_1d",
+      "weight": -0.047383335773636216,
+      "abs_weight": 0.047383335773636216,
+      "importance_score_percent": 1.4761285597344105
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 15,
+      "feature": "volume_ratio_5",
+      "weight": -0.016567174935511936,
+      "abs_weight": 0.016567174935511936,
+      "importance_score_percent": 0.5161156275120676
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "rank": 1,
       "feature": "high",
-      "weight": 1.805488969760671,
-      "abs_weight": 1.805488969760671,
-      "importance_score_percent": 51.14462990056872
+      "weight": 0.44274611835899497,
+      "abs_weight": 0.44274611835899497,
+      "importance_score_percent": 14.171801627882145
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "rank": 2,
-      "feature": "close",
-      "weight": -0.8782965624178971,
-      "abs_weight": 0.8782965624178971,
-      "importance_score_percent": 24.87977128642306
+      "feature": "volume",
+      "weight": -0.3378647354252975,
+      "abs_weight": 0.3378647354252975,
+      "importance_score_percent": 10.814667388279146
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "rank": 3,
-      "feature": "low",
-      "weight": -0.6658113041333306,
-      "abs_weight": 0.6658113041333306,
-      "importance_score_percent": 18.860637369625184
+      "feature": "ema_26",
+      "weight": -0.2999694682585326,
+      "abs_weight": 0.2999694682585326,
+      "importance_score_percent": 9.601682820704614
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": -0.11705082618523889,
-      "abs_weight": 0.11705082618523889,
-      "importance_score_percent": 3.3157340117084133
+      "feature": "sma_7",
+      "weight": 0.2911900515289621,
+      "abs_weight": 0.2911900515289621,
+      "importance_score_percent": 9.320663638060763
     },
     {
       "file": "cleaned_coin_Monero.csv",
       "rank": 5,
-      "feature": "volume",
-      "weight": -0.06351566700736283,
-      "abs_weight": 0.06351566700736283,
-      "importance_score_percent": 1.7992274316746129
+      "feature": "price_to_sma5",
+      "weight": -0.2710104639731409,
+      "abs_weight": 0.2710104639731409,
+      "importance_score_percent": 8.674737903390191
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 6,
+      "feature": "ema_12",
+      "weight": -0.26085250846305497,
+      "abs_weight": 0.26085250846305497,
+      "importance_score_percent": 8.349593256233591
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 7,
+      "feature": "volume_ratio_5",
+      "weight": 0.2404058340856186,
+      "abs_weight": 0.2404058340856186,
+      "importance_score_percent": 7.695118375006116
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 8,
+      "feature": "volatility_5d",
+      "weight": 0.18603702570101718,
+      "abs_weight": 0.18603702570101718,
+      "importance_score_percent": 5.95483441717782
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 9,
+      "feature": "volume_sma_5",
+      "weight": 0.17856307955838094,
+      "abs_weight": 0.17856307955838094,
+      "importance_score_percent": 5.715601868954703
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 10,
+      "feature": "open",
+      "weight": 0.16642559074045393,
+      "abs_weight": 0.16642559074045393,
+      "importance_score_percent": 5.327094603378121
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 11,
+      "feature": "rsi_momentum",
+      "weight": 0.12822990315718713,
+      "abs_weight": 0.12822990315718713,
+      "importance_score_percent": 4.104493918640529
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 12,
+      "feature": "low",
+      "weight": -0.12731322781115323,
+      "abs_weight": 0.12731322781115323,
+      "importance_score_percent": 4.07515217938528
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 13,
+      "feature": "returns_1d",
+      "weight": 0.07870296783527553,
+      "abs_weight": 0.07870296783527553,
+      "importance_score_percent": 2.5191928318222687
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 14,
+      "feature": "close",
+      "weight": -0.06621346928729803,
+      "abs_weight": 0.06621346928729803,
+      "importance_score_percent": 2.1194181336053957
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 15,
+      "feature": "sma_5",
+      "weight": 0.04860987539232873,
+      "abs_weight": 0.04860987539232873,
+      "importance_score_percent": 1.5559470374793334
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "rank": 1,
-      "feature": "low",
-      "weight": -0.6568301068299469,
-      "abs_weight": 0.6568301068299469,
-      "importance_score_percent": 47.576521491209085
+      "feature": "open",
+      "weight": -0.4629942368711715,
+      "abs_weight": 0.4629942368711715,
+      "importance_score_percent": 14.737531742824808
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "rank": 2,
-      "feature": "high",
-      "weight": 0.35923406170836925,
-      "abs_weight": 0.35923406170836925,
-      "importance_score_percent": 26.0205902249658
+      "feature": "ema_26",
+      "weight": -0.38694247599860243,
+      "abs_weight": 0.38694247599860243,
+      "importance_score_percent": 12.316734353355193
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "rank": 3,
-      "feature": "open",
-      "weight": 0.29766967533987226,
-      "abs_weight": 0.29766967533987226,
-      "importance_score_percent": 21.5612645626721
+      "feature": "sma_5",
+      "weight": 0.31008527143240394,
+      "abs_weight": 0.31008527143240394,
+      "importance_score_percent": 9.870298951451257
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "rank": 4,
-      "feature": "volume",
-      "weight": -0.048245969444679904,
-      "abs_weight": 0.048245969444679904,
-      "importance_score_percent": 3.4946257461113945
+      "feature": "close",
+      "weight": 0.3068841538374728,
+      "abs_weight": 0.3068841538374728,
+      "importance_score_percent": 9.768404438710402
     },
     {
       "file": "cleaned_coin_NEM.csv",
       "rank": 5,
-      "feature": "close",
-      "weight": 0.01859633273125653,
-      "abs_weight": 0.01859633273125653,
-      "importance_score_percent": 1.3469979750416077
+      "feature": "sma_7",
+      "weight": 0.21508323045936162,
+      "abs_weight": 0.21508323045936162,
+      "importance_score_percent": 6.846296743702543
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 6,
+      "feature": "volume_ratio_5",
+      "weight": 0.21040169630828165,
+      "abs_weight": 0.21040169630828165,
+      "importance_score_percent": 6.697279212463041
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 7,
+      "feature": "low",
+      "weight": -0.209996377951092,
+      "abs_weight": 0.209996377951092,
+      "importance_score_percent": 6.684377556936183
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 8,
+      "feature": "price_to_sma5",
+      "weight": -0.19685603825987452,
+      "abs_weight": 0.19685603825987452,
+      "importance_score_percent": 6.266108477347826
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 9,
+      "feature": "volume_sma_5",
+      "weight": 0.17887189291895003,
+      "abs_weight": 0.17887189291895003,
+      "importance_score_percent": 5.693656615699282
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 10,
+      "feature": "volume",
+      "weight": -0.14727869111332784,
+      "abs_weight": 0.14727869111332784,
+      "importance_score_percent": 4.688015989124091
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 11,
+      "feature": "rsi_momentum",
+      "weight": 0.13590093640703763,
+      "abs_weight": 0.13590093640703763,
+      "importance_score_percent": 4.325851608247178
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 12,
+      "feature": "volatility_5d",
+      "weight": 0.13265971362366924,
+      "abs_weight": 0.13265971362366924,
+      "importance_score_percent": 4.222680510528418
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 13,
+      "feature": "returns_1d",
+      "weight": -0.1289040736039229,
+      "abs_weight": 0.1289040736039229,
+      "importance_score_percent": 4.103135039769057
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 14,
+      "feature": "ema_12",
+      "weight": 0.07816814059017003,
+      "abs_weight": 0.07816814059017003,
+      "importance_score_percent": 2.4881636994236915
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 15,
+      "feature": "high",
+      "weight": 0.040572661048529045,
+      "abs_weight": 0.040572661048529045,
+      "importance_score_percent": 1.291465060417039
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "rank": 1,
-      "feature": "close",
-      "weight": -1.4617928171904282,
-      "abs_weight": 1.4617928171904282,
-      "importance_score_percent": 49.056657213974205
+      "feature": "volume_sma_5",
+      "weight": 0.5053517351727285,
+      "abs_weight": 0.5053517351727285,
+      "importance_score_percent": 19.190372900256666
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "rank": 2,
-      "feature": "open",
-      "weight": 0.883343019842381,
-      "abs_weight": 0.883343019842381,
-      "importance_score_percent": 29.644321149458342
+      "feature": "ema_26",
+      "weight": 0.3958100067616996,
+      "abs_weight": 0.3958100067616996,
+      "importance_score_percent": 15.0306036345436
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": 0.26408939012875904,
-      "abs_weight": 0.26408939012875904,
-      "importance_score_percent": 8.862639447287926
+      "feature": "volume_ratio_5",
+      "weight": 0.270883792565584,
+      "abs_weight": 0.270883792565584,
+      "importance_score_percent": 10.286619457619036
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "rank": 4,
-      "feature": "low",
-      "weight": 0.19495275471618498,
-      "abs_weight": 0.19495275471618498,
-      "importance_score_percent": 6.542466448435154
+      "feature": "sma_5",
+      "weight": -0.27043189268506507,
+      "abs_weight": 0.27043189268506507,
+      "importance_score_percent": 10.269458880901563
     },
     {
       "file": "cleaned_coin_Polkadot.csv",
       "rank": 5,
+      "feature": "price_to_sma5",
+      "weight": -0.2683305249044107,
+      "abs_weight": 0.2683305249044107,
+      "importance_score_percent": 10.189660933245248
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 6,
       "feature": "volume",
-      "weight": 0.17562720707838334,
-      "abs_weight": 0.17562720707838334,
-      "importance_score_percent": 5.893915740844379
+      "weight": -0.20648539132606292,
+      "abs_weight": 0.20648539132606292,
+      "importance_score_percent": 7.841135949890789
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 7,
+      "feature": "open",
+      "weight": -0.17741949760433626,
+      "abs_weight": 0.17741949760433626,
+      "importance_score_percent": 6.73737929808368
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 8,
+      "feature": "high",
+      "weight": -0.15097357172921205,
+      "abs_weight": 0.15097357172921205,
+      "importance_score_percent": 5.733114062776404
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 9,
+      "feature": "volatility_5d",
+      "weight": 0.11924163968260322,
+      "abs_weight": 0.11924163968260322,
+      "importance_score_percent": 4.528116500807233
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 10,
+      "feature": "returns_1d",
+      "weight": -0.0922864065272982,
+      "abs_weight": 0.0922864065272982,
+      "importance_score_percent": 3.5045106835899253
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 11,
+      "feature": "ema_12",
+      "weight": 0.08899544873501095,
+      "abs_weight": 0.08899544873501095,
+      "importance_score_percent": 3.3795389008940337
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 12,
+      "feature": "rsi_momentum",
+      "weight": 0.028121802725343814,
+      "abs_weight": 0.028121802725343814,
+      "importance_score_percent": 1.06790546735205
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 13,
+      "feature": "sma_7",
+      "weight": -0.02771581794939645,
+      "abs_weight": 0.02771581794939645,
+      "importance_score_percent": 1.05248848409069
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 14,
+      "feature": "low",
+      "weight": -0.0168054784103895,
+      "abs_weight": 0.0168054784103895,
+      "importance_score_percent": 0.6381760960063904
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 15,
+      "feature": "close",
+      "weight": -0.014507677764771907,
+      "abs_weight": 0.014507677764771907,
+      "importance_score_percent": 0.5509187499427021
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "rank": 1,
-      "feature": "high",
-      "weight": 3.0437703149207374,
-      "abs_weight": 3.0437703149207374,
-      "importance_score_percent": 38.857328165777275
+      "feature": "ema_26",
+      "weight": -0.6093029985155746,
+      "abs_weight": 0.6093029985155746,
+      "importance_score_percent": 15.218913368659356
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": -2.462660170647403,
-      "abs_weight": 2.462660170647403,
-      "importance_score_percent": 31.43876985150475
+      "feature": "sma_7",
+      "weight": 0.5353575494689862,
+      "abs_weight": 0.5353575494689862,
+      "importance_score_percent": 13.371935123371962
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": -1.3817753208565138,
-      "abs_weight": 1.3817753208565138,
-      "importance_score_percent": 17.639996300210957
+      "feature": "low",
+      "weight": -0.50118460146372,
+      "abs_weight": 0.50118460146372,
+      "importance_score_percent": 12.518377637997874
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": 0.7230640412242224,
-      "abs_weight": 0.7230640412242224,
-      "importance_score_percent": 9.23076770838879
+      "feature": "volume",
+      "weight": 0.4655345293063574,
+      "abs_weight": 0.4655345293063574,
+      "importance_score_percent": 11.627925168420065
     },
     {
       "file": "cleaned_coin_Solana.csv",
       "rank": 5,
-      "feature": "volume",
-      "weight": -0.22192522416635435,
-      "abs_weight": 0.22192522416635435,
-      "importance_score_percent": 2.8331379741182205
+      "feature": "high",
+      "weight": 0.3837530453624724,
+      "abs_weight": 0.3837530453624724,
+      "importance_score_percent": 9.585221747733423
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 6,
+      "feature": "volume_sma_5",
+      "weight": -0.27967011370473577,
+      "abs_weight": 0.27967011370473577,
+      "importance_score_percent": 6.985482170028562
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 7,
+      "feature": "close",
+      "weight": -0.20355732846681926,
+      "abs_weight": 0.20355732846681926,
+      "importance_score_percent": 5.084369115267159
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 8,
+      "feature": "returns_1d",
+      "weight": -0.17852251446725925,
+      "abs_weight": 0.17852251446725925,
+      "importance_score_percent": 4.459060087758631
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 9,
+      "feature": "volatility_5d",
+      "weight": 0.16140963266007186,
+      "abs_weight": 0.16140963266007186,
+      "importance_score_percent": 4.031621742064958
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 10,
+      "feature": "sma_5",
+      "weight": -0.15062367912057364,
+      "abs_weight": 0.15062367912057364,
+      "importance_score_percent": 3.7622147427297787
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 11,
+      "feature": "volume_ratio_5",
+      "weight": 0.12849198886582017,
+      "abs_weight": 0.12849198886582017,
+      "importance_score_percent": 3.2094187159423186
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 12,
+      "feature": "ema_12",
+      "weight": 0.12363923653142933,
+      "abs_weight": 0.12363923653142933,
+      "importance_score_percent": 3.088208714421596
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 13,
+      "feature": "open",
+      "weight": 0.12088395976724507,
+      "abs_weight": 0.12088395976724507,
+      "importance_score_percent": 3.0193885732390338
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 14,
+      "feature": "price_to_sma5",
+      "weight": -0.11712987196708867,
+      "abs_weight": 0.11712987196708867,
+      "importance_score_percent": 2.9256205511742928
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 15,
+      "feature": "rsi_momentum",
+      "weight": 0.04452963881244272,
+      "abs_weight": 0.04452963881244272,
+      "importance_score_percent": 1.112242541190997
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "rank": 1,
-      "feature": "open",
-      "weight": 1.1613512165279263,
-      "abs_weight": 1.1613512165279263,
-      "importance_score_percent": 33.796757376299546
+      "feature": "ema_26",
+      "weight": 0.6672856351262729,
+      "abs_weight": 0.6672856351262729,
+      "importance_score_percent": 14.155168276378854
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "rank": 2,
-      "feature": "close",
-      "weight": -0.8318969387957104,
-      "abs_weight": 0.8318969387957104,
-      "importance_score_percent": 24.209230250450133
+      "feature": "sma_7",
+      "weight": -0.6425052493753897,
+      "abs_weight": 0.6425052493753897,
+      "importance_score_percent": 13.629500538617714
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "rank": 3,
-      "feature": "low",
-      "weight": -0.8196023851725902,
-      "abs_weight": 0.8196023851725902,
-      "importance_score_percent": 23.85144352759057
+      "feature": "sma_5",
+      "weight": -0.5336550101129421,
+      "abs_weight": 0.5336550101129421,
+      "importance_score_percent": 11.320454198376215
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "rank": 4,
-      "feature": "high",
-      "weight": 0.41017200182775176,
-      "abs_weight": 0.41017200182775176,
-      "importance_score_percent": 11.936512771535275
+      "feature": "open",
+      "weight": 0.5032382455961102,
+      "abs_weight": 0.5032382455961102,
+      "importance_score_percent": 10.675221636045887
     },
     {
       "file": "cleaned_coin_Stellar.csv",
       "rank": 5,
+      "feature": "low",
+      "weight": -0.49657217613626914,
+      "abs_weight": 0.49657217613626914,
+      "importance_score_percent": 10.533813923997322
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 6,
+      "feature": "volatility_5d",
+      "weight": 0.3291702304659733,
+      "abs_weight": 0.3291702304659733,
+      "importance_score_percent": 6.982706892736474
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 7,
+      "feature": "price_to_sma5",
+      "weight": -0.295189508276864,
+      "abs_weight": 0.295189508276864,
+      "importance_score_percent": 6.261871892821182
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 8,
+      "feature": "high",
+      "weight": 0.2794864061094898,
+      "abs_weight": 0.2794864061094898,
+      "importance_score_percent": 5.928761089981423
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 9,
+      "feature": "ema_12",
+      "weight": 0.2734649580831794,
+      "abs_weight": 0.2734649580831794,
+      "importance_score_percent": 5.801027769206782
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 10,
+      "feature": "volume_ratio_5",
+      "weight": 0.17985592283275809,
+      "abs_weight": 0.17985592283275809,
+      "importance_score_percent": 3.815293959863728
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 11,
+      "feature": "rsi_momentum",
+      "weight": 0.1759840077468672,
+      "abs_weight": 0.1759840077468672,
+      "importance_score_percent": 3.733158804081057
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 12,
+      "feature": "close",
+      "weight": -0.14371408968263694,
+      "abs_weight": 0.14371408968263694,
+      "importance_score_percent": 3.0486151897445994
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 13,
       "feature": "volume",
-      "weight": 0.21325746406012575,
-      "abs_weight": 0.21325746406012575,
-      "importance_score_percent": 6.206056074124479
+      "weight": 0.10851815042281707,
+      "abs_weight": 0.10851815042281707,
+      "importance_score_percent": 2.3020017207259205
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 14,
+      "feature": "volume_sma_5",
+      "weight": 0.07268184811881238,
+      "abs_weight": 0.07268184811881238,
+      "importance_score_percent": 1.5418041938896394
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 15,
+      "feature": "returns_1d",
+      "weight": 0.012756290256784377,
+      "abs_weight": 0.012756290256784377,
+      "importance_score_percent": 0.2705999135331985
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "rank": 1,
-      "feature": "close",
-      "weight": -1.3088221225011325,
-      "abs_weight": 1.3088221225011325,
-      "importance_score_percent": 36.05840885454828
+      "feature": "open",
+      "weight": -1.0380113191715117,
+      "abs_weight": 1.0380113191715117,
+      "importance_score_percent": 16.96419472651975
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "rank": 2,
-      "feature": "open",
-      "weight": 1.2781090331735718,
-      "abs_weight": 1.2781090331735718,
-      "importance_score_percent": 35.212254810297324
+      "feature": "ema_12",
+      "weight": 0.7151144124695702,
+      "abs_weight": 0.7151144124695702,
+      "importance_score_percent": 11.687098127751803
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "rank": 3,
-      "feature": "low",
-      "weight": -0.5854404818451393,
-      "abs_weight": 0.5854404818451393,
-      "importance_score_percent": 16.129046026540948
+      "feature": "volume_ratio_5",
+      "weight": -0.696361439437415,
+      "abs_weight": 0.696361439437415,
+      "importance_score_percent": 11.380618727823325
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "rank": 4,
-      "feature": "high",
-      "weight": 0.3820516886034776,
-      "abs_weight": 0.3820516886034776,
-      "importance_score_percent": 10.52562892573115
+      "feature": "returns_1d",
+      "weight": -0.6806909238113942,
+      "abs_weight": 0.6806909238113942,
+      "importance_score_percent": 11.124515857233275
     },
     {
       "file": "cleaned_coin_Tether.csv",
       "rank": 5,
+      "feature": "rsi_momentum",
+      "weight": 0.480041060812483,
+      "abs_weight": 0.480041060812483,
+      "importance_score_percent": 7.845299836275207
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 6,
+      "feature": "low",
+      "weight": -0.40894934012521844,
+      "abs_weight": 0.40894934012521844,
+      "importance_score_percent": 6.683449506796442
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 7,
+      "feature": "volatility_5d",
+      "weight": 0.4074572956960751,
+      "abs_weight": 0.4074572956960751,
+      "importance_score_percent": 6.65906505956632
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 8,
+      "feature": "sma_7",
+      "weight": 0.38767939015159236,
+      "abs_weight": 0.38767939015159236,
+      "importance_score_percent": 6.335835211545865
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 9,
+      "feature": "ema_26",
+      "weight": -0.3634033262963222,
+      "abs_weight": 0.3634033262963222,
+      "importance_score_percent": 5.9390920673931324
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 10,
+      "feature": "high",
+      "weight": 0.3146481357263225,
+      "abs_weight": 0.3146481357263225,
+      "importance_score_percent": 5.142287127521959
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 11,
+      "feature": "volume_sma_5",
+      "weight": -0.21966231519980486,
+      "abs_weight": 0.21966231519980486,
+      "importance_score_percent": 3.589936082876119
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 12,
+      "feature": "price_to_sma5",
+      "weight": 0.1894608374230392,
+      "abs_weight": 0.1894608374230392,
+      "importance_score_percent": 3.0963540375062877
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 13,
+      "feature": "close",
+      "weight": 0.11467657785448922,
+      "abs_weight": 0.11467657785448922,
+      "importance_score_percent": 1.874156631400874
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 14,
+      "feature": "sma_5",
+      "weight": 0.06618139327003615,
+      "abs_weight": 0.06618139327003615,
+      "importance_score_percent": 1.0816009632740526
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 15,
       "feature": "volume",
-      "weight": -0.07530456281552285,
-      "abs_weight": 0.07530456281552285,
-      "importance_score_percent": 2.074661382882292
+      "weight": 0.0364986165111747,
+      "abs_weight": 0.0364986165111747,
+      "importance_score_percent": 0.5964960365156005
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "rank": 1,
       "feature": "low",
-      "weight": -1.6889642785244927,
-      "abs_weight": 1.6889642785244927,
-      "importance_score_percent": 48.745672139554145
+      "weight": -0.9788118879901585,
+      "abs_weight": 0.9788118879901585,
+      "importance_score_percent": 26.791662544969437
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "rank": 2,
       "feature": "close",
-      "weight": 0.785870969126717,
-      "abs_weight": 0.785870969126717,
-      "importance_score_percent": 22.681242636174023
+      "weight": 0.4258051484717472,
+      "abs_weight": 0.4258051484717472,
+      "importance_score_percent": 11.654974758418915
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": 0.5568824767109946,
-      "abs_weight": 0.5568824767109946,
-      "importance_score_percent": 16.072341478845185
+      "feature": "volatility_5d",
+      "weight": 0.3198440869582057,
+      "abs_weight": 0.3198440869582057,
+      "importance_score_percent": 8.754649335515904
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": 0.3653344724265864,
-      "abs_weight": 0.3653344724265864,
-      "importance_score_percent": 10.544020759125317
+      "feature": "ema_26",
+      "weight": 0.30178311435880323,
+      "abs_weight": 0.30178311435880323,
+      "importance_score_percent": 8.260291339812854
     },
     {
       "file": "cleaned_coin_Tron.csv",
       "rank": 5,
+      "feature": "sma_7",
+      "weight": -0.22035999197229622,
+      "abs_weight": 0.22035999197229622,
+      "importance_score_percent": 6.031608949352375
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 6,
+      "feature": "sma_5",
+      "weight": 0.19875178822531558,
+      "abs_weight": 0.19875178822531558,
+      "importance_score_percent": 5.440157506950329
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 7,
+      "feature": "returns_1d",
+      "weight": -0.18980514849121896,
+      "abs_weight": 0.18980514849121896,
+      "importance_score_percent": 5.19527352504497
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 8,
+      "feature": "ema_12",
+      "weight": 0.18735519349109164,
+      "abs_weight": 0.18735519349109164,
+      "importance_score_percent": 5.128214299039297
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 9,
+      "feature": "volume_sma_5",
+      "weight": -0.14983234727068284,
+      "abs_weight": 0.14983234727068284,
+      "importance_score_percent": 4.101153383659321
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 10,
+      "feature": "open",
+      "weight": 0.14702667450568868,
+      "abs_weight": 0.14702667450568868,
+      "importance_score_percent": 4.024357587803508
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 11,
       "feature": "volume",
-      "weight": -0.06779751066657383,
-      "abs_weight": 0.06779751066657383,
-      "importance_score_percent": 1.9567229863013396
+      "weight": 0.14382058689057897,
+      "abs_weight": 0.14382058689057897,
+      "importance_score_percent": 3.9366017906707205
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 12,
+      "feature": "price_to_sma5",
+      "weight": 0.13042424161785005,
+      "abs_weight": 0.13042424161785005,
+      "importance_score_percent": 3.569922180127966
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 13,
+      "feature": "high",
+      "weight": -0.12154970679023967,
+      "abs_weight": 0.12154970679023967,
+      "importance_score_percent": 3.327011825991251
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 14,
+      "feature": "volume_ratio_5",
+      "weight": 0.08145332912279436,
+      "abs_weight": 0.08145332912279436,
+      "importance_score_percent": 2.229509197628564
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 15,
+      "feature": "rsi_momentum",
+      "weight": 0.05679649346283266,
+      "abs_weight": 0.05679649346283266,
+      "importance_score_percent": 1.5546117750146031
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "rank": 1,
-      "feature": "close",
-      "weight": -3.505399793564319,
-      "abs_weight": 3.505399793564319,
-      "importance_score_percent": 45.3115377479743
+      "feature": "volume_sma_5",
+      "weight": 1.0340916493649988,
+      "abs_weight": 1.0340916493649988,
+      "importance_score_percent": 17.071087882409635
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": 1.8629875086816934,
-      "abs_weight": 1.8629875086816934,
-      "importance_score_percent": 24.081369827948063
+      "feature": "price_to_sma5",
+      "weight": -0.8648638106415764,
+      "abs_weight": 0.8648638106415764,
+      "importance_score_percent": 14.277425145870017
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "rank": 3,
       "feature": "volume",
-      "weight": 1.619518128378789,
-      "abs_weight": 1.619518128378789,
-      "importance_score_percent": 20.934233219928363
+      "weight": 0.6587045760225575,
+      "abs_weight": 0.6587045760225575,
+      "importance_score_percent": 10.874088106921196
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": -0.6325985013477644,
-      "abs_weight": 0.6325985013477644,
-      "importance_score_percent": 8.177101774740906
+      "feature": "close",
+      "weight": -0.5699941408297138,
+      "abs_weight": 0.5699941408297138,
+      "importance_score_percent": 9.409630255246473
     },
     {
       "file": "cleaned_coin_USDCoin.csv",
       "rank": 5,
+      "feature": "low",
+      "weight": 0.5113089924164039,
+      "abs_weight": 0.5113089924164039,
+      "importance_score_percent": 8.440838633564729
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 6,
+      "feature": "open",
+      "weight": -0.48628092014389096,
+      "abs_weight": 0.48628092014389096,
+      "importance_score_percent": 8.027667884575767
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 7,
+      "feature": "ema_12",
+      "weight": -0.4697596941507703,
+      "abs_weight": 0.4697596941507703,
+      "importance_score_percent": 7.754930646027421
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 8,
+      "feature": "ema_26",
+      "weight": -0.4288647017013812,
+      "abs_weight": 0.4288647017013812,
+      "importance_score_percent": 7.079824130582011
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 9,
+      "feature": "sma_7",
+      "weight": -0.3116025317933392,
+      "abs_weight": 0.3116025317933392,
+      "importance_score_percent": 5.144025878065932
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 10,
+      "feature": "volume_ratio_5",
+      "weight": -0.26814837647314194,
+      "abs_weight": 0.26814837647314194,
+      "importance_score_percent": 4.4266719522485385
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 11,
       "feature": "high",
-      "weight": -0.11571507048455487,
-      "abs_weight": 0.11571507048455487,
-      "importance_score_percent": 1.4957574294083753
+      "weight": -0.1419411964468979,
+      "abs_weight": 0.1419411964468979,
+      "importance_score_percent": 2.3432068522817135
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 12,
+      "feature": "sma_5",
+      "weight": -0.14128354099724497,
+      "abs_weight": 0.14128354099724497,
+      "importance_score_percent": 2.3323500834602418
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 13,
+      "feature": "volatility_5d",
+      "weight": -0.07642135682888447,
+      "abs_weight": 0.07642135682888447,
+      "importance_score_percent": 1.261586145986172
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 14,
+      "feature": "returns_1d",
+      "weight": 0.06048801551496338,
+      "abs_weight": 0.06048801551496338,
+      "importance_score_percent": 0.9985538799414736
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 15,
+      "feature": "rsi_momentum",
+      "weight": -0.0338080093798542,
+      "abs_weight": 0.0338080093798542,
+      "importance_score_percent": 0.5581125228186713
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "rank": 1,
-      "feature": "open",
-      "weight": 2.9309783394704683,
-      "abs_weight": 2.9309783394704683,
-      "importance_score_percent": 34.80255966870685
+      "feature": "volume_sma_5",
+      "weight": 0.7559573535485087,
+      "abs_weight": 0.7559573535485087,
+      "importance_score_percent": 26.998781049800556
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "rank": 2,
-      "feature": "high",
-      "weight": -2.2203189314378253,
-      "abs_weight": 2.2203189314378253,
-      "importance_score_percent": 26.36416006707337
+      "feature": "returns_1d",
+      "weight": -0.3625266983527959,
+      "abs_weight": 0.3625266983527959,
+      "importance_score_percent": 12.947527936053287
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "rank": 3,
-      "feature": "close",
-      "weight": -1.9583282350874598,
-      "abs_weight": 1.9583282350874598,
-      "importance_score_percent": 23.253271556028636
+      "feature": "ema_26",
+      "weight": -0.313413624067422,
+      "abs_weight": 0.313413624067422,
+      "importance_score_percent": 11.193469809508041
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "rank": 4,
-      "feature": "low",
-      "weight": 0.9228052197364746,
-      "abs_weight": 0.9228052197364746,
-      "importance_score_percent": 10.957427862900921
+      "feature": "price_to_sma5",
+      "weight": -0.22394546838993074,
+      "abs_weight": 0.22394546838993074,
+      "importance_score_percent": 7.998142540413547
     },
     {
       "file": "cleaned_coin_Uniswap.csv",
       "rank": 5,
+      "feature": "high",
+      "weight": -0.2123960096550305,
+      "abs_weight": 0.2123960096550305,
+      "importance_score_percent": 7.585657224722694
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 6,
+      "feature": "close",
+      "weight": -0.13767828178172903,
+      "abs_weight": 0.13767828178172903,
+      "importance_score_percent": 4.917136883038632
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 7,
+      "feature": "sma_7",
+      "weight": 0.13102207142365957,
+      "abs_weight": 0.13102207142365957,
+      "importance_score_percent": 4.679412406604393
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 8,
+      "feature": "ema_12",
+      "weight": 0.13082266492979677,
+      "abs_weight": 0.13082266492979677,
+      "importance_score_percent": 4.672290665883916
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 9,
+      "feature": "volume_ratio_5",
+      "weight": 0.11973996937209547,
+      "abs_weight": 0.11973996937209547,
+      "importance_score_percent": 4.276475651452981
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 10,
+      "feature": "volatility_5d",
+      "weight": -0.09619700432581216,
+      "abs_weight": 0.09619700432581216,
+      "importance_score_percent": 3.4356459994044637
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 11,
       "feature": "volume",
-      "weight": 0.38930137492671835,
-      "abs_weight": 0.38930137492671835,
-      "importance_score_percent": 4.622580845290222
+      "weight": -0.08664600776381741,
+      "abs_weight": 0.08664600776381741,
+      "importance_score_percent": 3.0945351367688145
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 12,
+      "feature": "open",
+      "weight": 0.074101175169844,
+      "abs_weight": 0.074101175169844,
+      "importance_score_percent": 2.6465003542229018
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 13,
+      "feature": "rsi_momentum",
+      "weight": -0.073694108697386,
+      "abs_weight": 0.073694108697386,
+      "importance_score_percent": 2.631962102149529
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 14,
+      "feature": "sma_5",
+      "weight": -0.05931803684855547,
+      "abs_weight": 0.05931803684855547,
+      "importance_score_percent": 2.1185251808988235
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 15,
+      "feature": "low",
+      "weight": 0.022509984079604313,
+      "abs_weight": 0.022509984079604313,
+      "importance_score_percent": 0.8039370590774142
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "rank": 1,
-      "feature": "open",
-      "weight": 2.3808888158083232,
-      "abs_weight": 2.3808888158083232,
-      "importance_score_percent": 48.06698249776797
+      "feature": "ema_12",
+      "weight": 0.6219175194279944,
+      "abs_weight": 0.6219175194279944,
+      "importance_score_percent": 18.272785760741517
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": -2.347789107295142,
-      "abs_weight": 2.347789107295142,
-      "importance_score_percent": 47.39874335143716
+      "feature": "returns_1d",
+      "weight": -0.41589959271488897,
+      "abs_weight": 0.41589959271488897,
+      "importance_score_percent": 12.219697818849925
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": -0.16578159305284068,
-      "abs_weight": 0.16578159305284068,
-      "importance_score_percent": 3.3469101449903698
+      "feature": "volatility_5d",
+      "weight": 0.3833746588678608,
+      "abs_weight": 0.3833746588678608,
+      "importance_score_percent": 11.264070859481325
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "rank": 4,
-      "feature": "close",
-      "weight": 0.04270525976454763,
-      "abs_weight": 0.04270525976454763,
-      "importance_score_percent": 0.8621624664015399
+      "feature": "low",
+      "weight": -0.37804669865507007,
+      "abs_weight": 0.37804669865507007,
+      "importance_score_percent": 11.107528114714103
     },
     {
       "file": "cleaned_coin_WrappedBitcoin.csv",
       "rank": 5,
+      "feature": "open",
+      "weight": -0.24811755016344988,
+      "abs_weight": 0.24811755016344988,
+      "importance_score_percent": 7.29003235314338
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 6,
+      "feature": "ema_26",
+      "weight": 0.22556286186172966,
+      "abs_weight": 0.22556286186172966,
+      "importance_score_percent": 6.62734481924548
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 7,
+      "feature": "price_to_sma5",
+      "weight": 0.19932732803616635,
+      "abs_weight": 0.19932732803616635,
+      "importance_score_percent": 5.8565090187777145
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 8,
+      "feature": "sma_5",
+      "weight": -0.19583985491247732,
+      "abs_weight": 0.19583985491247732,
+      "importance_score_percent": 5.754042297315799
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 9,
+      "feature": "close",
+      "weight": -0.14747976406151458,
+      "abs_weight": 0.14747976406151458,
+      "importance_score_percent": 4.333156807062377
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 10,
+      "feature": "volume_sma_5",
+      "weight": -0.14432265781780695,
+      "abs_weight": 0.14432265781780695,
+      "importance_score_percent": 4.2403967155501965
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 11,
+      "feature": "sma_7",
+      "weight": 0.13006839964613884,
+      "abs_weight": 0.13006839964613884,
+      "importance_score_percent": 3.821587150595744
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 12,
+      "feature": "high",
+      "weight": -0.12561745229662563,
+      "abs_weight": 0.12561745229662563,
+      "importance_score_percent": 3.690812241046968
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 13,
+      "feature": "rsi_momentum",
+      "weight": 0.10721751485769183,
+      "abs_weight": 0.10721751485769183,
+      "importance_score_percent": 3.15019695955125
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 14,
       "feature": "volume",
-      "weight": -0.016108119707413146,
-      "abs_weight": 0.016108119707413146,
-      "importance_score_percent": 0.32520153940296914
+      "weight": 0.046282462991706894,
+      "abs_weight": 0.046282462991706894,
+      "importance_score_percent": 1.3598419473771137
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 15,
+      "feature": "volume_ratio_5",
+      "weight": 0.0344435028720037,
+      "abs_weight": 0.0344435028720037,
+      "importance_score_percent": 1.0119971365471045
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "rank": 1,
-      "feature": "close",
-      "weight": 1.4073945146532654,
-      "abs_weight": 1.4073945146532654,
-      "importance_score_percent": 35.26633120486689
+      "feature": "sma_7",
+      "weight": -0.4399662198803561,
+      "abs_weight": 0.4399662198803561,
+      "importance_score_percent": 11.726772798135991
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "rank": 2,
-      "feature": "low",
-      "weight": -1.2140702022220207,
-      "abs_weight": 1.2140702022220207,
-      "importance_score_percent": 30.422032636719397
+      "feature": "open",
+      "weight": 0.39562093261532383,
+      "abs_weight": 0.39562093261532383,
+      "importance_score_percent": 10.544802262837798
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "rank": 3,
-      "feature": "high",
-      "weight": -0.6875494009153328,
-      "abs_weight": 0.6875494009153328,
-      "importance_score_percent": 17.228534458485978
+      "feature": "low",
+      "weight": -0.37588895389901406,
+      "abs_weight": 0.37588895389901406,
+      "importance_score_percent": 10.018869996204364
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "rank": 4,
-      "feature": "open",
-      "weight": 0.6496821360959841,
-      "abs_weight": 0.6496821360959841,
-      "importance_score_percent": 16.279660856210672
+      "feature": "volatility_5d",
+      "weight": 0.3591646947480534,
+      "abs_weight": 0.3591646947480534,
+      "importance_score_percent": 9.573104893297609
     },
     {
       "file": "cleaned_coin_XRP.csv",
       "rank": 5,
+      "feature": "close",
+      "weight": 0.3414405043096366,
+      "abs_weight": 0.3414405043096366,
+      "importance_score_percent": 9.100687819189671
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 6,
+      "feature": "rsi_momentum",
+      "weight": 0.32039655020395597,
+      "abs_weight": 0.32039655020395597,
+      "importance_score_percent": 8.539786419443967
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 7,
+      "feature": "ema_26",
+      "weight": 0.30144409795950466,
+      "abs_weight": 0.30144409795950466,
+      "importance_score_percent": 8.034631497553278
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 8,
+      "feature": "sma_5",
+      "weight": 0.2982777793421665,
+      "abs_weight": 0.2982777793421665,
+      "importance_score_percent": 7.950237065994123
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 9,
+      "feature": "ema_12",
+      "weight": -0.2631032936009955,
+      "abs_weight": 0.2631032936009955,
+      "importance_score_percent": 7.012703264671474
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 10,
+      "feature": "price_to_sma5",
+      "weight": -0.24021482393081148,
+      "abs_weight": 0.24021482393081148,
+      "importance_score_percent": 6.40263851108138
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 11,
+      "feature": "high",
+      "weight": -0.14122395312642852,
+      "abs_weight": 0.14122395312642852,
+      "importance_score_percent": 3.764155376334557
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 12,
+      "feature": "returns_1d",
+      "weight": 0.10623509972263258,
+      "abs_weight": 0.10623509972263258,
+      "importance_score_percent": 2.83156938269809
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 13,
+      "feature": "volume_sma_5",
+      "weight": -0.08281692064025648,
+      "abs_weight": 0.08281692064025648,
+      "importance_score_percent": 2.207385858972643
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 14,
+      "feature": "volume_ratio_5",
+      "weight": 0.07324032273895086,
+      "abs_weight": 0.07324032273895086,
+      "importance_score_percent": 1.9521331084358944
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 15,
       "feature": "volume",
-      "weight": -0.032063392977485616,
-      "abs_weight": 0.032063392977485616,
-      "importance_score_percent": 0.8034408437170806
+      "weight": -0.012775728461640018,
+      "abs_weight": 0.012775728461640018,
+      "importance_score_percent": 0.3405217451491464
     }
   ],
   "skipped_files": []
