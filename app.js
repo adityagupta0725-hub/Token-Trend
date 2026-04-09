@@ -3,11 +3,27 @@ const API_KEY = 'CG-LCdqS2Gs8t9UEUHbKgoafQgd'; // Replace with your CoinGecko De
 const COIN_MAP = {
     "Bitcoin": { apiId: "bitcoin", jsonKey: "cleaned_coin_Bitcoin.csv" },
     "Ethereum": { apiId: "ethereum", jsonKey: "cleaned_coin_Ethereum.csv" },
+    "Tether": { apiId: "tether", jsonKey: "cleaned_coin_Tether.csv" },
     "BinanceCoin": { apiId: "binancecoin", jsonKey: "cleaned_coin_BinanceCoin.csv" },
     "Solana": { apiId: "solana", jsonKey: "cleaned_coin_Solana.csv" },
+    "XRP": { apiId: "ripple", jsonKey: "cleaned_coin_XRP.csv" },
     "Cardano": { apiId: "cardano", jsonKey: "cleaned_coin_Cardano.csv" },
     "Dogecoin": { apiId: "dogecoin", jsonKey: "cleaned_coin_Dogecoin.csv" },
-    "XRP": { apiId: "ripple", jsonKey: "cleaned_coin_XRP.csv" }
+    "Litecoin": { apiId: "litecoin", jsonKey: "cleaned_coin_Litecoin.csv" },
+    "Monero": { apiId: "monero", jsonKey: "cleaned_coin_Monero.csv" },
+    "Polkadot": { apiId: "polkadot", jsonKey: "cleaned_coin_Polkadot.csv" },
+    "Cosmos": { apiId: "cosmos", jsonKey: "cleaned_coin_Cosmos.csv" },
+    "Stellar": { apiId: "stellar", jsonKey: "cleaned_coin_Stellar.csv" },
+    "ChainLink": { apiId: "chainlink", jsonKey: "cleaned_coin_ChainLink.csv" },
+    "Uniswap": { apiId: "uniswap", jsonKey: "cleaned_coin_Uniswap.csv" },
+    "Aave": { apiId: "aave", jsonKey: "cleaned_coin_Aave.csv" },
+    "USDCoin": { apiId: "usd-coin", jsonKey: "cleaned_coin_USDCoin.csv" },
+    "Tron": { apiId: "tron", jsonKey: "cleaned_coin_Tron.csv" },
+    "Iota": { apiId: "iota", jsonKey: "cleaned_coin_Iota.csv" },
+    "NEM": { apiId: "nem", jsonKey: "cleaned_coin_NEM.csv" },
+    "EOS": { apiId: "eos", jsonKey: "cleaned_coin_EOS.csv" },
+    "CryptocomCoin": { apiId: "crypto-com-coin", jsonKey: "cleaned_coin_CryptocomCoin.csv" },
+    "WrappedBitcoin": { apiId: "wrapped-bitcoin", jsonKey: "cleaned_coin_WrappedBitcoin.csv" }
 };
 
 // --- SCALING ENGINE (Replicating Python StandardScaler) ---
