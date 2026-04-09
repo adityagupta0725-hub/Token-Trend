@@ -1,186 +1,2127 @@
 {
-  "cleaned_coin_Aave.csv": {
-    "intercept": -0.26521014369471657,
-    "w_open": 1.014827902281806,
-    "w_high": -1.451320613367415,
-    "w_low": -0.9492758853396107,
-    "w_close": 0.6996807539706597,
-    "w_volume": 0.46329227879113805
-  },
-  "cleaned_coin_BinanceCoin.csv": {
-    "intercept": -0.8888058830435502,
-    "w_open": -0.45725832985852166,
-    "w_high": 0.011478663277686532,
-    "w_low": 0.5592435343270478,
-    "w_close": -0.9639238503245999,
-    "w_volume": 0.5317821396105517
-  },
-  "cleaned_coin_Bitcoin.csv": {
-    "intercept": -1.269472514387433,
-    "w_open": -0.07059661794891235,
-    "w_high": 0.6843266845702198,
-    "w_low": -0.4560754594512485,
-    "w_close": 0.19330073382908008,
-    "w_volume": -0.12801528757163505
-  },
-  "cleaned_coin_Cardano.csv": {
-    "intercept": -0.917022904054985,
-    "w_open": 0.35122262230999124,
-    "w_high": 0.14417035097767886,
-    "w_low": -1.8828586145312876,
-    "w_close": 1.4171612626643435,
-    "w_volume": -0.005472934211809214
-  },
-  "cleaned_coin_ChainLink.csv": {
-    "intercept": -0.6630537192839032,
-    "w_open": 0.5838753822959571,
-    "w_high": 1.5493668664386653,
-    "w_low": -1.671621574388624,
-    "w_close": -0.7334386283371024,
-    "w_volume": 0.03774777200546325
-  },
-  "cleaned_coin_Cosmos.csv": {
-    "intercept": -0.7543018715253279,
-    "w_open": 0.9764891286765333,
-    "w_high": -0.07241693441607173,
-    "w_low": -0.7290018145543202,
-    "w_close": -0.314733541354282,
-    "w_volume": 0.08956094196839001
-  },
-  "cleaned_coin_CryptocomCoin.csv": {
-    "intercept": -1.0975330124693863,
-    "w_open": -0.23831888063051018,
-    "w_high": 0.1064383979901539,
-    "w_low": 0.016116270615118066,
-    "w_close": 0.31339581056760457,
-    "w_volume": -0.034598608823996416
-  },
-  "cleaned_coin_Dogecoin.csv": {
-    "intercept": -1.1594199270778172,
-    "w_open": 0.08658861063210525,
-    "w_high": 1.6817190575963,
-    "w_low": -2.2269263466399223,
-    "w_close": 0.7346968294700572,
-    "w_volume": -0.08046110106831939
-  },
-  "cleaned_coin_EOS.csv": {
-    "intercept": -0.9186963690268798,
-    "w_open": 1.0514064663902256,
-    "w_high": 1.0462893007411935,
-    "w_low": -2.057377476846108,
-    "w_close": -0.0617755696182698,
-    "w_volume": -0.11536192023229971
-  },
-  "cleaned_coin_Ethereum.csv": {
-    "intercept": -0.9025290935414063,
-    "w_open": -0.10789914557639188,
-    "w_high": 2.947985321694875,
-    "w_low": -1.4343706199824136,
-    "w_close": -1.3905718858508547,
-    "w_volume": -0.08370383495725309
-  },
-  "cleaned_coin_Iota.csv": {
-    "intercept": -0.8498654487005575,
-    "w_open": 1.6798997858712466,
-    "w_high": 1.1025138545349282,
-    "w_low": -1.8181249484524429,
-    "w_close": -0.7672686774312105,
-    "w_volume": -0.031650746890993
-  },
-  "cleaned_coin_Litecoin.csv": {
-    "intercept": -1.310832646296724,
-    "w_open": 1.3536151490354467,
-    "w_high": -0.3362335751380512,
-    "w_low": -1.2783763987344299,
-    "w_close": 0.40893108086855817,
-    "w_volume": 0.044962444675324266
-  },
-  "cleaned_coin_Monero.csv": {
-    "intercept": -0.7475658740753018,
-    "w_open": -0.11705082618523889,
-    "w_high": 1.805488969760671,
-    "w_low": -0.6658113041333306,
-    "w_close": -0.8782965624178971,
-    "w_volume": -0.06351566700736283
-  },
-  "cleaned_coin_NEM.csv": {
-    "intercept": -0.7380549771881791,
-    "w_open": 0.29766967533987226,
-    "w_high": 0.35923406170836925,
-    "w_low": -0.6568301068299469,
-    "w_close": 0.01859633273125653,
-    "w_volume": -0.048245969444679904
-  },
-  "cleaned_coin_Polkadot.csv": {
-    "intercept": -0.595366988446184,
-    "w_open": 0.883343019842381,
-    "w_high": 0.26408939012875904,
-    "w_low": 0.19495275471618498,
-    "w_close": -1.4617928171904282,
-    "w_volume": 0.17562720707838334
-  },
-  "cleaned_coin_Solana.csv": {
-    "intercept": -0.5617458105927544,
-    "w_open": 0.7230640412242224,
-    "w_high": 3.0437703149207374,
-    "w_low": -2.462660170647403,
-    "w_close": -1.3817753208565138,
-    "w_volume": -0.22192522416635435
-  },
-  "cleaned_coin_Stellar.csv": {
-    "intercept": -0.9266070989165719,
-    "w_open": 1.1613512165279263,
-    "w_high": 0.41017200182775176,
-    "w_low": -0.8196023851725902,
-    "w_close": -0.8318969387957104,
-    "w_volume": 0.21325746406012575
-  },
-  "cleaned_coin_Tether.csv": {
-    "intercept": -5.205489104199453,
-    "w_open": 1.2781090331735718,
-    "w_high": 0.3820516886034776,
-    "w_low": -0.5854404818451393,
-    "w_close": -1.3088221225011325,
-    "w_volume": -0.07530456281552285
-  },
-  "cleaned_coin_Tron.csv": {
-    "intercept": -0.8992365241947939,
-    "w_open": 0.3653344724265864,
-    "w_high": 0.5568824767109946,
-    "w_low": -1.6889642785244927,
-    "w_close": 0.785870969126717,
-    "w_volume": -0.06779751066657383
-  },
-  "cleaned_coin_USDCoin.csv": {
-    "intercept": -10.951442621606335,
-    "w_open": -0.6325985013477644,
-    "w_high": -0.11571507048455487,
-    "w_low": 1.8629875086816934,
-    "w_close": -3.505399793564319,
-    "w_volume": 1.619518128378789
-  },
-  "cleaned_coin_Uniswap.csv": {
-    "intercept": -0.40405246234497966,
-    "w_open": 2.9309783394704683,
-    "w_high": -2.2203189314378253,
-    "w_low": 0.9228052197364746,
-    "w_close": -1.9583282350874598,
-    "w_volume": 0.38930137492671835
-  },
-  "cleaned_coin_WrappedBitcoin.csv": {
-    "intercept": -1.4774066441305393,
-    "w_open": 2.3808888158083232,
-    "w_high": -0.16578159305284068,
-    "w_low": -2.347789107295142,
-    "w_close": 0.04270525976454763,
-    "w_volume": -0.016108119707413146
-  },
-  "cleaned_coin_XRP.csv": {
-    "intercept": -1.1529371559636885,
-    "w_open": 0.6496821360959841,
-    "w_high": -0.6875494009153328,
-    "w_low": -1.2140702022220207,
-    "w_close": 1.4073945146532654,
-    "w_volume": -0.032063392977485616
-  }
+  "metrics": [
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rows_used": 2317,
+      "train_rows": 1390,
+      "test_rows": 927,
+      "accuracy": 0.9978425026968716
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rows_used": 2759,
+      "train_rows": 1655,
+      "test_rows": 1104,
+      "accuracy": 0.7789855072463768
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rows_used": 2892,
+      "train_rows": 1735,
+      "test_rows": 1157,
+      "accuracy": 0.7761452031114953
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rows_used": 887,
+      "train_rows": 532,
+      "test_rows": 355,
+      "accuracy": 0.7492957746478873
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rows_used": 1465,
+      "train_rows": 879,
+      "test_rows": 586,
+      "accuracy": 0.7474402730375427
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rows_used": 934,
+      "train_rows": 560,
+      "test_rows": 374,
+      "accuracy": 0.7433155080213903
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rows_used": 2990,
+      "train_rows": 1794,
+      "test_rows": 1196,
+      "accuracy": 0.7366220735785953
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rows_used": 2287,
+      "train_rows": 1372,
+      "test_rows": 915,
+      "accuracy": 0.7180327868852459
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rows_used": 2990,
+      "train_rows": 1794,
+      "test_rows": 1196,
+      "accuracy": 0.7090301003344481
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rows_used": 2159,
+      "train_rows": 1295,
+      "test_rows": 864,
+      "accuracy": 0.7083333333333334
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rows_used": 2601,
+      "train_rows": 1560,
+      "test_rows": 1041,
+      "accuracy": 0.7079731027857828
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rows_used": 1391,
+      "train_rows": 834,
+      "test_rows": 557,
+      "accuracy": 0.6876122082585279
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rows_used": 291,
+      "train_rows": 174,
+      "test_rows": 117,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rows_used": 319,
+      "train_rows": 191,
+      "test_rows": 128,
+      "accuracy": 0.6640625
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rows_used": 1483,
+      "train_rows": 889,
+      "test_rows": 594,
+      "accuracy": 0.6599326599326599
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rows_used": 1373,
+      "train_rows": 823,
+      "test_rows": 550,
+      "accuracy": 0.6545454545454545
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rows_used": 1384,
+      "train_rows": 830,
+      "test_rows": 554,
+      "accuracy": 0.6534296028880866
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rows_used": 1001,
+      "train_rows": 600,
+      "test_rows": 401,
+      "accuracy": 0.6458852867830424
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rows_used": 274,
+      "train_rows": 164,
+      "test_rows": 110,
+      "accuracy": 0.6454545454545455
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rows_used": 1441,
+      "train_rows": 864,
+      "test_rows": 577,
+      "accuracy": 0.6429809358752167
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rows_used": 2526,
+      "train_rows": 1515,
+      "test_rows": 1011,
+      "accuracy": 0.6132542037586548
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rows_used": 844,
+      "train_rows": 506,
+      "test_rows": 338,
+      "accuracy": 0.6094674556213018
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rows_used": 451,
+      "train_rows": 270,
+      "test_rows": 181,
+      "accuracy": 0.56353591160221
+    }
+  ],
+  "weights": [
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "intercept": -0.26521014369471657,
+      "w_open": 1.014827902281806,
+      "w_high": -1.451320613367415,
+      "w_low": -0.9492758853396107,
+      "w_close": 0.6996807539706597,
+      "w_volume": 0.46329227879113805
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "intercept": -0.8888058830435502,
+      "w_open": -0.45725832985852166,
+      "w_high": 0.011478663277686532,
+      "w_low": 0.5592435343270478,
+      "w_close": -0.9639238503245999,
+      "w_volume": 0.5317821396105517
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "intercept": -1.269472514387433,
+      "w_open": -0.07059661794891235,
+      "w_high": 0.6843266845702198,
+      "w_low": -0.4560754594512485,
+      "w_close": 0.19330073382908008,
+      "w_volume": -0.12801528757163505
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "intercept": -0.917022904054985,
+      "w_open": 0.35122262230999124,
+      "w_high": 0.14417035097767886,
+      "w_low": -1.8828586145312876,
+      "w_close": 1.4171612626643435,
+      "w_volume": -0.005472934211809214
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "intercept": -0.6630537192839032,
+      "w_open": 0.5838753822959571,
+      "w_high": 1.5493668664386653,
+      "w_low": -1.671621574388624,
+      "w_close": -0.7334386283371024,
+      "w_volume": 0.03774777200546325
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "intercept": -0.7543018715253279,
+      "w_open": 0.9764891286765333,
+      "w_high": -0.07241693441607173,
+      "w_low": -0.7290018145543202,
+      "w_close": -0.314733541354282,
+      "w_volume": 0.08956094196839001
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "intercept": -1.0975330124693863,
+      "w_open": -0.23831888063051018,
+      "w_high": 0.1064383979901539,
+      "w_low": 0.016116270615118066,
+      "w_close": 0.31339581056760457,
+      "w_volume": -0.034598608823996416
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "intercept": -1.1594199270778172,
+      "w_open": 0.08658861063210525,
+      "w_high": 1.6817190575963,
+      "w_low": -2.2269263466399223,
+      "w_close": 0.7346968294700572,
+      "w_volume": -0.08046110106831939
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "intercept": -0.9186963690268798,
+      "w_open": 1.0514064663902256,
+      "w_high": 1.0462893007411935,
+      "w_low": -2.057377476846108,
+      "w_close": -0.0617755696182698,
+      "w_volume": -0.11536192023229971
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "intercept": -0.9025290935414063,
+      "w_open": -0.10789914557639188,
+      "w_high": 2.947985321694875,
+      "w_low": -1.4343706199824136,
+      "w_close": -1.3905718858508547,
+      "w_volume": -0.08370383495725309
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "intercept": -0.8498654487005575,
+      "w_open": 1.6798997858712466,
+      "w_high": 1.1025138545349282,
+      "w_low": -1.8181249484524429,
+      "w_close": -0.7672686774312105,
+      "w_volume": -0.031650746890993
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "intercept": -1.310832646296724,
+      "w_open": 1.3536151490354467,
+      "w_high": -0.3362335751380512,
+      "w_low": -1.2783763987344299,
+      "w_close": 0.40893108086855817,
+      "w_volume": 0.044962444675324266
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "intercept": -0.7475658740753018,
+      "w_open": -0.11705082618523889,
+      "w_high": 1.805488969760671,
+      "w_low": -0.6658113041333306,
+      "w_close": -0.8782965624178971,
+      "w_volume": -0.06351566700736283
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "intercept": -0.7380549771881791,
+      "w_open": 0.29766967533987226,
+      "w_high": 0.35923406170836925,
+      "w_low": -0.6568301068299469,
+      "w_close": 0.01859633273125653,
+      "w_volume": -0.048245969444679904
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "intercept": -0.595366988446184,
+      "w_open": 0.883343019842381,
+      "w_high": 0.26408939012875904,
+      "w_low": 0.19495275471618498,
+      "w_close": -1.4617928171904282,
+      "w_volume": 0.17562720707838334
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "intercept": -0.5617458105927544,
+      "w_open": 0.7230640412242224,
+      "w_high": 3.0437703149207374,
+      "w_low": -2.462660170647403,
+      "w_close": -1.3817753208565138,
+      "w_volume": -0.22192522416635435
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "intercept": -0.9266070989165719,
+      "w_open": 1.1613512165279263,
+      "w_high": 0.41017200182775176,
+      "w_low": -0.8196023851725902,
+      "w_close": -0.8318969387957104,
+      "w_volume": 0.21325746406012575
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "intercept": -5.205489104199453,
+      "w_open": 1.2781090331735718,
+      "w_high": 0.3820516886034776,
+      "w_low": -0.5854404818451393,
+      "w_close": -1.3088221225011325,
+      "w_volume": -0.07530456281552285
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "intercept": -0.8992365241947939,
+      "w_open": 0.3653344724265864,
+      "w_high": 0.5568824767109946,
+      "w_low": -1.6889642785244927,
+      "w_close": 0.785870969126717,
+      "w_volume": -0.06779751066657383
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "intercept": -10.951442621606335,
+      "w_open": -0.6325985013477644,
+      "w_high": -0.11571507048455487,
+      "w_low": 1.8629875086816934,
+      "w_close": -3.505399793564319,
+      "w_volume": 1.619518128378789
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "intercept": -0.40405246234497966,
+      "w_open": 2.9309783394704683,
+      "w_high": -2.2203189314378253,
+      "w_low": 0.9228052197364746,
+      "w_close": -1.9583282350874598,
+      "w_volume": 0.38930137492671835
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "intercept": -1.4774066441305393,
+      "w_open": 2.3808888158083232,
+      "w_high": -0.16578159305284068,
+      "w_low": -2.347789107295142,
+      "w_close": 0.04270525976454763,
+      "w_volume": -0.016108119707413146
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "intercept": -1.1529371559636885,
+      "w_open": 0.6496821360959841,
+      "w_high": -0.6875494009153328,
+      "w_low": -1.2140702022220207,
+      "w_close": 1.4073945146532654,
+      "w_volume": -0.032063392977485616
+    }
+  ],
+  "powers_by_model": [
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.26521014369471657
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 1.014827902281806
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -1.451320613367415
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.9492758853396107
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.6996807539706597
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.46329227879113805
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.8888058830435502
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": -0.45725832985852166
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.011478663277686532
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": 0.5592435343270478
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.9639238503245999
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.5317821396105517
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -1.269472514387433
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": -0.07059661794891235
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.6843266845702198
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.4560754594512485
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.19330073382908008
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.12801528757163505
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.917022904054985
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.35122262230999124
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.14417035097767886
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.8828586145312876
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 1.4171612626643435
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.005472934211809214
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.6630537192839032
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.5838753822959571
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 1.5493668664386653
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.671621574388624
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.7334386283371024
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.03774777200546325
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.7543018715253279
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.9764891286765333
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -0.07241693441607173
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.7290018145543202
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.314733541354282
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.08956094196839001
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -1.0975330124693863
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": -0.23831888063051018
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.1064383979901539
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": 0.016116270615118066
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.31339581056760457
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.034598608823996416
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -1.1594199270778172
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.08658861063210525
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 1.6817190575963
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -2.2269263466399223
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.7346968294700572
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.08046110106831939
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.9186963690268798
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 1.0514064663902256
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 1.0462893007411935
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -2.057377476846108
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.0617755696182698
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.11536192023229971
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.9025290935414063
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": -0.10789914557639188
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 2.947985321694875
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.4343706199824136
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -1.3905718858508547
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.08370383495725309
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.8498654487005575
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 1.6798997858712466
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 1.1025138545349282
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.8181249484524429
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.7672686774312105
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.031650746890993
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -1.310832646296724
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 1.3536151490354467
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -0.3362335751380512
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.2783763987344299
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.40893108086855817
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.044962444675324266
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.7475658740753018
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": -0.11705082618523889
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 1.805488969760671
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.6658113041333306
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.8782965624178971
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.06351566700736283
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.7380549771881791
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.29766967533987226
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.35923406170836925
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.6568301068299469
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.01859633273125653
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.048245969444679904
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.595366988446184
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.883343019842381
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.26408939012875904
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": 0.19495275471618498
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -1.4617928171904282
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.17562720707838334
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.5617458105927544
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.7230640412242224
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 3.0437703149207374
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -2.462660170647403
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -1.3817753208565138
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.22192522416635435
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.9266070989165719
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 1.1613512165279263
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.41017200182775176
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.8196023851725902
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -0.8318969387957104
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.21325746406012575
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -5.205489104199453
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 1.2781090331735718
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.3820516886034776
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -0.5854404818451393
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -1.3088221225011325
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.07530456281552285
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.8992365241947939
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.3653344724265864
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": 0.5568824767109946
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.6889642785244927
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.785870969126717
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.06779751066657383
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -10.951442621606335
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": -0.6325985013477644
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -0.11571507048455487
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": 1.8629875086816934
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -3.505399793564319
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 1.619518128378789
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -0.40405246234497966
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 2.9309783394704683
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -2.2203189314378253
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": 0.9228052197364746
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": -1.9583282350874598
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": 0.38930137492671835
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -1.4774066441305393
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 2.3808888158083232
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -0.16578159305284068
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -2.347789107295142
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 0.04270525976454763
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.016108119707413146
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "intercept",
+      "power_used": 0,
+      "weight": -1.1529371559636885
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "open",
+      "power_used": 1,
+      "weight": 0.6496821360959841
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "high",
+      "power_used": 1,
+      "weight": -0.6875494009153328
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "low",
+      "power_used": 1,
+      "weight": -1.2140702022220207
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "close",
+      "power_used": 1,
+      "weight": 1.4073945146532654
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "feature": "volume",
+      "power_used": 1,
+      "weight": -0.032063392977485616
+    }
+  ],
+  "feature_importance": [
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 1,
+      "feature": "high",
+      "weight": -1.451320613367415,
+      "abs_weight": 1.451320613367415,
+      "importance_score_percent": 31.699314757358042
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 2,
+      "feature": "open",
+      "weight": 1.014827902281806,
+      "abs_weight": 1.014827902281806,
+      "importance_score_percent": 22.165570310711487
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 3,
+      "feature": "low",
+      "weight": -0.9492758853396107,
+      "abs_weight": 0.9492758853396107,
+      "importance_score_percent": 20.73380258213981
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 4,
+      "feature": "close",
+      "weight": 0.6996807539706597,
+      "abs_weight": 0.6996807539706597,
+      "importance_score_percent": 15.282219687020056
+    },
+    {
+      "file": "cleaned_coin_Aave.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": 0.46329227879113805,
+      "abs_weight": 0.46329227879113805,
+      "importance_score_percent": 10.119092662770615
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 1,
+      "feature": "close",
+      "weight": -0.9639238503245999,
+      "abs_weight": 0.9639238503245999,
+      "importance_score_percent": 38.19507073003187
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": 0.5592435343270478,
+      "abs_weight": 0.5592435343270478,
+      "importance_score_percent": 22.15978610939187
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 3,
+      "feature": "volume",
+      "weight": 0.5317821396105517,
+      "abs_weight": 0.5317821396105517,
+      "importance_score_percent": 21.07164007670611
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": -0.45725832985852166,
+      "abs_weight": 0.45725832985852166,
+      "importance_score_percent": 18.11866595578184
+    },
+    {
+      "file": "cleaned_coin_BinanceCoin.csv",
+      "rank": 5,
+      "feature": "high",
+      "weight": 0.011478663277686532,
+      "abs_weight": 0.011478663277686532,
+      "importance_score_percent": 0.4548371280882991
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 1,
+      "feature": "high",
+      "weight": 0.6843266845702198,
+      "abs_weight": 0.6843266845702198,
+      "importance_score_percent": 44.65966732140375
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -0.4560754594512485,
+      "abs_weight": 0.4560754594512485,
+      "importance_score_percent": 29.763822969056108
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": 0.19330073382908008,
+      "abs_weight": 0.19330073382908008,
+      "importance_score_percent": 12.614949351582844
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 4,
+      "feature": "volume",
+      "weight": -0.12801528757163505,
+      "abs_weight": 0.12801528757163505,
+      "importance_score_percent": 8.354372675958993
+    },
+    {
+      "file": "cleaned_coin_Bitcoin.csv",
+      "rank": 5,
+      "feature": "open",
+      "weight": -0.07059661794891235,
+      "abs_weight": 0.07059661794891235,
+      "importance_score_percent": 4.60718768199832
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -1.8828586145312876,
+      "abs_weight": 1.8828586145312876,
+      "importance_score_percent": 49.53736368803625
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 2,
+      "feature": "close",
+      "weight": 1.4171612626643435,
+      "abs_weight": 1.4171612626643435,
+      "importance_score_percent": 37.2850262528481
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 3,
+      "feature": "open",
+      "weight": 0.35122262230999124,
+      "abs_weight": 0.35122262230999124,
+      "importance_score_percent": 9.24054660427437
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 4,
+      "feature": "high",
+      "weight": 0.14417035097767886,
+      "abs_weight": 0.14417035097767886,
+      "importance_score_percent": 3.793072434804655
+    },
+    {
+      "file": "cleaned_coin_Cardano.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.005472934211809214,
+      "abs_weight": 0.005472934211809214,
+      "importance_score_percent": 0.14399102003661568
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -1.671621574388624,
+      "abs_weight": 1.671621574388624,
+      "importance_score_percent": 36.529790818654305
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 2,
+      "feature": "high",
+      "weight": 1.5493668664386653,
+      "abs_weight": 1.5493668664386653,
+      "importance_score_percent": 33.85817005446249
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": -0.7334386283371024,
+      "abs_weight": 0.7334386283371024,
+      "importance_score_percent": 16.027766141552753
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": 0.5838753822959571,
+      "abs_weight": 0.5838753822959571,
+      "importance_score_percent": 12.759374433913912
+    },
+    {
+      "file": "cleaned_coin_ChainLink.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": 0.03774777200546325,
+      "abs_weight": 0.03774777200546325,
+      "importance_score_percent": 0.8248985514165493
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 1,
+      "feature": "open",
+      "weight": 0.9764891286765333,
+      "abs_weight": 0.9764891286765333,
+      "importance_score_percent": 44.7478724311644
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -0.7290018145543202,
+      "abs_weight": 0.7290018145543202,
+      "importance_score_percent": 33.40670084466455
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": -0.314733541354282,
+      "abs_weight": 0.314733541354282,
+      "importance_score_percent": 14.422747724204616
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 4,
+      "feature": "volume",
+      "weight": 0.08956094196839001,
+      "abs_weight": 0.08956094196839001,
+      "importance_score_percent": 4.104153838812467
+    },
+    {
+      "file": "cleaned_coin_Cosmos.csv",
+      "rank": 5,
+      "feature": "high",
+      "weight": -0.07241693441607173,
+      "abs_weight": 0.07241693441607173,
+      "importance_score_percent": 3.318525161153955
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 1,
+      "feature": "close",
+      "weight": 0.31339581056760457,
+      "abs_weight": 0.31339581056760457,
+      "importance_score_percent": 44.21074508056115
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 2,
+      "feature": "open",
+      "weight": -0.23831888063051018,
+      "abs_weight": 0.23831888063051018,
+      "importance_score_percent": 33.61964303338168
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": 0.1064383979901539,
+      "abs_weight": 0.1064383979901539,
+      "importance_score_percent": 15.01526415366968
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 4,
+      "feature": "volume",
+      "weight": -0.034598608823996416,
+      "abs_weight": 0.034598608823996416,
+      "importance_score_percent": 4.880825535253265
+    },
+    {
+      "file": "cleaned_coin_CryptocomCoin.csv",
+      "rank": 5,
+      "feature": "low",
+      "weight": 0.016116270615118066,
+      "abs_weight": 0.016116270615118066,
+      "importance_score_percent": 2.27352219713423
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -2.2269263466399223,
+      "abs_weight": 2.2269263466399223,
+      "importance_score_percent": 46.29407274736409
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 2,
+      "feature": "high",
+      "weight": 1.6817190575963,
+      "abs_weight": 1.6817190575963,
+      "importance_score_percent": 34.96012542599823
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": 0.7346968294700572,
+      "abs_weight": 0.7346968294700572,
+      "importance_score_percent": 15.273117820920948
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": 0.08658861063210525,
+      "abs_weight": 0.08658861063210525,
+      "importance_score_percent": 1.8000323386285826
+    },
+    {
+      "file": "cleaned_coin_Dogecoin.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.08046110106831939,
+      "abs_weight": 0.08046110106831939,
+      "importance_score_percent": 1.672651667088151
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -2.057377476846108,
+      "abs_weight": 2.057377476846108,
+      "importance_score_percent": 47.49024466379399
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 2,
+      "feature": "open",
+      "weight": 1.0514064663902256,
+      "abs_weight": 1.0514064663902256,
+      "importance_score_percent": 24.26951344218579
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": 1.0462893007411935,
+      "abs_weight": 1.0462893007411935,
+      "importance_score_percent": 24.15139440404495
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 4,
+      "feature": "volume",
+      "weight": -0.11536192023229971,
+      "abs_weight": 0.11536192023229971,
+      "importance_score_percent": 2.6628880107676984
+    },
+    {
+      "file": "cleaned_coin_EOS.csv",
+      "rank": 5,
+      "feature": "close",
+      "weight": -0.0617755696182698,
+      "abs_weight": 0.0617755696182698,
+      "importance_score_percent": 1.4259594792075752
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 1,
+      "feature": "high",
+      "weight": 2.947985321694875,
+      "abs_weight": 2.947985321694875,
+      "importance_score_percent": 49.4252677462964
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -1.4343706199824136,
+      "abs_weight": 1.4343706199824136,
+      "importance_score_percent": 24.04833952812663
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": -1.3905718858508547,
+      "abs_weight": 1.3905718858508547,
+      "importance_score_percent": 23.31401967060557
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": -0.10789914557639188,
+      "abs_weight": 0.10789914557639188,
+      "importance_score_percent": 1.8090131319391138
+    },
+    {
+      "file": "cleaned_coin_Ethereum.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.08370383495725309,
+      "abs_weight": 0.08370383495725309,
+      "importance_score_percent": 1.403359923032289
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -1.8181249484524429,
+      "abs_weight": 1.8181249484524429,
+      "importance_score_percent": 33.672360151966174
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 2,
+      "feature": "open",
+      "weight": 1.6798997858712466,
+      "abs_weight": 1.6798997858712466,
+      "importance_score_percent": 31.112377978870843
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": 1.1025138545349282,
+      "abs_weight": 1.1025138545349282,
+      "importance_score_percent": 20.418972642134456
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 4,
+      "feature": "close",
+      "weight": -0.7672686774312105,
+      "abs_weight": 0.7672686774312105,
+      "importance_score_percent": 14.210105450550817
+    },
+    {
+      "file": "cleaned_coin_Iota.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.031650746890993,
+      "abs_weight": 0.031650746890993,
+      "importance_score_percent": 0.5861837764777348
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 1,
+      "feature": "open",
+      "weight": 1.3536151490354467,
+      "abs_weight": 1.3536151490354467,
+      "importance_score_percent": 39.55488655099178
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -1.2783763987344299,
+      "abs_weight": 1.2783763987344299,
+      "importance_score_percent": 37.35628509878745
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": 0.40893108086855817,
+      "abs_weight": 0.40893108086855817,
+      "importance_score_percent": 11.949646487375926
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 4,
+      "feature": "high",
+      "weight": -0.3362335751380512,
+      "abs_weight": 0.3362335751380512,
+      "importance_score_percent": 9.825304429177685
+    },
+    {
+      "file": "cleaned_coin_Litecoin.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": 0.044962444675324266,
+      "abs_weight": 0.044962444675324266,
+      "importance_score_percent": 1.3138774336671695
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 1,
+      "feature": "high",
+      "weight": 1.805488969760671,
+      "abs_weight": 1.805488969760671,
+      "importance_score_percent": 51.14462990056872
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 2,
+      "feature": "close",
+      "weight": -0.8782965624178971,
+      "abs_weight": 0.8782965624178971,
+      "importance_score_percent": 24.87977128642306
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 3,
+      "feature": "low",
+      "weight": -0.6658113041333306,
+      "abs_weight": 0.6658113041333306,
+      "importance_score_percent": 18.860637369625184
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": -0.11705082618523889,
+      "abs_weight": 0.11705082618523889,
+      "importance_score_percent": 3.3157340117084133
+    },
+    {
+      "file": "cleaned_coin_Monero.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.06351566700736283,
+      "abs_weight": 0.06351566700736283,
+      "importance_score_percent": 1.7992274316746129
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -0.6568301068299469,
+      "abs_weight": 0.6568301068299469,
+      "importance_score_percent": 47.576521491209085
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 2,
+      "feature": "high",
+      "weight": 0.35923406170836925,
+      "abs_weight": 0.35923406170836925,
+      "importance_score_percent": 26.0205902249658
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 3,
+      "feature": "open",
+      "weight": 0.29766967533987226,
+      "abs_weight": 0.29766967533987226,
+      "importance_score_percent": 21.5612645626721
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 4,
+      "feature": "volume",
+      "weight": -0.048245969444679904,
+      "abs_weight": 0.048245969444679904,
+      "importance_score_percent": 3.4946257461113945
+    },
+    {
+      "file": "cleaned_coin_NEM.csv",
+      "rank": 5,
+      "feature": "close",
+      "weight": 0.01859633273125653,
+      "abs_weight": 0.01859633273125653,
+      "importance_score_percent": 1.3469979750416077
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 1,
+      "feature": "close",
+      "weight": -1.4617928171904282,
+      "abs_weight": 1.4617928171904282,
+      "importance_score_percent": 49.056657213974205
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 2,
+      "feature": "open",
+      "weight": 0.883343019842381,
+      "abs_weight": 0.883343019842381,
+      "importance_score_percent": 29.644321149458342
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": 0.26408939012875904,
+      "abs_weight": 0.26408939012875904,
+      "importance_score_percent": 8.862639447287926
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 4,
+      "feature": "low",
+      "weight": 0.19495275471618498,
+      "abs_weight": 0.19495275471618498,
+      "importance_score_percent": 6.542466448435154
+    },
+    {
+      "file": "cleaned_coin_Polkadot.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": 0.17562720707838334,
+      "abs_weight": 0.17562720707838334,
+      "importance_score_percent": 5.893915740844379
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 1,
+      "feature": "high",
+      "weight": 3.0437703149207374,
+      "abs_weight": 3.0437703149207374,
+      "importance_score_percent": 38.857328165777275
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -2.462660170647403,
+      "abs_weight": 2.462660170647403,
+      "importance_score_percent": 31.43876985150475
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": -1.3817753208565138,
+      "abs_weight": 1.3817753208565138,
+      "importance_score_percent": 17.639996300210957
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": 0.7230640412242224,
+      "abs_weight": 0.7230640412242224,
+      "importance_score_percent": 9.23076770838879
+    },
+    {
+      "file": "cleaned_coin_Solana.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.22192522416635435,
+      "abs_weight": 0.22192522416635435,
+      "importance_score_percent": 2.8331379741182205
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 1,
+      "feature": "open",
+      "weight": 1.1613512165279263,
+      "abs_weight": 1.1613512165279263,
+      "importance_score_percent": 33.796757376299546
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 2,
+      "feature": "close",
+      "weight": -0.8318969387957104,
+      "abs_weight": 0.8318969387957104,
+      "importance_score_percent": 24.209230250450133
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 3,
+      "feature": "low",
+      "weight": -0.8196023851725902,
+      "abs_weight": 0.8196023851725902,
+      "importance_score_percent": 23.85144352759057
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 4,
+      "feature": "high",
+      "weight": 0.41017200182775176,
+      "abs_weight": 0.41017200182775176,
+      "importance_score_percent": 11.936512771535275
+    },
+    {
+      "file": "cleaned_coin_Stellar.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": 0.21325746406012575,
+      "abs_weight": 0.21325746406012575,
+      "importance_score_percent": 6.206056074124479
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 1,
+      "feature": "close",
+      "weight": -1.3088221225011325,
+      "abs_weight": 1.3088221225011325,
+      "importance_score_percent": 36.05840885454828
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 2,
+      "feature": "open",
+      "weight": 1.2781090331735718,
+      "abs_weight": 1.2781090331735718,
+      "importance_score_percent": 35.212254810297324
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 3,
+      "feature": "low",
+      "weight": -0.5854404818451393,
+      "abs_weight": 0.5854404818451393,
+      "importance_score_percent": 16.129046026540948
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 4,
+      "feature": "high",
+      "weight": 0.3820516886034776,
+      "abs_weight": 0.3820516886034776,
+      "importance_score_percent": 10.52562892573115
+    },
+    {
+      "file": "cleaned_coin_Tether.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.07530456281552285,
+      "abs_weight": 0.07530456281552285,
+      "importance_score_percent": 2.074661382882292
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 1,
+      "feature": "low",
+      "weight": -1.6889642785244927,
+      "abs_weight": 1.6889642785244927,
+      "importance_score_percent": 48.745672139554145
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 2,
+      "feature": "close",
+      "weight": 0.785870969126717,
+      "abs_weight": 0.785870969126717,
+      "importance_score_percent": 22.681242636174023
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": 0.5568824767109946,
+      "abs_weight": 0.5568824767109946,
+      "importance_score_percent": 16.072341478845185
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": 0.3653344724265864,
+      "abs_weight": 0.3653344724265864,
+      "importance_score_percent": 10.544020759125317
+    },
+    {
+      "file": "cleaned_coin_Tron.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.06779751066657383,
+      "abs_weight": 0.06779751066657383,
+      "importance_score_percent": 1.9567229863013396
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 1,
+      "feature": "close",
+      "weight": -3.505399793564319,
+      "abs_weight": 3.505399793564319,
+      "importance_score_percent": 45.3115377479743
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": 1.8629875086816934,
+      "abs_weight": 1.8629875086816934,
+      "importance_score_percent": 24.081369827948063
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 3,
+      "feature": "volume",
+      "weight": 1.619518128378789,
+      "abs_weight": 1.619518128378789,
+      "importance_score_percent": 20.934233219928363
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": -0.6325985013477644,
+      "abs_weight": 0.6325985013477644,
+      "importance_score_percent": 8.177101774740906
+    },
+    {
+      "file": "cleaned_coin_USDCoin.csv",
+      "rank": 5,
+      "feature": "high",
+      "weight": -0.11571507048455487,
+      "abs_weight": 0.11571507048455487,
+      "importance_score_percent": 1.4957574294083753
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 1,
+      "feature": "open",
+      "weight": 2.9309783394704683,
+      "abs_weight": 2.9309783394704683,
+      "importance_score_percent": 34.80255966870685
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 2,
+      "feature": "high",
+      "weight": -2.2203189314378253,
+      "abs_weight": 2.2203189314378253,
+      "importance_score_percent": 26.36416006707337
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 3,
+      "feature": "close",
+      "weight": -1.9583282350874598,
+      "abs_weight": 1.9583282350874598,
+      "importance_score_percent": 23.253271556028636
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 4,
+      "feature": "low",
+      "weight": 0.9228052197364746,
+      "abs_weight": 0.9228052197364746,
+      "importance_score_percent": 10.957427862900921
+    },
+    {
+      "file": "cleaned_coin_Uniswap.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": 0.38930137492671835,
+      "abs_weight": 0.38930137492671835,
+      "importance_score_percent": 4.622580845290222
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 1,
+      "feature": "open",
+      "weight": 2.3808888158083232,
+      "abs_weight": 2.3808888158083232,
+      "importance_score_percent": 48.06698249776797
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -2.347789107295142,
+      "abs_weight": 2.347789107295142,
+      "importance_score_percent": 47.39874335143716
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": -0.16578159305284068,
+      "abs_weight": 0.16578159305284068,
+      "importance_score_percent": 3.3469101449903698
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 4,
+      "feature": "close",
+      "weight": 0.04270525976454763,
+      "abs_weight": 0.04270525976454763,
+      "importance_score_percent": 0.8621624664015399
+    },
+    {
+      "file": "cleaned_coin_WrappedBitcoin.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.016108119707413146,
+      "abs_weight": 0.016108119707413146,
+      "importance_score_percent": 0.32520153940296914
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 1,
+      "feature": "close",
+      "weight": 1.4073945146532654,
+      "abs_weight": 1.4073945146532654,
+      "importance_score_percent": 35.26633120486689
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 2,
+      "feature": "low",
+      "weight": -1.2140702022220207,
+      "abs_weight": 1.2140702022220207,
+      "importance_score_percent": 30.422032636719397
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 3,
+      "feature": "high",
+      "weight": -0.6875494009153328,
+      "abs_weight": 0.6875494009153328,
+      "importance_score_percent": 17.228534458485978
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 4,
+      "feature": "open",
+      "weight": 0.6496821360959841,
+      "abs_weight": 0.6496821360959841,
+      "importance_score_percent": 16.279660856210672
+    },
+    {
+      "file": "cleaned_coin_XRP.csv",
+      "rank": 5,
+      "feature": "volume",
+      "weight": -0.032063392977485616,
+      "abs_weight": 0.032063392977485616,
+      "importance_score_percent": 0.8034408437170806
+    }
+  ],
+  "skipped_files": []
 }
