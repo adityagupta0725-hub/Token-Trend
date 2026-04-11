@@ -110,6 +110,36 @@ function engineerFeatures(ohlcData, volumeData) {
     };
 }
 
+// Calculate features at a specific time index using only historical data
+function engineerFeaturesAtIndex(ohlcData, volumeData, index) {
+    const pricesUpTo = ohlcData.slice(0, index + 1).map(d => d[4]); // Close prices up to this point
+    const volumesUpTo = volumeData.slice(0, index + 1).map(v => (Array.isArray(v) ? v[1] : v));
+    
+    const volatility5d = calculateVolatility(pricesUpTo, 5);
+    const returns1d = pricesUpTo.length > 1 ? (pricesUpTo[pricesUpTo.length - 1] - pricesUpTo[pricesUpTo.length - 2]) / pricesUpTo[pricesUpTo.length - 2] : 0;
+    const ema12 = calculateEMA(pricesUpTo, 12);
+    const ema26 = calculateEMA(pricesUpTo, 26);
+    const sma5 = calculateSMA(pricesUpTo, 5);
+    const sma7 = calculateSMA(pricesUpTo, 7);
+    const volumeSma5 = calculateSMA(volumesUpTo, 5);
+    const rsiMomentum = calculateRSI(pricesUpTo, 14);
+    const priceToSma5 = pricesUpTo[pricesUpTo.length - 1] / (sma5 + 1e-10);
+    const volumeRatio5 = volumesUpTo[volumesUpTo.length - 1] / (volumeSma5 + 1e-10);
+    
+    return {
+        volatility_5d: volatility5d,
+        returns_1d: returns1d,
+        ema_12: ema12,
+        ema_26: ema26,
+        sma_5: sma5,
+        sma_7: sma7,
+        volume_sma_5: volumeSma5,
+        rsi_momentum: rsiMomentum,
+        price_to_sma5: priceToSma5,
+        volume_ratio_5: volumeRatio5
+    };
+}
+
 async function updateDashboard() {
     const selectedName = document.getElementById('coinSelect').value;
     const config = COIN_MAP[selectedName];
@@ -147,19 +177,21 @@ async function updateDashboard() {
             throw new Error("No volume data available");
         }
 
-        // 1. Engineer Advanced Features
-        const advFeatures = engineerFeatures(ohlcData, volumeData);
-        currentFeatures = advFeatures;
+        // 1. Engineer Advanced Features (only for current display)
+        const currentAdvFeatures = engineerFeatures(ohlcData, volumeData);
+        currentFeatures = currentAdvFeatures;
 
         // 2. Calculate Scaling Stats (StandardScaler Replication)
         const priceStats = getStats(ohlcData.map(d => d[4])); 
         const volStats = getStats(volumeData.map(v => (Array.isArray(v) ? v[1] : v)));
 
-        // 3. 3-Day Backtesting Loop
+        // 3. 3/5 train - 2/5 test split (matching notebook approach)
+        const n = ohlcData.length;
+        const splitIdx = Math.floor((3 * n) / 5);
         let correct = 0;
-        const testWindow = Math.min(1, Math.max(1, ohlcData.length - 1));
+        let totalTests = 0;
         
-        for (let i = Math.max(0, ohlcData.length - testWindow - 1); i < ohlcData.length - 1; i++) {
+        for (let i = splitIdx; i < ohlcData.length - 1; i++) {
             const day = ohlcData[i];
             const nextDay = ohlcData[i + 1];
             
@@ -173,6 +205,9 @@ async function updateDashboard() {
                 volume: (volValue - volStats.mean) / volStats.std
             };
 
+            // Calculate features at this specific time point (using only historical data)
+            const advFeaturesAtTime = engineerFeaturesAtIndex(ohlcData, volumeData, i);
+
             let logit = (weights.intercept || 0) + 
                         (z.open * (weights.w_open || 0)) + 
                         (z.high * (weights.w_high || 0)) + 
@@ -180,25 +215,26 @@ async function updateDashboard() {
                         (z.close * (weights.w_close || 0)) + 
                         (z.volume * (weights.w_volume || 0));
             
-            // Add advanced feature weights
-            logit += (advFeatures.volatility_5d * (weights.w_volatility_5d || 0));
-            logit += (advFeatures.returns_1d * (weights.w_returns_1d || 0));
-            logit += (advFeatures.ema_12 * (weights.w_ema_12 || 0));
-            logit += (advFeatures.ema_26 * (weights.w_ema_26 || 0));
-            logit += (advFeatures.sma_5 * (weights.w_sma_5 || 0));
-            logit += (advFeatures.sma_7 * (weights.w_sma_7 || 0));
-            logit += (advFeatures.volume_sma_5 * (weights.w_volume_sma_5 || 0));
-            logit += (advFeatures.rsi_momentum * (weights.w_rsi_momentum || 0));
-            logit += (advFeatures.price_to_sma5 * (weights.w_price_to_sma5 || 0));
-            logit += (advFeatures.volume_ratio_5 * (weights.w_volume_ratio_5 || 0));
+            // Add advanced feature weights (calculated from historical data only)
+            logit += (advFeaturesAtTime.volatility_5d * (weights.w_volatility_5d || 0));
+            logit += (advFeaturesAtTime.returns_1d * (weights.w_returns_1d || 0));
+            logit += (advFeaturesAtTime.ema_12 * (weights.w_ema_12 || 0));
+            logit += (advFeaturesAtTime.ema_26 * (weights.w_ema_26 || 0));
+            logit += (advFeaturesAtTime.sma_5 * (weights.w_sma_5 || 0));
+            logit += (advFeaturesAtTime.sma_7 * (weights.w_sma_7 || 0));
+            logit += (advFeaturesAtTime.volume_sma_5 * (weights.w_volume_sma_5 || 0));
+            logit += (advFeaturesAtTime.rsi_momentum * (weights.w_rsi_momentum || 0));
+            logit += (advFeaturesAtTime.price_to_sma5 * (weights.w_price_to_sma5 || 0));
+            logit += (advFeaturesAtTime.volume_ratio_5 * (weights.w_volume_ratio_5 || 0));
             
             const pred = (1 / (1 + Math.exp(-Math.max(-500, Math.min(500, logit))))) > 0.5 ? 1 : 0;
             const actual = ((nextDay[4] - day[4]) / day[4]) > threshold ? 1 : 0;
 
             if (pred === actual) correct++;
+            totalTests++;
         }
 
-        const accuracy = (correct / testWindow) * 100;
+        const accuracy = totalTests > 0 ? (correct / totalTests) * 100 : 0;
 
         // 4. Final Prediction for Today
         const current = ohlcData[ohlcData.length - 1];
@@ -213,30 +249,30 @@ async function updateDashboard() {
             ((currentVolValue - volStats.mean) / volStats.std * (weights.w_volume || 0));
 
         // Add advanced features to final prediction
-        finalZ += (advFeatures.volatility_5d * (weights.w_volatility_5d || 0));
-        finalZ += (advFeatures.returns_1d * (weights.w_returns_1d || 0));
-        finalZ += (advFeatures.ema_12 * (weights.w_ema_12 || 0));
-        finalZ += (advFeatures.ema_26 * (weights.w_ema_26 || 0));
-        finalZ += (advFeatures.sma_5 * (weights.w_sma_5 || 0));
-        finalZ += (advFeatures.sma_7 * (weights.w_sma_7 || 0));
-        finalZ += (advFeatures.volume_sma_5 * (weights.w_volume_sma_5 || 0));
-        finalZ += (advFeatures.rsi_momentum * (weights.w_rsi_momentum || 0));
-        finalZ += (advFeatures.price_to_sma5 * (weights.w_price_to_sma5 || 0));
-        finalZ += (advFeatures.volume_ratio_5 * (weights.w_volume_ratio_5 || 0));
+        finalZ += (currentAdvFeatures.volatility_5d * (weights.w_volatility_5d || 0));
+        finalZ += (currentAdvFeatures.returns_1d * (weights.w_returns_1d || 0));
+        finalZ += (currentAdvFeatures.ema_12 * (weights.w_ema_12 || 0));
+        finalZ += (currentAdvFeatures.ema_26 * (weights.w_ema_26 || 0));
+        finalZ += (currentAdvFeatures.sma_5 * (weights.w_sma_5 || 0));
+        finalZ += (currentAdvFeatures.sma_7 * (weights.w_sma_7 || 0));
+        finalZ += (currentAdvFeatures.volume_sma_5 * (weights.w_volume_sma_5 || 0));
+        finalZ += (currentAdvFeatures.rsi_momentum * (weights.w_rsi_momentum || 0));
+        finalZ += (currentAdvFeatures.price_to_sma5 * (weights.w_price_to_sma5 || 0));
+        finalZ += (currentAdvFeatures.volume_ratio_5 * (weights.w_volume_ratio_5 || 0));
 
         const clippedZ = Math.max(-500, Math.min(500, finalZ));
         const result = (1 / (1 + Math.exp(-clippedZ))) > 0.5 ? "UP" : "DOWN";
 
         // 5. Update UI
         document.getElementById('price').innerText = `$${current[4].toFixed(2)}`;
-        document.getElementById('accuracy-display').innerText = `5d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
+        document.getElementById('accuracy-display').innerText = `Test Set Accuracy: ${accuracy.toFixed(1)}%`;
         
         const predEl = document.getElementById('prediction');
         predEl.innerText = result;
         predEl.style.color = result === "UP" ? "#22c55e" : "#ef4444";
 
         // 6. Update Feature Metrics Panel
-        updateFeatureMetrics(advFeatures);
+        updateFeatureMetrics(currentAdvFeatures);
 
         // 7. Render Price Chart
         renderChart(ohlcData, current[4]);
