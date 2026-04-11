@@ -157,7 +157,7 @@ async function updateDashboard() {
 
         // 3. 3-Day Backtesting Loop
         let correct = 0;
-        const testWindow = Math.min(15, Math.max(1, ohlcData.length - 1));
+        const testWindow = Math.min(6, Math.max(1, ohlcData.length - 1));
         
         for (let i = Math.max(0, ohlcData.length - testWindow - 1); i < ohlcData.length - 1; i++) {
             const day = ohlcData[i];
@@ -229,7 +229,7 @@ async function updateDashboard() {
 
         // 5. Update UI
         document.getElementById('price').innerText = `$${current[4].toFixed(2)}`;
-        document.getElementById('accuracy-display').innerText = `15d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
+        document.getElementById('accuracy-display').innerText = `5d Backtest Accuracy: ${accuracy.toFixed(1)}%`;
         
         const predEl = document.getElementById('prediction');
         predEl.innerText = result;
