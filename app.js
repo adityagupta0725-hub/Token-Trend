@@ -113,7 +113,7 @@ function engineerFeatures(ohlcData, volumeData) {
 async function updateDashboard() {
     const selectedName = document.getElementById('coinSelect').value;
     const config = COIN_MAP[selectedName];
-    const threshold = 0.0233;
+    const threshold = 0.5;
 
     try {
         // Fetching 30 days of data directly from CoinGecko (public API, no key needed)
@@ -157,7 +157,7 @@ async function updateDashboard() {
 
         // 3. 3-Day Backtesting Loop
         let correct = 0;
-        const testWindow = Math.min(6, Math.max(1, ohlcData.length - 1));
+        const testWindow = Math.min(1, Math.max(1, ohlcData.length - 1));
         
         for (let i = Math.max(0, ohlcData.length - testWindow - 1); i < ohlcData.length - 1; i++) {
             const day = ohlcData[i];
